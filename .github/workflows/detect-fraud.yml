@@ -1,0 +1,148 @@
+name: TRIER Fraud Detection Pipeline with Gists
+
+on:
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'docs/**'
+
+jobs:
+  run-fraud-detection:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install pandas numpy requests
+    
+    - name: Generate fresh data
+      run: |
+        cd src
+        python data_generator.py
+    
+    - name: Run TRIER fraud detector
+      run: |
+        cd src
+        python trier_fraud_detector.py
+    
+    - name: Generate dashboard
+      run: |
+        cd src
+        python trier_dashboard.py
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        keep_files: false
+    
+    - name: Create Gists for key files
+      shell: python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        import os
+        import json
+        import requests
+        from datetime import datetime
+        
+        # Configuration
+        token = os.environ.get('GITHUB_TOKEN')
+        headers = {
+            'Authorization': f'token {token}',
+            'Accept': 'application/vnd.github.v3+json'
+        }
+        
+        # Files to upload as Gists
+        gist_files = {
+            'trier_fraud_detector.py': {
+                'path': 'src/trier_fraud_detector.py',
+                'description': 'TRIER - Main fraud detection logic with oriental pattern focus'
+            },
+            'trier_dashboard.py': {
+                'path': 'src/trier_dashboard.py',
+                'description': 'TRIER - Dashboard generator with pattern visualization'
+            },
+            'data_generator.py': {
+                'path': 'src/data_generator.py',
+                'description': 'TRIER - Generate sample transaction data with oriental patterns'
+            },
+            'latest_results.json': {
+                'path': 'data/trier_results.json',
+                'description': f'TRIER - Latest detection results {datetime.now().strftime("%Y-%m-%d %H:%M")}'
+            },
+            'latest_alerts.json': {
+                'path': 'data/trier_alerts.json',
+                'description': f'TRIER - Latest fraud alerts {datetime.now().strftime("%Y-%m-%d %H:%M")}'
+            }
+        }
+        
+        # Create or update Gists
+        for filename, info in gist_files.items():
+            try:
+                # Read file content
+                with open(info['path'], 'r') as f:
+                    content = f.read()
+                
+                # Prepare Gist data
+                gist_data = {
+                    'description': info['description'],
+                    'public': True,  # Set to False if you want secret gists
+                    'files': {
+                        filename: {
+                            'content': content
+                        }
+                    }
+                }
+                
+                # Check if Gist already exists (you'd need to store IDs - simplified version)
+                # For simplicity, we'll create new ones each time with timestamp in description
+                response = requests.post(
+                    'https://api.github.com/gists',
+                    headers=headers,
+                    data=json.dumps(gist_data)
+                )
+                
+                if response.status_code == 201:
+                    gist_url = response.json()['html_url']
+                    print(f"✅ Created Gist for {filename}: {gist_url}")
+                    
+                    # Append to Gist list file
+                    with open('docs/gists.json', 'a') as f:
+                        json.dump({
+                            'filename': filename,
+                            'gist_url': gist_url,
+                            'created_at': datetime.now().isoformat(),
+                            'description': info['description']
+                        }, f)
+                        f.write('\n')
+                else:
+                    print(f"❌ Failed to create Gist for {filename}: {response.status_code}")
+                    
+            except Exception as e:
+                print(f"❌ Error processing {filename}: {str(e)}")
+    
+    - name: Update Gist Gallery in Dashboard
+      run: |
+        cd src
+        python update_gist_gallery.py
+
+    - name: Deploy updated dashboard with Gist links
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        keep_files: true
