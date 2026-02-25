@@ -1,0 +1,500 @@
+[
+  {
+    "transaction_id": "TX_000038",
+    "user_id": 28,
+    "amount": 2879.51,
+    "merchant": "Amazon",
+    "location": "RU",
+    "pattern_rating": 85,
+    "risk_score": 98.5,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-RU",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:106similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 8,
+    "historical_similar": 106
+  },
+  {
+    "transaction_id": "TX_000071",
+    "user_id": 35,
+    "amount": 178.41,
+    "merchant": "Walmart",
+    "location": "AU",
+    "pattern_rating": 65,
+    "risk_score": 72.2,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "MEDIUM_RISK_PATTERN:Walmart-AU",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:60similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 9,
+    "historical_similar": 60
+  },
+  {
+    "transaction_id": "TX_000237",
+    "user_id": 1,
+    "amount": 1991.4,
+    "merchant": "Unknown Store",
+    "location": "CN",
+    "pattern_rating": 95,
+    "risk_score": 72.5,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:66similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 5,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000288",
+    "user_id": 13,
+    "amount": 992.78,
+    "merchant": "Amazon",
+    "location": "RU",
+    "pattern_rating": 85,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-RU",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:106similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 10,
+    "historical_similar": 106
+  },
+  {
+    "transaction_id": "TX_000337",
+    "user_id": 98,
+    "amount": 1401.76,
+    "merchant": "Unknown Store",
+    "location": "NG",
+    "pattern_rating": 98,
+    "risk_score": 94.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 7,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000408",
+    "user_id": 83,
+    "amount": 2271.66,
+    "merchant": "Amazon",
+    "location": "RU",
+    "pattern_rating": 85,
+    "risk_score": 93.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-RU",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:106similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 1,
+    "historical_similar": 106
+  },
+  {
+    "transaction_id": "TX_000441",
+    "user_id": 46,
+    "amount": 133.59,
+    "merchant": "Walmart",
+    "location": "AU",
+    "pattern_rating": 65,
+    "risk_score": 70.2,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "MEDIUM_RISK_PATTERN:Walmart-AU",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:60similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 10,
+    "historical_similar": 60
+  },
+  {
+    "transaction_id": "TX_000454",
+    "user_id": 28,
+    "amount": 2383.0,
+    "merchant": "Amazon",
+    "location": "RU",
+    "pattern_rating": 85,
+    "risk_score": 82.2,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-RU",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:106similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 2,
+    "historical_similar": 106
+  },
+  {
+    "transaction_id": "TX_000472",
+    "user_id": 77,
+    "amount": 1000.39,
+    "merchant": "Unknown Store",
+    "location": "CN",
+    "pattern_rating": 95,
+    "risk_score": 82.5,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 11,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000526",
+    "user_id": 30,
+    "amount": 1746.96,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:74similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 10,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000534",
+    "user_id": 64,
+    "amount": 1277.81,
+    "merchant": "Amazon",
+    "location": "CN",
+    "pattern_rating": 80,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:108similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 6,
+    "historical_similar": 108
+  },
+  {
+    "transaction_id": "TX_000537",
+    "user_id": 99,
+    "amount": 154.79,
+    "merchant": "Walmart",
+    "location": "AU",
+    "pattern_rating": 65,
+    "risk_score": 71.1,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "MEDIUM_RISK_PATTERN:Walmart-AU",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:60similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 8,
+    "historical_similar": 60
+  },
+  {
+    "transaction_id": "TX_000570",
+    "user_id": 66,
+    "amount": 2608.27,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 94.1,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:74similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 3,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000598",
+    "user_id": 39,
+    "amount": 2305.48,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 97.3,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:74similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 4,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000608",
+    "user_id": 73,
+    "amount": 2969.1,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:74similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 11,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000629",
+    "user_id": 1,
+    "amount": 1894.78,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:74similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 2,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000729",
+    "user_id": 20,
+    "amount": 883.24,
+    "merchant": "Amazon",
+    "location": "CN",
+    "pattern_rating": 80,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:108similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 13,
+    "historical_similar": 108
+  },
+  {
+    "transaction_id": "TX_000779",
+    "user_id": 43,
+    "amount": 2180.07,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 100,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:74similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 10,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000832",
+    "user_id": 89,
+    "amount": 2592.06,
+    "merchant": "Unknown Store",
+    "location": "RU",
+    "pattern_rating": 98,
+    "risk_score": 94.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-RU",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 10,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000841",
+    "user_id": 91,
+    "amount": 2395.77,
+    "merchant": "Unknown Store",
+    "location": "NG",
+    "pattern_rating": 98,
+    "risk_score": 94.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 10,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000866",
+    "user_id": 13,
+    "amount": 2760.95,
+    "merchant": "Amazon",
+    "location": "CN",
+    "pattern_rating": 80,
+    "risk_score": 96.9,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:108similar"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 6,
+    "historical_similar": 108
+  },
+  {
+    "transaction_id": "TX_000871",
+    "user_id": 74,
+    "amount": 1496.33,
+    "merchant": "Amazon",
+    "location": "CN",
+    "pattern_rating": 80,
+    "risk_score": 96.2,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:108similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 5,
+    "historical_similar": 108
+  },
+  {
+    "transaction_id": "TX_000887",
+    "user_id": 71,
+    "amount": 2537.27,
+    "merchant": "Amazon",
+    "location": "NG",
+    "pattern_rating": 95,
+    "risk_score": 94.8,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
+      "HIGH_RISK_PATTERN:Amazon-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HISTORICAL_PATTERN_MATCH:74similar",
+      "HIGH_RISK_USER"
+    ],
+    "pattern_category": "global_retail",
+    "velocity_24h": 3,
+    "historical_similar": 74
+  },
+  {
+    "transaction_id": "TX_000969",
+    "user_id": 45,
+    "amount": 1433.62,
+    "merchant": "Unknown Store",
+    "location": "CN",
+    "pattern_rating": 95,
+    "risk_score": 82.5,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 10,
+    "historical_similar": 66
+  }
+]

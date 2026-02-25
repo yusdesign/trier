@@ -12,52 +12,135 @@ class TrierFraudDetector:
         self.initialize_pattern_ratings()
         
     def initialize_pattern_ratings(self):
-        """Initialize the pattern rating matrix (oriental focus)"""
+        """Initialize the pattern rating matrix (ENHANCED oriental focus)"""
         self.pattern_ratings = {
-            # Format: (merchant, location): risk_score
-            # High risk oriental patterns
-            ('RU Store', 'RU'): 90,
-            ('CN Store', 'CN'): 85,
-            ('Unknown Store', 'RU'): 95,
-            ('Unknown Store', 'CN'): 90,
-            ('RU Store', 'CN'): 70,  # Cross-border suspicious
-            ('CN Store', 'RU'): 70,
-            
-            # Amazon patterns (with location context)
-            ('Amazon', 'US'): 15,   # Normal Amazon US
-            ('Amazon', 'UK'): 20,   # Normal Amazon UK
-            ('Amazon', 'RU'): 75,    # Amazon RU - unusual
-            ('Amazon', 'CN'): 70,    # Amazon CN - unusual
-            ('Amazon', 'Unknown'): 60,
-            
-            # Walmart patterns
-            ('Walmart', 'US'): 10,   # Normal Walmart US
-            ('Walmart', 'CA'): 15,   # Normal Walmart CA
-            ('Walmart', 'RU'): 80,    # Walmart RU - very unusual
-            ('Walmart', 'CN'): 80,    # Walmart CN - very unusual
-            ('Walmart', 'Unknown'): 50,
-            
-            # Other merchants with oriental connections
-            ('Target', 'CN'): 65,
-            ('Best Buy', 'RU'): 65,
-            ('Local Store', 'RU'): 40,
-            ('Local Store', 'CN'): 40,
-        }
+            # ===== RUSSIAN PATTERNS (RU) =====
+            # Russian merchants
+            ('RU Store', 'RU'): 95,           # Russian store in Russia
+            ('RU Store', 'CN'): 85,            # Russian store in China (suspicious)
+            ('RU Store', 'US'): 80,            # Russian store in US (suspicious)
+            ('RU Store', 'UK'): 80,            # Russian store in UK
+            ('RU Store', 'DE'): 75,            # Russian store in Germany
         
-        # Default ratings for unspecified combinations
-        self.default_ratings = {
-            'US': 10,
-            'UK': 15,
-            'CA': 15,
-            'AU': 20,
-            'DE': 20,
-            'FR': 20,
-            'RU': 60,  # Default high for RU
-            'CN': 55,  # Default medium-high for CN
-            'IN': 30,
-            'BR': 35,
-            'Unknown': 45
+            # Russian marketplaces
+            ('Yandex Market', 'RU'): 70,       # Legit Russian marketplace
+            ('Yandex Market', 'CN'): 90,        # Yandex in China? Suspicious!
+            ('Ozon', 'RU'): 65,                 # Russian Amazon
+            ('Ozon', 'CN'): 85,                  # Ozon in China? Fraud!
+            ('Wildberries', 'RU'): 60,          # Russian fashion retailer
+            ('Wildberries', 'CN'): 85,           # Wildberries in China? NO!
+        
+            # ===== CHINESE PATTERNS (CN) =====
+            # Chinese merchants
+            ('CN Store', 'CN'): 90,            # Chinese store in China
+            ('CN Store', 'RU'): 85,             # Chinese store in Russia
+            ('CN Store', 'US'): 75,             # Chinese store in US
+            ('CN Store', 'UK'): 75,             # Chinese store in UK
+        
+            # Chinese marketplaces
+            ('Alibaba', 'CN'): 60,              # Legit in China
+            ('Alibaba', 'RU'): 85,               # Alibaba in Russia? Suspicious!
+            ('Alibaba', 'US'): 70,               # Alibaba in US (common but monitor)
+            ('JD.com', 'CN'): 55,                # Legit Chinese retailer
+            ('JD.com', 'RU'): 80,                 # JD.com in Russia? Unusual!
+            ('Taobao', 'CN'): 65,                 # Chinese eBay
+            ('Taobao', 'RU'): 85,                  # Taobao in Russia? Fraud!
+        
+            # ===== AMAZON PATTERNS (Unusual Locations) =====
+            ('Amazon', 'US'): 10,                # Normal
+            ('Amazon', 'UK'): 15,                 # Normal
+            ('Amazon', 'CA'): 15,                  # Normal
+            ('Amazon', 'DE'): 20,                   # Normal EU
+            ('Amazon', 'FR'): 20,                    # Normal EU
+            ('Amazon', 'JP'): 25,                    # Normal Japan
+        
+            # Amazon in unexpected places
+            ('Amazon', 'RU'): 85,                   # Amazon Russia? Very unusual!
+            ('Amazon', 'CN'): 80,                    # Amazon China? Alibaba territory!
+            ('Amazon', 'IN'): 45,                    # Amazon India exists but monitor
+            ('Amazon', 'BR'): 50,                    # Amazon Brazil exists but monitor
+            ('Amazon', 'NG'): 95,                    # Amazon Nigeria? Definitely fraud!
+            ('Amazon', 'Unknown'): 70,                # Unknown location with Amazon
+        
+            # ===== WALMART PATTERNS (Unusual Locations) =====
+            ('Walmart', 'US'): 5,                  # Very normal
+            ('Walmart', 'CA'): 10,                   # Normal Canada
+            ('Walmart', 'MX'): 15,                    # Normal Mexico
+        
+            # Walmart in unexpected places
+            ('Walmart', 'RU'): 90,                   # Walmart Russia? NO!
+            ('Walmart', 'CN'): 90,                    # Walmart China? They have stores but monitor
+            ('Walmart', 'UK'): 60,                    # Walmart owns Asda in UK
+            ('Walmart', 'DE'): 75,                    # Walmart Germany failed years ago - suspicious!
+            ('Walmart', 'JP'): 80,                     # Walmart Japan (Seiyu) but monitor
+            ('Walmart', 'Unknown'): 65,                 # Unknown location
+        
+            # ===== UNKNOWN STORE PATTERNS (High Risk) =====
+            ('Unknown Store', 'RU'): 98,             # Maximum risk
+            ('Unknown Store', 'CN'): 95,              # Maximum risk
+            ('Unknown Store', 'NG'): 98,               # Nigeria high risk
+            ('Unknown Store', 'BR'): 70,                # Brazil medium-high
+            ('Unknown Store', 'IN'): 65,                 # India medium
+            ('Unknown Store', 'US'): 50,                 # Unknown in US (suspicious but possible)
+            ('Unknown Store', 'UK'): 55,                  # Unknown in UK
+        
+            # ===== CROSS-BORDER ORIENTAL FRAUD =====
+            ('RU Store', 'CN'): 92,                    # Russian store IN China? VERY SUSPICIOUS!
+            ('CN Store', 'RU'): 92,                     # Chinese store IN Russia? VERY SUSPICIOUS!
+            ('Alibaba', 'RU'): 88,                       # Chinese marketplace in Russia
+            ('Yandex', 'CN'): 90,                        # Russian service in China
         }
+    
+        # Default ratings by location
+        self.default_ratings = {
+            'US': 10, 'UK': 15, 'CA': 15, 'AU': 20,     # Low risk
+            'DE': 20, 'FR': 20, 'JP': 25, 'KR': 25,      # Medium-low
+            'IN': 35, 'BR': 40, 'MX': 35,                 # Medium
+            'RU': 70,                                      # HIGH RISK
+            'CN': 68,                                       # HIGH RISK
+            'NG': 85, 'KE': 75, 'ZA': 60,                   # Africa (varies)
+            'Unknown': 50                                    # Unknown location
+        }
+    
+        # Add regional patterns
+        self.regional_risk = {
+            'Eastern Europe': ['RU', 'UA', 'BY', 'RO'],     # Higher risk
+            'Asia': ['CN', 'HK', 'SG', 'MY'],                # Mixed risk
+            'Africa': ['NG', 'KE', 'ZA', 'EG'],              # Higher risk
+        }
+
+    def get_pattern_category(self, merchant, location):
+        """Categorize the pattern for better analytics"""
+    
+        # RU patterns
+        ru_merchants = ['RU Store', 'Yandex', 'Ozon', 'Wildberries', 'Kaspersky', 'Mail.ru']
+        cn_merchants = ['CN Store', 'Alibaba', 'JD.com', 'Taobao', 'Baidu', 'Tencent']
+    
+        category = 'normal'
+    
+        if any(ru in merchant for ru in ru_merchants):
+            if location == 'RU':
+                category = 'ru_domestic'
+            elif location in ['CN', 'US', 'UK', 'DE']:
+                category = 'ru_international_suspicious'
+            else:
+                category = 'ru_other'
+    
+        elif any(cn in merchant for cn in cn_merchants):
+            if location == 'CN':
+                category = 'cn_domestic'
+            elif location in ['RU', 'US', 'UK', 'JP']:
+                category = 'cn_international_suspicious'
+            else:
+                category = 'cn_other'
+    
+        elif merchant in ['Amazon', 'Walmart']:
+            if location in ['US', 'CA', 'UK', 'DE', 'FR', 'JP']:
+                category = f'{merchant.lower()}_normal'
+            else:
+                category = f'{merchant.lower()}_unusual'
+    
+        return category
     
     def get_pattern_rating(self, merchant, location):
         """Get risk rating for merchant-location pattern"""
@@ -216,44 +299,58 @@ class TrierFraudDetector:
     def score_transaction(self, transaction):
         """Score transaction with oriental pattern focus"""
         user = self.users[self.users['user_id'] == transaction['user_id']].iloc[0]
-        
+    
+        # IMPORTANT: Initialize variables FIRST!
+        risk_score = 0
+        rules_triggered = []
+    
+        # Get pattern category
+        pattern_category = self.get_pattern_category(transaction['merchant'], transaction['location'])
+    
+        # Bonus risk for cross-border oriental patterns
+        if pattern_category in ['ru_international_suspicious', 'cn_international_suspicious']:
+            risk_score += 15
+            rules_triggered.append(f'CROSS_BORDER_ORIENTAL:{transaction["merchant"]}-{transaction["location"]}')
+    
+        # Extra scrutiny for Amazon/Walmart in RU/CN
+        if pattern_category in ['amazon_unusual', 'walmart_unusual']:
+            if transaction['amount'] > 200:  # Lower threshold for unusual locations
+                risk_score += 20
+                rules_triggered.append('UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT')
+    
         # Get pattern rating (THIS IS THE KEY ORIENTAL FEATURE)
         pattern_rating = self.get_pattern_rating(
             transaction['merchant'],
             transaction['location']
         )
-        
+    
         # Calculate velocities
         tx_24h, amount_24h = self.calculate_velocity(
             transaction['user_id'], 
             transaction['timestamp'], 
             24
         )
-        
+    
         # Check historical patterns
         historical_match = self.check_historical_patterns(
             transaction['merchant'],
             transaction['location'],
             transaction['amount']
         )
-        
-        # Calculate risk score (weighted combination)
-        risk_score = 0
-        rules_triggered = []
-        
+    
         # 1. Pattern rating (0-100) - THIS IS YOUR ORIENTAL FOCUS
         risk_score += pattern_rating * 0.5  # 50% weight on pattern
         if pattern_rating > 70:
             rules_triggered.append(f'HIGH_RISK_PATTERN:{transaction["merchant"]}-{transaction["location"]}')
         elif pattern_rating > 50:
             rules_triggered.append(f'MEDIUM_RISK_PATTERN:{transaction["merchant"]}-{transaction["location"]}')
-        
+    
         # 2. Amount check with pattern context
         expected_amount = self.get_expected_amount(transaction['merchant'], transaction['location'])
         if transaction['amount'] > expected_amount * 2:
             risk_score += 15
             rules_triggered.append('AMOUNT_ABOVE_PATTERN_EXPECTATION')
-        
+    
         # 3. Velocity check (especially for oriental patterns)
         if tx_24h > 5 and pattern_rating > 60:
             risk_score += 20
@@ -261,20 +358,20 @@ class TrierFraudDetector:
         elif tx_24h > 10:
             risk_score += 10
             rules_triggered.append('HIGH_VELOCITY')
-        
+    
         # 4. Historical pattern match
         if historical_match['matches']:
             risk_score += historical_match['confidence'] * 15
             rules_triggered.append(f'HISTORICAL_PATTERN_MATCH:{historical_match["similar_count"]}similar')
-        
+    
         # 5. User risk profile
         if user['risk_score'] > 0.7:
             risk_score += 10
             rules_triggered.append('HIGH_RISK_USER')
-        
+    
         # Cap at 100
         risk_score = min(100, risk_score)
-        
+    
         # Determine action
         if risk_score >= 70:
             risk_level = 'HIGH'
@@ -285,7 +382,7 @@ class TrierFraudDetector:
         else:
             risk_level = 'LOW'
             action = 'ALLOW'
-        
+    
         return {
             'transaction_id': transaction['transaction_id'],
             'user_id': transaction['user_id'],
@@ -301,7 +398,7 @@ class TrierFraudDetector:
             'velocity_24h': tx_24h,
             'historical_similar': historical_match['similar_count']
         }
-    
+   
     def calculate_velocity(self, user_id, current_time, hours):
         """Calculate transaction velocity"""
         time_threshold = current_time - timedelta(hours=hours)
@@ -355,6 +452,26 @@ class TrierFraudDetector:
             }
         
         return {'matches': False, 'similar_count': 0, 'confidence': 0}
+
+    # Add this test function
+    def test_patterns(self):
+        """Test your new patterns"""
+        test_cases = [
+            ('RU Store', 'RU', 1500),      # Should be HIGH
+            ('CN Store', 'CN', 2000),      # Should be HIGH
+            ('Amazon', 'RU', 300),          # Should be MEDIUM-HIGH
+            ('Walmart', 'CN', 400),          # Should be MEDIUM-HIGH
+            ('Alibaba', 'RU', 500),          # Should be HIGH
+            ('Yandex', 'CN', 600),            # Should be HIGH
+            ('Unknown Store', 'RU', 100),     # Should be HIGH
+            ('Amazon', 'US', 500),             # Should be LOW
+        ]
+    
+        print("\n🧪 Testing Enhanced Patterns:")
+        for merchant, location, amount in test_cases:
+            rating = self.get_pattern_rating(merchant, location)
+            category = self.get_pattern_category(merchant, location)
+            print(f"   {merchant:12} in {location:2}: rating={rating:3}, category={category}")
     
     def process_all_transactions(self):
         """Process all transactions with oriental focus"""
