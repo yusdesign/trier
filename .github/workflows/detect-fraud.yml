@@ -52,7 +52,7 @@ jobs:
     - name: Create Gists for key files
       shell: python
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
       run: |
         import os
         import json
@@ -60,7 +60,7 @@ jobs:
         from datetime import datetime
         
         # Configuration
-        token = os.environ.get('GITHUB_TOKEN')
+        token = os.environ.get('GIST_TOKEN')
         headers = {
             'Authorization': f'token {token}',
             'Accept': 'application/vnd.github.v3+json'
