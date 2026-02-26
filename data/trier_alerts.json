@@ -222,7 +222,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 74
   },
   {
@@ -410,7 +410,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 66
   },
   {

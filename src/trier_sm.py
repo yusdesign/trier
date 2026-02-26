@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-🎵🔍 TRIER Session Manager with Live Logger Output
+🎵🔍 TRIER SESSION MANAGER - With Live Stream Priority!
 """
 
 import subprocess
@@ -9,6 +9,8 @@ import os
 import signal
 import sys
 import threading
+import json
+import pandas as pd
 from datetime import datetime
 
 class TrierSessionManager:
@@ -21,73 +23,123 @@ class TrierSessionManager:
         self.git_push_interval = 2 * 60 * 60  # 2 hours
         
         self.running = True
+        self.stream_started = False
         
     def log(self, msg):
         """Print with timestamp"""
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 📍 {msg}")
     
     def start_stream_logger(self):
-        """Start the unified logger with mpv stream and SHOW OUTPUT"""
+        """Start the unified logger with mpv stream and SHOW LIVE OUTPUT"""
         self.log("🎧 Starting SomaFM stream + logger...")
         
         self.stream_logger = subprocess.Popen(
-            'mpv https://ice1.somafm.com/indiepop-32-aac 2>&1 | python trier_unified_logger.py',
+            'mpv --volume=50 https://ice1.somafm.com/indiepop-32-aac 2>&1 | python -u trier_unified_logger.py',
             shell=True,
             executable='/data/data/com.termux/files/usr/bin/bash',
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            bufsize=1,
+            bufsize=0,
             universal_newlines=True
         )
         
-        self.log("✅ Stream + Logger active - SHOWING LIVE OUTPUT:")
+        self.log("✅ Stream + Logger active - LIVE OUTPUT:")
         self.log("-" * 60)
         
         def print_output():
             for line in self.stream_logger.stdout:
-                print(line, end='')  # Live logger prints!
+                print(line, end='')
+                sys.stdout.flush()
         
-        thread = threading.Thread(target=print_output, daemon=True)
-        thread.start()
+        self.stream_thread = threading.Thread(target=print_output, daemon=True)
+        self.stream_thread.start()
+        self.stream_started = True
+        
+        # Give stream a moment to start producing output
+        time.sleep(5)
     
     def generate_dashboards(self):
-        """Update both dashboards with FORCED updates"""
-        self.log("📊 Generating dashboards...")
-    
-        # First, run the fraud detector to ANALYZE new transactions
-        self.log("🔍 Running fraud detector on new data...")
-        fraud_result = subprocess.run(
-            ["python", "trier_fraud_detector.py"], 
-            capture_output=True, text=True
-        )
-        if fraud_result.returncode == 0:
-            self.log("✅ Fraud detector analyzed new transactions")
-        else:
-            self.log(f"⚠️ Fraud detector error: {fraud_result.stderr[:100]}")
-    
-        # THEN generate the fraud dashboard
-        dash_result = subprocess.run(
-            ["python", "trier_dashboard.py"], 
-            capture_output=True, text=True
-        )
-        if dash_result.returncode == 0:
+        """Update both dashboards WITHOUT blocking stream"""
+        self.log("📊 Generating dashboards (stream continues in background)...")
+        self.log("-" * 40)
+        
+        # STEP 1: Run fraud detector
+        self.log("🔍 Step 1: Running fraud detector...")
+        try:
+            fraud_result = subprocess.run(
+                ["python", "trier_fraud_detector.py"],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            
+            if fraud_result.returncode == 0:
+                self.log("✅ Fraud detector completed")
+                # Show just the key results
+                for line in fraud_result.stdout.split('\n'):
+                    if 'True Positives:' in line or 'Precision:' in line:
+                        print(f"     {line.strip()}")
+            else:
+                self.log(f"⚠️ Fraud detector error")
+                
+        except Exception as e:
+            self.log(f"⚠️ Fraud detector exception: {e}")
+        
+        # STEP 2: Generate fraud dashboard
+        self.log("📈 Step 2: Generating fraud dashboard...")
+        try:
+            subprocess.run(["python", "trier_dashboard.py"], 
+                         capture_output=True, text=True)
             self.log("✅ Fraud dashboard updated")
-        else:
-            self.log(f"⚠️ Fraud dashboard error: {dash_result.stderr[:100]}")
-    
-        # Music dashboard (your existing code)
-        music_result = subprocess.run(
-            ["python", "music_dashboard.py"], 
-            capture_output=True, text=True
-        )
-        if music_result.returncode == 0:
-            self.log("✅ Music dashboard updated")
-        else:
-            self.log(f"⚠️ Music dashboard error: {music_result.stderr[:100]}")
-    
+        except Exception as e:
+            self.log(f"⚠️ Fraud dashboard error: {e}")
+        
+        # STEP 3: Generate music dashboard
+        self.log("🎵 Step 3: Generating music dashboard...")
+        try:
+            music_result = subprocess.run(
+                ["python", "music_dashboard.py"],
+                capture_output=True,
+                text=True
+            )
+            if music_result.returncode == 0:
+                self.log("✅ Music dashboard updated")
+                # Show play count
+                for line in music_result.stdout.split('\n'):
+                    if "✅ Loaded" in line and "plays" in line:
+                        print(f"     {line.strip()}")
+            else:
+                self.log(f"⚠️ Music dashboard error")
+        except Exception as e:
+            self.log(f"⚠️ Music dashboard exception: {e}")
+        
+        # STEP 4: Show summary
+        self.log("\n📊 Step 4: Quick Stats")
+        self.log(f"     Fraud: {self.get_fraud_stats()}")
+        self.log(f"     Music: {self.get_music_stats()}")
+        self.log("-" * 40)
+        
         self.last_dashboard = time.time()
-   
+    
+    def get_fraud_stats(self):
+        """Get quick fraud stats"""
+        try:
+            with open('../data/trier_results.json', 'r') as f:
+                data = json.load(f)
+                metrics = data.get('metrics', {})
+                return f"P:{metrics.get('precision', 0)*100:.0f}% R:{metrics.get('recall', 0)*100:.0f}%"
+        except:
+            return "No data"
+    
+    def get_music_stats(self):
+        """Get quick music stats"""
+        try:
+            df = pd.read_csv('../music/plays.csv')
+            return f"{len(df)} plays, {df['artist'].nunique()} artists"
+        except:
+            return "No data"
+    
     def push_to_git(self):
         """Push all changes to GitHub"""
         self.log("🚀 Pushing to GitHub...")
@@ -107,18 +159,12 @@ class TrierSessionManager:
             if push_result.returncode == 0:
                 self.log("✅ Pushed to GitHub! Website updates in 1-2 min")
             else:
-                self.log(f"⚠️ Push failed: {push_result.stderr[:100]}")
+                self.log(f"⚠️ Push failed")
         else:
             self.log("📊 No changes to push")
         
         os.chdir("src")
         self.last_git_push = time.time()
-    
-    def check_stream_logger(self):
-        """Make sure logger is still running"""
-        if self.stream_logger and self.stream_logger.poll() is not None:
-            self.log("⚠️ Stream logger died, restarting...")
-            self.start_stream_logger()
     
     def run(self):
         """Main loop"""
@@ -128,7 +174,13 @@ class TrierSessionManager:
         self.log(f"Git pushes: every {self.git_push_interval//3600} hours")
         self.log("="*60)
         
+        # Start stream FIRST - it will show live output
         self.start_stream_logger()
+        
+        # Wait a bit for stream to stabilize
+        time.sleep(3)
+        
+        # NOW do initial dashboards (stream continues in background)
         self.generate_dashboards()
         
         def signal_handler(sig, frame):
@@ -139,13 +191,18 @@ class TrierSessionManager:
         
         signal.signal(signal.SIGINT, signal_handler)
         
+        # Main loop - stream output continues via thread
         while self.running:
-            time.sleep(10)
-            self.check_stream_logger()
+            for _ in range(60):  # Check every second but sleep in small chunks
+                if not self.running:
+                    break
+                time.sleep(1)
             
+            # Check if it's time for dashboards (stream continues printing)
             if time.time() - self.last_dashboard > self.dashboard_interval:
                 self.generate_dashboards()
             
+            # Check if it's time for git push
             if time.time() - self.last_git_push > self.git_push_interval:
                 self.push_to_git()
 
