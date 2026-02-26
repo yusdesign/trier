@@ -1,2 +1,23 @@
-play_id, play, on_air
+timestamp,artist,track,album,source,duration_seconds
 #Add your data here 
+2026-02-26T06:22:11.881696,Duane Hoover,Nowhere (Single),,SomaFM,180
+2026-02-26T06:54:00.362537,Duane Hoover,Nowhere (Single),,SomaFM,180
+2026-02-26T06:56:48.633280,,,,manual,180
+2026-02-26T07:52:55.317617,Beirut,Arctic Forest,,SomaFM Indie Pop,180
+2026-02-26T07:55:21.545785,Dari Bay,Shy Of A Nurse,,SomaFM Indie Pop,180
+2026-02-26T07:57:59.073437,Minus The Bear,The Lucky Ones,,SomaFM Indie Pop,180
+2026-02-26T08:02:51.541306,Business Of Dreams,Ripe For Anarchy,,SomaFM Indie Pop,180
+2026-02-26T08:05:51.547457,I Am Oak,Embers,,SomaFM Indie Pop,180
+2026-02-26T08:09:36.552979,Wies,Venus (Ft. Noor),,SomaFM Indie Pop,180
+2026-02-26T08:12:14.067042,Patrick Watson,Peter And The Wolf,,SomaFM Indie Pop,180
+2026-02-26T08:15:47.811388,Eric Bachmann,Belong To You,,SomaFM Indie Pop,180
+2026-02-26T08:20:06.546189,+/,(Plus/Minus) - Ill Advised,,SomaFM Indie Pop,180
+2026-02-26T08:22:32.798642,Saintseneca,Lazarus,,SomaFM Indie Pop,180
+2026-02-26T08:26:51.540731,Nada Surf,Ice On The Wing,,SomaFM Indie Pop,180
+2026-02-26T08:30:36.544743,Happy Landing,Machines,,SomaFM Indie Pop,180
+2026-02-26T08:33:47.817313,Wet Leg,Cpr (Radio Mix),,SomaFM Indie Pop,180
+2026-02-26T08:36:25.301252,Julia Logan,Moodswings,,SomaFM Indie Pop,180
+2026-02-26T08:40:44.067584,Dr. Dog,Fire On My Back,,SomaFM Indie Pop,180
+2026-02-26T08:43:21.541968,Hot Hot Heat,Kid Who Stays In The Picture,,SomaFM Indie Pop,180
+2026-02-26T08:46:21.540692,Neko Case,Neon Grey Midnight Green,,SomaFM Indie Pop,180
+2026-02-26T08:50:40.302980,Blondshell,Model Rockets,,SomaFM Indie Pop,180

@@ -184,7 +184,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -462,7 +462,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 39
     },
     {
@@ -586,7 +586,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -620,7 +620,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 35
     },
     {
@@ -979,7 +979,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 39
     },
     {
@@ -1085,7 +1085,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 39
     },
     {
@@ -1443,7 +1443,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 21,
+      "velocity_24h": 22,
       "historical_similar": 39
     },
     {
@@ -1493,7 +1493,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 0
     },
     {
@@ -1686,7 +1686,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -1723,7 +1723,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 35
     },
     {
@@ -1828,7 +1828,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 60
     },
     {
@@ -2499,7 +2499,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 21,
+      "velocity_24h": 22,
       "historical_similar": 39
     },
     {
@@ -2621,7 +2621,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 0
     },
     {
@@ -2854,16 +2854,17 @@
       "merchant": "Unknown Store",
       "location": "NG",
       "pattern_rating": 98,
-      "risk_score": 64.0,
-      "risk_level": "MEDIUM",
-      "action": "REVIEW",
+      "risk_score": 84.0,
+      "risk_level": "HIGH",
+      "action": "BLOCK",
       "rules_triggered": [
         "HIGH_RISK_PATTERN:Unknown Store-NG",
         "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+        "HIGH_VELOCITY_WITH_RISKY_PATTERN",
         "HISTORICAL_PATTERN_MATCH:66similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 66
     },
     {
@@ -2928,7 +2929,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -2977,7 +2978,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 39
     },
     {
@@ -3223,7 +3224,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 0
     },
     {
@@ -3662,7 +3663,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -3878,14 +3879,15 @@
       "merchant": "Netflix",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 10.3,
+      "risk_score": 20.3,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 39
     },
     {
@@ -3902,7 +3904,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -3973,7 +3975,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 60
     },
     {
@@ -3991,7 +3993,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 99
     },
     {
@@ -4329,7 +4331,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -4354,14 +4356,15 @@
       "merchant": "Spotify",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 9.9,
+      "risk_score": 19.9,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 39
     },
     {
@@ -4433,7 +4436,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 74
     },
     {
@@ -5170,7 +5173,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 39
     },
     {
@@ -6006,7 +6009,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 39
     },
     {
@@ -6820,7 +6823,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 0
     },
     {
@@ -7252,7 +7255,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 60
     },
     {
@@ -7874,7 +7877,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 60
     },
     {
@@ -7945,7 +7948,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -8290,7 +8293,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 39
     },
     {
@@ -8359,7 +8362,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 0
     },
     {
@@ -8465,7 +8468,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -8824,7 +8827,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 39
     },
     {
@@ -9008,15 +9011,16 @@
       "merchant": "Target",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 20.7,
+      "risk_score": 30.7,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:39similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 39
     },
     {
@@ -9689,7 +9693,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 99
     },
     {
@@ -10156,16 +10160,17 @@
       "merchant": "Walmart",
       "location": "UK",
       "pattern_rating": 60,
-      "risk_score": 50.2,
+      "risk_score": 60.2,
       "risk_level": "MEDIUM",
       "action": "REVIEW",
       "rules_triggered": [
         "MEDIUM_RISK_PATTERN:Walmart-UK",
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -10777,7 +10782,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 0
     },
     {
@@ -11359,7 +11364,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 39
     },
     {
@@ -11521,7 +11526,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -11593,7 +11598,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 21,
+      "velocity_24h": 22,
       "historical_similar": 35
     },
     {
@@ -12210,7 +12215,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 0
     },
     {
@@ -12487,7 +12492,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -12769,7 +12774,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 0
     },
     {
@@ -12909,7 +12914,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 74
     },
     {
@@ -13043,14 +13048,15 @@
       "merchant": "Target",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 13.6,
+      "risk_score": 23.6,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 60
     },
     {
@@ -13410,7 +13416,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 39
     },
     {
@@ -13445,7 +13451,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 39
     },
     {
@@ -13463,7 +13469,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 39
     },
     {
@@ -13928,7 +13934,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 35
     },
     {
@@ -14575,7 +14581,7 @@
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 99
     },
     {
@@ -15116,7 +15122,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 74
     },
     {
@@ -15180,18 +15186,19 @@
       "merchant": "Amazon",
       "location": "CN",
       "pattern_rating": 80,
-      "risk_score": 96.2,
+      "risk_score": 100,
       "risk_level": "HIGH",
       "action": "BLOCK",
       "rules_triggered": [
         "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
         "HIGH_RISK_PATTERN:Amazon-CN",
         "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+        "HIGH_VELOCITY_WITH_RISKY_PATTERN",
         "HISTORICAL_PATTERN_MATCH:108similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 108
     },
     {
@@ -15328,7 +15335,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 39
     },
     {
@@ -15817,7 +15824,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 74
     },
     {
@@ -16411,7 +16418,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 39
     },
     {
@@ -17447,6 +17454,93 @@
       "pattern_category": "other",
       "velocity_24h": 10,
       "historical_similar": 39
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260226_075255",
+      "user_id": 32,
+      "amount": 67.75,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.2,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260226_075521",
+      "user_id": 87,
+      "amount": 87.88,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.4,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 1,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260226_075759",
+      "user_id": 22,
+      "amount": 65.4,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.2,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260226_080251",
+      "user_id": 74,
+      "amount": 106.28,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.5,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260226_080551",
+      "user_id": 16,
+      "amount": 148.69,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.9,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
     }
   ],
   "pattern_stats": {
@@ -17456,8 +17550,8 @@
     "Walmart_unusual": 0
   },
   "metrics": {
-    "precision": 0.875,
-    "recall": 0.6774193548387096,
-    "f1": 0.7636363636363636
+    "precision": 0,
+    "recall": 0,
+    "f1": 0
   }
 }
