@@ -155,22 +155,24 @@ class TrierUnifiedLogger:
         
         conn.commit()
         conn.close()
+
+    def log_discovery(self, artist, track, source="SomaFM Indie Pop"):
+        """Record new artist discovery - ALWAYS in music folder"""
+        discovery_path = os.path.join(self.music_path, 'discoveries.json')
     
-    def log_discovery(self, artist, track):
-        """Record new artist discovery"""
-        with open(f'{self.music_path}discoveries.json', 'r') as f:
+        with open(discovery_path, 'r') as f:
             discoveries = json.load(f)
-        
+    
         discoveries.append({
             'artist': artist,
             'track': track,
             'discovered_at': datetime.now().isoformat(),
-            'source': 'SomaFM Indie Pop'
+            'source': source
         })
         
-        with open(f'{self.music_path}discoveries.json', 'w') as f:
+        with open(discovery_path, 'w') as f:
             json.dump(discoveries[-100:], f, indent=2)
-    
+       
     def update_fraud_db(self, artist, track):
         """
         Update fraud detection databases based on music patterns

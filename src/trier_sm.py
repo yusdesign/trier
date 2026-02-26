@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 """
-🎵🔍 TRIER Session Manager
-Runs everything needed for a LIVE website:
-- Stream logger (music + fraud transactions)
-- Dashboard generator (every 30 min)
-- Git pusher (every 2 hours)
-- All in one session!
+🎵🔍 TRIER Session Manager with Live Logger Output
 """
 
 import subprocess
@@ -13,6 +8,7 @@ import time
 import os
 import signal
 import sys
+import threading
 from datetime import datetime
 
 class TrierSessionManager:
@@ -21,9 +17,8 @@ class TrierSessionManager:
         self.last_dashboard = time.time()
         self.last_git_push = time.time()
         
-        # Timing configuration
         self.dashboard_interval = 30 * 60  # 30 minutes
-        self.git_push_interval = 2 * 60 * 60  # 2 hours (you asked for this!)
+        self.git_push_interval = 2 * 60 * 60  # 2 hours
         
         self.running = True
         
@@ -32,21 +27,30 @@ class TrierSessionManager:
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 📍 {msg}")
     
     def start_stream_logger(self):
-        """Start the unified logger with mpv stream"""
+        """Start the unified logger with mpv stream and SHOW OUTPUT"""
         self.log("🎧 Starting SomaFM stream + logger...")
-    
-        # Run the exact command that works!
+        
         self.stream_logger = subprocess.Popen(
             'mpv https://ice1.somafm.com/indiepop-32-aac 2>&1 | python trier_unified_logger.py',
             shell=True,
-            executable='/data/data/com.termux/files/usr/bin/bash',  # Termux bash
+            executable='/data/data/com.termux/files/usr/bin/bash',
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
-            bufsize=1
+            bufsize=1,
+            universal_newlines=True
         )
-        self.log("✅ Stream + Logger active - YOU SHOULD HEAR MUSIC NOW!")
-   
+        
+        self.log("✅ Stream + Logger active - SHOWING LIVE OUTPUT:")
+        self.log("-" * 60)
+        
+        def print_output():
+            for line in self.stream_logger.stdout:
+                print(line, end='')  # Live logger prints!
+        
+        thread = threading.Thread(target=print_output, daemon=True)
+        thread.start()
+    
     def generate_dashboards(self):
         """Update both dashboards"""
         self.log("📊 Generating dashboards...")
@@ -73,30 +77,25 @@ class TrierSessionManager:
         """Push all changes to GitHub"""
         self.log("🚀 Pushing to GitHub...")
         
-        # Go to root directory
         os.chdir("..")
         
-        # Add everything
         subprocess.run(["git", "add", "data/", "music/", "docs/"], 
                       capture_output=True)
         
-        # Commit
         commit_msg = f"🤖 TRIER Live Update: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
         result = subprocess.run(["git", "commit", "-m", commit_msg],
                                capture_output=True, text=True)
         
         if "nothing to commit" not in result.stderr:
-            # Push
             push_result = subprocess.run(["git", "push"], 
                                         capture_output=True, text=True)
             if push_result.returncode == 0:
-                self.log("✅ Pushed to GitHub! Website will update in 1-2 min")
+                self.log("✅ Pushed to GitHub! Website updates in 1-2 min")
             else:
                 self.log(f"⚠️ Push failed: {push_result.stderr[:100]}")
         else:
             self.log("📊 No changes to push")
         
-        # Go back to src
         os.chdir("src")
         self.last_git_push = time.time()
     
@@ -114,11 +113,9 @@ class TrierSessionManager:
         self.log(f"Git pushes: every {self.git_push_interval//3600} hours")
         self.log("="*60)
         
-        # Start everything
         self.start_stream_logger()
-        self.generate_dashboards()  # Initial dashboards
+        self.generate_dashboards()
         
-        # Handle Ctrl+C gracefully
         def signal_handler(sig, frame):
             self.log("\n👋 Shutting down TRIER Session...")
             if self.stream_logger:
@@ -127,18 +124,13 @@ class TrierSessionManager:
         
         signal.signal(signal.SIGINT, signal_handler)
         
-        # Main loop
         while self.running:
-            time.sleep(10)  # Check every 10 seconds
-            
-            # Check logger health
+            time.sleep(10)
             self.check_stream_logger()
             
-            # Time for new dashboards?
             if time.time() - self.last_dashboard > self.dashboard_interval:
                 self.generate_dashboards()
             
-            # Time for git push?
             if time.time() - self.last_git_push > self.git_push_interval:
                 self.push_to_git()
 
