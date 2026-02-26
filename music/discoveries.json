@@ -1,53 +1,5 @@
 [
   {
-    "artist": "Slow Pulp",
-    "track": "Broadview",
-    "discovered_at": "2026-02-26T19:19:32.508455",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Anna Burch",
-    "track": "Quit The Curse",
-    "discovered_at": "2026-02-26T19:26:51.257362",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Beliefs",
-    "track": "Morning Light",
-    "discovered_at": "2026-02-26T19:29:40.006757",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Twilight Sad",
-    "track": "There's A Girl In The Corner",
-    "discovered_at": "2026-02-26T19:36:13.749992",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Rocket",
-    "track": "Number One Fan",
-    "discovered_at": "2026-02-26T19:42:13.763309",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Amy Millan",
-    "track": "Untethered",
-    "discovered_at": "2026-02-26T19:45:58.755256",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Low",
-    "track": "Walk Into The Sea",
-    "discovered_at": "2026-02-26T19:53:06.251837",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Savoir Adore",
-    "track": "Holding On Together (Radio Edi",
-    "discovered_at": "2026-02-26T19:55:55.022714",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Radical Face",
     "track": "Dreamcatcher",
     "discovered_at": "2026-02-26T19:59:06.258520",
@@ -597,6 +549,54 @@
     "artist": "Hope Sandoval",
     "track": "Thinking Like That",
     "discovered_at": "2026-02-27T03:50:36.852711",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Bat For Lashes",
+    "track": "What's A Girl To Do",
+    "discovered_at": "2026-02-27T03:55:06.855615",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Jet Van Der Steen",
+    "track": "Juni",
+    "discovered_at": "2026-02-27T03:57:55.595806",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Antlers",
+    "track": "Carnage (Radio Edit)",
+    "discovered_at": "2026-02-27T04:00:55.593002",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Samana",
+    "track": "I'll Keep You With Me",
+    "discovered_at": "2026-02-27T04:07:06.865434",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Beach House",
+    "track": "Heart Of Chambers",
+    "discovered_at": "2026-02-27T04:12:10.614089",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Shannon & The Clams",
+    "track": "Bean Fields",
+    "discovered_at": "2026-02-27T04:16:29.361025",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Today Junior",
+    "track": "Fired Up",
+    "discovered_at": "2026-02-27T04:19:29.362593",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Donovan Woods",
+    "track": "We Used To",
+    "discovered_at": "2026-02-27T04:27:10.598368",
     "source": "SomaFM Indie Pop"
   }
 ]

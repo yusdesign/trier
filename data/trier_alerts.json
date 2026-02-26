@@ -119,7 +119,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 106
   },
   {
@@ -516,7 +516,7 @@
       "HISTORICAL_PATTERN_MATCH:108similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 108
   },
   {
