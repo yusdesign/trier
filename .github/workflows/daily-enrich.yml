@@ -1,0 +1,27 @@
+name: Daily TRIER Enrichment
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 3 AM daily
+  workflow_dispatch:
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run enrichment
+        run: |
+          cd src
+          python enrich_database.py
+          python trier_dashboard.py
+          python music_dashboard.py
+      
+      - name: Commit updates
+        run: |
+          git config --local user.email "trier@github.com"
+          git config --local user.name "TRIER Bot"
+          git add data/ music/ docs/
+          git commit -m "Daily enrichment $(date)" || exit 0
+          git push
