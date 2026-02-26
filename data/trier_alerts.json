@@ -499,6 +499,26 @@
     "historical_similar": 74
   },
   {
+    "transaction_id": "TX_000955",
+    "user_id": 62,
+    "amount": 1056.69,
+    "merchant": "Unknown Store",
+    "location": "NG",
+    "pattern_rating": 98,
+    "risk_score": 84.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 6,
+    "historical_similar": 66
+  },
+  {
     "transaction_id": "TX_000969",
     "user_id": 45,
     "amount": 1433.62,
