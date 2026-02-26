@@ -52,27 +52,42 @@ class TrierSessionManager:
         thread.start()
     
     def generate_dashboards(self):
-        """Update both dashboards"""
+        """Update both dashboards with FORCED updates"""
         self.log("📊 Generating dashboards...")
-        
-        # Fraud dashboard
-        result = subprocess.run(["python", "trier_dashboard.py"], 
-                               capture_output=True, text=True)
-        if result.returncode == 0:
+    
+        # First, run the fraud detector to ANALYZE new transactions
+        self.log("🔍 Running fraud detector on new data...")
+        fraud_result = subprocess.run(
+            ["python", "trier_fraud_detector.py"], 
+            capture_output=True, text=True
+        )
+        if fraud_result.returncode == 0:
+            self.log("✅ Fraud detector analyzed new transactions")
+        else:
+            self.log(f"⚠️ Fraud detector error: {fraud_result.stderr[:100]}")
+    
+        # THEN generate the fraud dashboard
+        dash_result = subprocess.run(
+            ["python", "trier_dashboard.py"], 
+            capture_output=True, text=True
+        )
+        if dash_result.returncode == 0:
             self.log("✅ Fraud dashboard updated")
         else:
-            self.log(f"⚠️ Fraud dashboard error: {result.stderr[:100]}")
-        
-        # Music dashboard
-        result = subprocess.run(["python", "music_dashboard.py"], 
-                               capture_output=True, text=True)
-        if result.returncode == 0:
+            self.log(f"⚠️ Fraud dashboard error: {dash_result.stderr[:100]}")
+    
+        # Music dashboard (your existing code)
+        music_result = subprocess.run(
+            ["python", "music_dashboard.py"], 
+            capture_output=True, text=True
+        )
+        if music_result.returncode == 0:
             self.log("✅ Music dashboard updated")
         else:
-            self.log(f"⚠️ Music dashboard error: {result.stderr[:100]}")
-        
-        self.last_dashboard = time.time()
+            self.log(f"⚠️ Music dashboard error: {music_result.stderr[:100]}")
     
+        self.last_dashboard = time.time()
+   
     def push_to_git(self):
         """Push all changes to GitHub"""
         self.log("🚀 Pushing to GitHub...")
