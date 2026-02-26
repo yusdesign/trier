@@ -1,131 +1,5 @@
 [
   {
-    "artist": "Fruit Bats",
-    "track": "Creature From The Wild",
-    "discovered_at": "2026-02-26T14:24:46.312534",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Loney, Dear",
-    "track": "Largo",
-    "discovered_at": "2026-02-26T14:31:31.314571",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Green Buzzard",
-    "track": "To Be Like You",
-    "discovered_at": "2026-02-26T14:34:42.581907",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Operators",
-    "track": "In Moderan",
-    "discovered_at": "2026-02-26T14:37:53.827353",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Nyles Lannon",
-    "track": "Submarine",
-    "discovered_at": "2026-02-26T14:41:16.307699",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Softlung",
-    "track": "Midnight Mountains",
-    "discovered_at": "2026-02-26T14:44:27.571634",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Ratatat",
-    "track": "Lex",
-    "discovered_at": "2026-02-26T14:59:11.754093",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Yo La Tengo",
-    "track": "Sugarcube",
-    "discovered_at": "2026-02-26T14:59:23.010507",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Kate Prendergast",
-    "track": "Retold Tale",
-    "discovered_at": "2026-02-26T15:02:22.994174",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "They Might Be Giants",
-    "track": "Answer",
-    "discovered_at": "2026-02-26T15:16:26.753242",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Stars",
-    "track": "Hold On When You Get Love And Let Go When You Give It",
-    "discovered_at": "2026-02-26T15:19:37.984388",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Kelley Stoltz",
-    "track": "I Remember, You Were Wild",
-    "discovered_at": "2026-02-26T15:24:19.245629",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Greeting Committee",
-    "track": "Cyclical",
-    "discovered_at": "2026-02-26T15:27:30.499097",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Celestial Bums",
-    "track": "The Letters",
-    "discovered_at": "2026-02-26T15:33:52.981409",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Matt Costa",
-    "track": "Sweet Thursday",
-    "discovered_at": "2026-02-26T15:40:40.061282",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Strange Names",
-    "track": "Neighborhood",
-    "discovered_at": "2026-02-26T15:44:13.801936",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Belair Lip Bombs",
-    "track": "Hey You (Radio Edit)",
-    "discovered_at": "2026-02-26T15:48:10.054622",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sea Of Lettuce",
-    "track": "Future Endeavours",
-    "discovered_at": "2026-02-26T15:51:32.539545",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Lisa SQ",
-    "track": "Cold Little Fingers",
-    "discovered_at": "2026-02-26T15:55:06.295450",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dream Wife",
-    "track": "Hasta La Vista",
-    "discovered_at": "2026-02-26T15:57:32.553384",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sea Wolf",
-    "track": "Kasper",
-    "discovered_at": "2026-02-26T16:01:17.542919",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Matt Pond PA",
     "track": "Rabbit",
     "discovered_at": "2026-02-26T16:04:51.289031",
@@ -597,6 +471,132 @@
     "artist": "Augustines",
     "track": "Hold Me Loneliness",
     "discovered_at": "2026-02-26T21:40:10.005434",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Superchunk",
+    "track": "Green Flowers Blue Fish",
+    "discovered_at": "2026-02-26T21:54:02.491224",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Sean McVerry",
+    "track": "Marcy And The Apparition",
+    "discovered_at": "2026-02-26T21:57:36.249918",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Rachel Bobbitt",
+    "track": "Sweetest Heart",
+    "discovered_at": "2026-02-26T22:03:47.482607",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Carl Broemel",
+    "track": "Snowflake",
+    "discovered_at": "2026-02-26T22:12:13.759440",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Earlimart",
+    "track": "Everybody Knows Everybody",
+    "discovered_at": "2026-02-26T22:16:10.001086",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tennis",
+    "track": "Please Don't Ruin This For Me",
+    "discovered_at": "2026-02-26T22:18:36.243257",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Boy & Bear",
+    "track": "Three Headed Woman",
+    "discovered_at": "2026-02-26T22:21:25.019679",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Glom",
+    "track": "Mirror",
+    "discovered_at": "2026-02-26T22:31:21.247316",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Twerps",
+    "track": "Raft",
+    "discovered_at": "2026-02-26T22:34:21.252124",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Youth Lagoon",
+    "track": "Football (Radio Edit)",
+    "discovered_at": "2026-02-26T22:40:32.498514",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Endearments",
+    "track": "Real Deal",
+    "discovered_at": "2026-02-26T22:43:55.001075",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Bombay Bicycle Club",
+    "track": "Heaven (Feat. Damon Albarn)",
+    "discovered_at": "2026-02-26T22:46:43.761819",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Netorare Fan Club",
+    "track": "18",
+    "discovered_at": "2026-02-26T22:51:47.482123",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Minks",
+    "track": "Everything's Fine",
+    "discovered_at": "2026-02-26T22:56:28.748934",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Just A Gent",
+    "track": "Sounds Of Her Mind (Feat. Samsaruh)",
+    "discovered_at": "2026-02-26T22:59:51.247294",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tennis System",
+    "track": "Call It Home",
+    "discovered_at": "2026-02-26T23:03:47.481666",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Silver Snails",
+    "track": "U Say U Know",
+    "discovered_at": "2026-02-26T23:09:02.486317",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Field Mouse",
+    "track": "Netsuke",
+    "discovered_at": "2026-02-26T23:16:10.017705",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Liam Finn",
+    "track": "Burn Up The Road",
+    "discovered_at": "2026-02-26T23:19:32.487981",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Mitski",
+    "track": "That's Our Lamp",
+    "discovered_at": "2026-02-26T23:33:13.750026",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Chvrches",
+    "track": "Night Sky",
+    "discovered_at": "2026-02-26T23:35:28.742841",
     "source": "SomaFM Indie Pop"
   }
 ]

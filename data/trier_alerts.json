@@ -37,7 +37,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 60
   },
   {
@@ -57,7 +57,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 66
   },
   {
@@ -67,17 +67,18 @@
     "merchant": "Unknown Store",
     "location": "CN",
     "pattern_rating": 95,
-    "risk_score": 72.5,
+    "risk_score": 92.5,
     "risk_level": "HIGH",
     "action": "BLOCK",
     "rules_triggered": [
       "HIGH_RISK_PATTERN:Unknown Store-CN",
       "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
       "HISTORICAL_PATTERN_MATCH:66similar",
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 5,
+    "velocity_24h": 6,
     "historical_similar": 66
   },
   {
@@ -98,7 +99,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 106
   },
   {
@@ -120,6 +121,26 @@
     ],
     "pattern_category": "other",
     "velocity_24h": 9,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000355",
+    "user_id": 86,
+    "amount": 995.81,
+    "merchant": "Unknown Store",
+    "location": "NG",
+    "pattern_rating": 98,
+    "risk_score": 84.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 6,
     "historical_similar": 66
   },
   {
@@ -263,7 +284,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 13,
     "historical_similar": 60
   },
   {
@@ -349,7 +370,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 2,
+    "velocity_24h": 3,
     "historical_similar": 74
   },
   {
@@ -412,7 +433,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 12,
+    "velocity_24h": 14,
     "historical_similar": 66
   },
   {
@@ -433,7 +454,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 11,
+    "velocity_24h": 12,
     "historical_similar": 66
   },
   {
@@ -454,7 +475,7 @@
       "HISTORICAL_PATTERN_MATCH:108similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 9,
+    "velocity_24h": 10,
     "historical_similar": 108
   },
   {
@@ -517,7 +538,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
