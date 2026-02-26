@@ -1,11 +1,5 @@
 [
   {
-    "artist": "Neko Case",
-    "track": "Neon Grey Midnight Green",
-    "discovered_at": "2026-02-26T08:46:21.549517",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Blondshell",
     "track": "Model Rockets",
     "discovered_at": "2026-02-26T08:50:40.311397",
@@ -597,6 +591,12 @@
     "artist": "Snuggle",
     "track": "Playthings",
     "discovered_at": "2026-02-26T17:38:28.748750",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Daisy The Great",
+    "track": "Dog",
+    "discovered_at": "2026-02-26T17:41:28.759982",
     "source": "SomaFM Indie Pop"
   }
 ]

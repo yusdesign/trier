@@ -141,31 +141,77 @@ class TrierSessionManager:
             return "No data"
     
     def push_to_git(self):
-        """Push all changes to GitHub"""
-        self.log("🚀 Pushing to GitHub...")
-        
-        os.chdir("..")
-        
+        """Push all changes to GitHub with VERIFICATION"""
+        self.log("🚀 PUSHING TO GITHUB...")  # ALL CAPS so you see it!
+    
+        # Store current directory
+        current_dir = os.getcwd()
+        os.chdir("..")  # Go to root
+    
+        # Check if there are changes
+        status_result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            capture_output=True,
+            text=True
+        )
+    
+        changes = status_result.stdout.strip()
+        if not changes:
+            self.log("📊 No changes to push")
+            os.chdir(current_dir)
+            self.last_git_push = time.time()
+            return
+    
+        # Show what's being pushed
+        change_lines = changes.split('\n')
+        self.log(f"📦 Found {len(change_lines)} changed files:")
+        for line in change_lines[:5]:
+            print(f"     {line}")
+        if len(change_lines) > 5:
+            print(f"     ... and {len(change_lines)-5} more")
+    
+        # Add changes
         subprocess.run(["git", "add", "data/", "music/", "docs/"], 
                       capture_output=True)
-        
-        commit_msg = f"🤖 TRIER Live Update: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-        result = subprocess.run(["git", "commit", "-m", commit_msg],
-                               capture_output=True, text=True)
-        
-        if "nothing to commit" not in result.stderr:
-            push_result = subprocess.run(["git", "push"], 
-                                        capture_output=True, text=True)
-            if push_result.returncode == 0:
-                self.log("✅ Pushed to GitHub! Website updates in 1-2 min")
-            else:
-                self.log(f"⚠️ Push failed")
-        else:
-            self.log("📊 No changes to push")
-        
-        os.chdir("src")
-        self.last_git_push = time.time()
     
+        # Commit
+        commit_msg = f"🤖 Auto-push: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        commit_result = subprocess.run(
+            ["git", "commit", "-m", commit_msg],
+            capture_output=True,
+            text=True
+        )
+    
+        if "nothing to commit" in commit_result.stderr:
+            self.log("📊 Nothing to commit")
+        else:
+            # Push
+            self.log("⬆️ Pushing to remote...")
+            push_result = subprocess.run(
+                ["git", "push"],
+                capture_output=True,
+                text=True
+            )
+        
+            if push_result.returncode == 0:
+                self.log("✅ SUCCESS! Pushed to GitHub")
+                self.log(f"🌐 Live in 1-2 min at: https://github.com/yusdesign/trier")
+            
+                # Show last commit
+                show_result = subprocess.run(
+                    ["git", "log", "-1", "--pretty=format:%h - %s"],
+                    capture_output=True,
+                    text=True
+                )
+                print(f"     Last commit: {show_result.stdout}")
+            else:
+                self.log(f"❌ Push failed: {push_result.stderr[:200]}")
+    
+        # Return to src
+        os.chdir(current_dir)
+        self.last_git_push = time.time()
+        self.log("💤 Next push in 2 hours")
+   
     def run(self):
         """Main loop"""
         self.log("="*60)
@@ -190,21 +236,24 @@ class TrierSessionManager:
             sys.exit(0)
         
         signal.signal(signal.SIGINT, signal_handler)
-        
+
         # Main loop - stream output continues via thread
         while self.running:
             for _ in range(60):  # Check every second but sleep in small chunks
                 if not self.running:
                     break
                 time.sleep(1)
-            
-            # Check if it's time for dashboards (stream continues printing)
-            if time.time() - self.last_dashboard > self.dashboard_interval:
+    
+            current_time = time.time()
+    
+            # Check if it's time for dashboards
+            if current_time - self.last_dashboard > self.dashboard_interval:
                 self.generate_dashboards()
-            
-            # Check if it's time for git push
-            if time.time() - self.last_git_push > self.git_push_interval:
-                self.push_to_git()
+    
+            # Check if it's time for git push (EVERY 2 HOURS)
+            if current_time - self.last_git_push > self.git_push_interval:
+                self.push_to_git()  # ← THIS WAS MISSING!
+
 
 if __name__ == "__main__":
     manager = TrierSessionManager()
