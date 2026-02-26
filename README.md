@@ -1,4 +1,3 @@
-<div align="center">
 
 ![TRIER Banner](https://img.shields.io/badge/TRIER-Fraud%20Detector%20%26%20Music%20Lab-ff6b6b?style=for-the-badge&logo=github&logoColor=white)
 
@@ -12,7 +11,6 @@
 [![Last Commit](https://img.shields.io/github/last-commit/yusdesign/trier?style=flat-square&color=blue)](https://github.com/yusdesign/trier/commits)
 [![Stars](https://img.shields.io/github/stars/yusdesign/trier?style=flat-square&color=yellow)](https://github.com/yusdesign/trier/stargazers)
 
-</div>
 
 # trier
 trier is a fraud detector board
