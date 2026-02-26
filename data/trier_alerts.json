@@ -17,7 +17,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 8,
+    "velocity_24h": 9,
     "historical_similar": 106
   },
   {
@@ -57,7 +57,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 9,
     "historical_similar": 66
   },
   {
@@ -180,7 +180,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 2,
+    "velocity_24h": 3,
     "historical_similar": 106
   },
   {
@@ -294,18 +294,19 @@
     "merchant": "Amazon",
     "location": "NG",
     "pattern_rating": 95,
-    "risk_score": 97.3,
+    "risk_score": 100,
     "risk_level": "HIGH",
     "action": "BLOCK",
     "rules_triggered": [
       "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
       "HIGH_RISK_PATTERN:Amazon-NG",
       "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
       "HISTORICAL_PATTERN_MATCH:74similar",
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 4,
+    "velocity_24h": 6,
     "historical_similar": 74
   },
   {
