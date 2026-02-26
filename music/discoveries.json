@@ -1,281 +1,5 @@
 [
   {
-    "artist": "Matt Pond PA",
-    "track": "Rabbit",
-    "discovered_at": "2026-02-26T16:04:51.289031",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Camera Obscura",
-    "track": "Happy New Year",
-    "discovered_at": "2026-02-26T16:08:13.810935",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Mayflies Usa",
-    "track": "Kickless Kids",
-    "discovered_at": "2026-02-26T16:11:58.800627",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Ryli",
-    "track": "I Think I Need You Around",
-    "discovered_at": "2026-02-26T16:15:32.557745",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Snocaps",
-    "track": "Coast (Dirty)",
-    "discovered_at": "2026-02-26T16:18:21.291314",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Clap Your Hands Say Yeah",
-    "track": "Details Of The War",
-    "discovered_at": "2026-02-26T16:20:36.272320",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Benjamin Gibbard",
-    "track": "You Remind Me Of Home",
-    "discovered_at": "2026-02-26T16:24:10.040381",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Oceanique",
-    "track": "Winter Song",
-    "discovered_at": "2026-02-26T16:26:13.801182",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Peel Dream Magazine",
-    "track": "Venus In Nadir",
-    "discovered_at": "2026-02-26T16:29:47.555547",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Death Cab For Cutie",
-    "track": "No Sunlight",
-    "discovered_at": "2026-02-26T16:35:36.284360",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Black Keys",
-    "track": "Tell Me Lies",
-    "discovered_at": "2026-02-26T16:38:02.539424",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Line & Circle",
-    "track": "Tunnel Joy",
-    "discovered_at": "2026-02-26T16:41:47.538538",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Peaking Lights",
-    "track": "Dreamquest",
-    "discovered_at": "2026-02-26T16:45:32.555702",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Hiqpy",
-    "track": "Girl In Red",
-    "discovered_at": "2026-02-26T16:49:28.814192",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Fanclubwallet",
-    "track": "Do Over",
-    "discovered_at": "2026-02-26T16:55:51.291078",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dismemberment Plan",
-    "track": "Spider In The Snow",
-    "discovered_at": "2026-02-26T16:58:51.280521",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Tallies",
-    "track": "Eden",
-    "discovered_at": "2026-02-26T17:02:36.293404",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Soft Loft",
-    "track": "Can",
-    "discovered_at": "2026-02-26T17:10:28.800397",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Washed Out",
-    "track": "Letting Go",
-    "discovered_at": "2026-02-26T17:13:40.040731",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Of Monsters And Men",
-    "track": "Lakehouse",
-    "discovered_at": "2026-02-26T17:17:58.796776",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Tristen",
-    "track": "Dark Matter",
-    "discovered_at": "2026-02-26T17:22:17.535350",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Ladytron",
-    "track": "The Animals",
-    "discovered_at": "2026-02-26T17:25:51.291272",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Small Black",
-    "track": "Lines Of Latitude",
-    "discovered_at": "2026-02-26T17:30:21.283708",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Innocence Mission",
-    "track": "The Camera Divides The Coast Of Maine",
-    "discovered_at": "2026-02-26T17:34:43.774059",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Snuggle",
-    "track": "Playthings",
-    "discovered_at": "2026-02-26T17:38:28.748750",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Daisy The Great",
-    "track": "Dog",
-    "discovered_at": "2026-02-26T17:41:28.759982",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Buffetlibre",
-    "track": "In The Aeroplane",
-    "discovered_at": "2026-02-26T17:45:25.011550",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Leggy",
-    "track": "Adonis",
-    "discovered_at": "2026-02-26T17:50:40.012920",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Quentyn",
-    "track": "The Night (I Wanna Know)",
-    "discovered_at": "2026-02-26T17:52:43.770296",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Grandaddy",
-    "track": "Watercooler",
-    "discovered_at": "2026-02-26T17:55:10.023150",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Coral Moons",
-    "track": "Summer Of U",
-    "discovered_at": "2026-02-26T17:59:28.750635",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Hop Along",
-    "track": "How Simple (Radio)",
-    "discovered_at": "2026-02-26T18:02:28.741249",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Kathryn Calder",
-    "track": "Low",
-    "discovered_at": "2026-02-26T18:08:17.494993",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sea And Cake",
-    "track": "Window Sills",
-    "discovered_at": "2026-02-26T18:12:13.760834",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Boyscott",
-    "track": "Moose Head",
-    "discovered_at": "2026-02-26T18:15:47.491010",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "NoSo",
-    "track": "You're No Man",
-    "discovered_at": "2026-02-26T18:17:40.009592",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Badsoma",
-    "track": "Making Due",
-    "discovered_at": "2026-02-26T18:21:13.759735",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Big Thief",
-    "track": "Ufof",
-    "discovered_at": "2026-02-26T18:24:25.001546",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Yawn",
-    "track": "Follow You",
-    "discovered_at": "2026-02-26T18:27:25.012125",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Simian Ghost",
-    "track": "The Ocean Is A Whisper",
-    "discovered_at": "2026-02-26T18:40:43.746577",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Postcards",
-    "track": "Before We Sleep",
-    "discovered_at": "2026-02-26T18:43:43.761098",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Crystal Fighters",
-    "track": "La Calling",
-    "discovered_at": "2026-02-26T18:48:47.498920",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Jeff Tweedy",
-    "track": "Caught Up In The Past",
-    "discovered_at": "2026-02-26T18:59:40.018547",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Wilson's Prom",
-    "track": "Shapeshifter",
-    "discovered_at": "2026-02-26T19:06:58.759678",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Palehound",
-    "track": "Dry Food",
-    "discovered_at": "2026-02-26T19:10:55.020877",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Afterhourless",
-    "track": "Coriolis, Centrifugal Love",
-    "discovered_at": "2026-02-26T19:14:51.259060",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Slow Pulp",
     "track": "Broadview",
     "discovered_at": "2026-02-26T19:19:32.508455",
@@ -597,6 +321,282 @@
     "artist": "Chvrches",
     "track": "Night Sky",
     "discovered_at": "2026-02-26T23:35:28.742841",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Hemhora & The Glass Band",
+    "track": "World On It's Neck",
+    "discovered_at": "2026-02-26T23:42:13.771145",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Barr Brothers",
+    "track": "Run Right Into It (Feat. Land Of Talk)",
+    "discovered_at": "2026-02-26T23:45:36.255218",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Moon By Moon",
+    "track": "Freshman Year",
+    "discovered_at": "2026-02-26T23:49:55.028955",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Stephen Malkmus",
+    "track": "Jenny & The Ess-dog",
+    "discovered_at": "2026-02-26T23:59:17.505116",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Elvis Costello",
+    "track": "Bullets For The Newborn King",
+    "discovered_at": "2026-02-27T00:01:55.008019",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Pictish Trail",
+    "track": "Torch Song",
+    "discovered_at": "2026-02-27T00:05:28.778916",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Mommyheads",
+    "track": "It's Only Life",
+    "discovered_at": "2026-02-27T00:10:10.015160",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Royel Otis",
+    "track": "Ihysm",
+    "discovered_at": "2026-02-27T00:15:36.248619",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Errors",
+    "track": "Holus-Bolus",
+    "discovered_at": "2026-02-27T00:18:36.273089",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Caroline Rose",
+    "track": "Everywhere I Go I Bring The Ra",
+    "discovered_at": "2026-02-27T00:41:23.499892",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Islands",
+    "track": "Drown A Fish",
+    "discovered_at": "2026-02-27T00:59:47.897184",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Otter Petter",
+    "track": "Winnebago",
+    "discovered_at": "2026-02-27T00:59:59.119075",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Dodos",
+    "track": "Destroyer",
+    "discovered_at": "2026-02-27T01:04:06.719189",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Domestics",
+    "track": "Tunnels And Trains",
+    "discovered_at": "2026-02-27T01:10:29.153866",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Rogue Wave",
+    "track": "When Sunday Morning Comes",
+    "discovered_at": "2026-02-27T01:13:17.881053",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Beths",
+    "track": "Mosquitoes",
+    "discovered_at": "2026-02-27T01:18:32.879279",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Yumi Zouma",
+    "track": "Haji Awali",
+    "discovered_at": "2026-02-27T01:26:36.645815",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Out Lines",
+    "track": "Buried Guns",
+    "discovered_at": "2026-02-27T01:29:14.110111",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Dear Boy",
+    "track": "Wanderlow",
+    "discovered_at": "2026-02-27T01:34:17.879829",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Rose Of The West",
+    "track": "Feast Or Famine (Elise's Radio Edit)",
+    "discovered_at": "2026-02-27T01:37:51.640178",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Dizzy",
+    "track": "Close",
+    "discovered_at": "2026-02-27T01:40:51.650419",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Sin Fang, Soley & Oervar Smarason",
+    "track": "Go To Sleep Boy",
+    "discovered_at": "2026-02-27T01:46:29.115336",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Elf Power",
+    "track": "Too Many Things In My Hands",
+    "discovered_at": "2026-02-27T01:51:44.379318",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Decemberists",
+    "track": "Los Angeles, I'm Yours",
+    "discovered_at": "2026-02-27T01:53:25.604738",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Courtney Barnett",
+    "track": "Lotta Love",
+    "discovered_at": "2026-02-27T01:57:33.107973",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "My Morning Jacket",
+    "track": "Just One Thing",
+    "discovered_at": "2026-02-27T02:11:25.617751",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "NewDad",
+    "track": "Change My Mind",
+    "discovered_at": "2026-02-27T02:14:36.853933",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "xx, The",
+    "track": "Teardrops",
+    "discovered_at": "2026-02-27T02:18:10.603753",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Pinback",
+    "track": "Non Photo Blue",
+    "discovered_at": "2026-02-27T02:26:03.114840",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Literature",
+    "track": "Court, Date",
+    "discovered_at": "2026-02-27T02:29:36.862783",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Frightened Rabbit",
+    "track": "Break",
+    "discovered_at": "2026-02-27T02:32:03.113297",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Blonde Redhead",
+    "track": "Before (Radio Edit)",
+    "discovered_at": "2026-02-27T02:41:14.355949",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Walkmen",
+    "track": "The Love You Love",
+    "discovered_at": "2026-02-27T02:47:25.593015",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Pixies",
+    "track": "Magdalena",
+    "discovered_at": "2026-02-27T02:50:25.604836",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Cate Le Bon",
+    "track": "Heaven Is No Feeling",
+    "discovered_at": "2026-02-27T03:00:10.592101",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Papercuts",
+    "track": "A Peculiar Hallelujah",
+    "discovered_at": "2026-02-27T03:03:44.353831",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Shins",
+    "track": "Plenty Is Never Enough",
+    "discovered_at": "2026-02-27T03:06:44.349647",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Kopecky",
+    "track": "Burnin'",
+    "discovered_at": "2026-02-27T03:09:44.354550",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Built To Spill",
+    "track": "Horizon To Cliff",
+    "discovered_at": "2026-02-27T03:14:03.127210",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Maia Friedman",
+    "track": "Russian Blue",
+    "discovered_at": "2026-02-27T03:20:03.114008",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Mary Onettes",
+    "track": "Slide",
+    "discovered_at": "2026-02-27T03:22:40.585503",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Cub Sport",
+    "track": "Paradise",
+    "discovered_at": "2026-02-27T03:29:59.354479",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Radio Free Alice",
+    "track": "Rule 31",
+    "discovered_at": "2026-02-27T03:38:36.855366",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "STRFKR",
+    "track": "Never Ever",
+    "discovered_at": "2026-02-27T03:42:44.354934",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Quiet Company",
+    "track": "A Year In Decline",
+    "discovered_at": "2026-02-27T03:46:06.847090",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Hope Sandoval",
+    "track": "Thinking Like That",
+    "discovered_at": "2026-02-27T03:50:36.852711",
     "source": "SomaFM Indie Pop"
   }
 ]
