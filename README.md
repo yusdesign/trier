@@ -1,5 +1,5 @@
 
-![TRIER Banner](https://img.shields.io/badge/TRIER-Fraud%20Detector%20%26%20Music%20Lab-3c2d48?style=for-the-badge&logo=github&logoColor=white)
+![TRIER Banner](https://img.shields.io/badge/TRIER-Fraud%20Detector%20%26%20Music%20Lab-ffffff?style=for-the-badge&logo=github&logoColor=black)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Pandas](https://img.shields.io/badge/Pandas-3.0.1-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org)
