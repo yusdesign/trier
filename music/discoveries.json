@@ -1,59 +1,5 @@
 [
   {
-    "artist": "Rose Of The West",
-    "track": "Feast Or Famine (Elise's Radio Edit)",
-    "discovered_at": "2026-02-27T01:37:51.640178",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dizzy",
-    "track": "Close",
-    "discovered_at": "2026-02-27T01:40:51.650419",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sin Fang, Soley & Oervar Smarason",
-    "track": "Go To Sleep Boy",
-    "discovered_at": "2026-02-27T01:46:29.115336",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Elf Power",
-    "track": "Too Many Things In My Hands",
-    "discovered_at": "2026-02-27T01:51:44.379318",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Decemberists",
-    "track": "Los Angeles, I'm Yours",
-    "discovered_at": "2026-02-27T01:53:25.604738",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Courtney Barnett",
-    "track": "Lotta Love",
-    "discovered_at": "2026-02-27T01:57:33.107973",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "My Morning Jacket",
-    "track": "Just One Thing",
-    "discovered_at": "2026-02-27T02:11:25.617751",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "NewDad",
-    "track": "Change My Mind",
-    "discovered_at": "2026-02-27T02:14:36.853933",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "xx, The",
-    "track": "Teardrops",
-    "discovered_at": "2026-02-27T02:18:10.603753",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Pinback",
     "track": "Non Photo Blue",
     "discovered_at": "2026-02-27T02:26:03.114840",
@@ -597,6 +543,60 @@
     "artist": "Vampire Weekend",
     "track": "Walcott",
     "discovered_at": "2026-02-27T13:50:41.751001",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Elbow",
+    "track": "Real Life (Angel)",
+    "discovered_at": "2026-02-27T14:08:04.981528",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Feelds",
+    "track": "Sweet Tooth",
+    "discovered_at": "2026-02-27T14:14:54.060308",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Squirrel Flower",
+    "track": "Intheskatepark",
+    "discovered_at": "2026-02-27T14:21:31.525370",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Old Sea Brigade & Luke Sital",
+    "track": "s - Call Me When You Land (Radio E",
+    "discovered_at": "2026-02-27T14:24:36.977124",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Luluc",
+    "track": "Passerby",
+    "discovered_at": "2026-02-27T14:46:48.176426",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Waters",
+    "track": "For The One",
+    "discovered_at": "2026-02-27T14:51:06.931108",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Mirah",
+    "track": "Catch My Breath [Fcc Warning]",
+    "discovered_at": "2026-02-27T14:57:18.148926",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Wallice",
+    "track": "Clown Like Me (Feat. Albert Ha",
+    "discovered_at": "2026-02-27T15:00:29.411609",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Dyan",
+    "track": "Days Upon Days",
+    "discovered_at": "2026-02-27T15:08:33.143750",
     "source": "SomaFM Indie Pop"
   }
 ]

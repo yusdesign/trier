@@ -1,0 +1,31 @@
+name: Update OZON Live Dashboard
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 min
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Fetch OZON Data
+        env:
+          OZON_CLIENT_ID: ${{ secrets.OZON_CLIENT_ID }}
+          OZON_API_KEY: ${{ secrets.OZON_API_KEY }}
+        run: |
+          cd src
+          python ozon_dashboard_data.py  # Script that fetches API and generates JSON
+      
+      - name: Update Dashboard
+        run: |
+          # Generate HTML with fresh data
+          python src/update_ozon_dashboard.py
+      
+      - name: Deploy to Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
