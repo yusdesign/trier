@@ -17,7 +17,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 106
   },
   {
@@ -98,7 +98,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 9,
+    "velocity_24h": 10,
     "historical_similar": 66
   },
   {
@@ -161,6 +161,26 @@
     ],
     "pattern_category": "other",
     "velocity_24h": 7,
+    "historical_similar": 66
+  },
+  {
+    "transaction_id": "TX_000350",
+    "user_id": 67,
+    "amount": 1725.92,
+    "merchant": "Unknown Store",
+    "location": "NG",
+    "pattern_rating": 98,
+    "risk_score": 84.0,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-NG",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 6,
     "historical_similar": 66
   },
   {
@@ -242,7 +262,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 8,
+    "velocity_24h": 9,
     "historical_similar": 106
   },
   {
@@ -284,7 +304,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 13,
+    "velocity_24h": 15,
     "historical_similar": 74
   },
   {
@@ -329,6 +349,26 @@
     "historical_similar": 60
   },
   {
+    "transaction_id": "TX_000548",
+    "user_id": 6,
+    "amount": 1631.09,
+    "merchant": "Unknown Store",
+    "location": "CN",
+    "pattern_rating": 95,
+    "risk_score": 82.5,
+    "risk_level": "HIGH",
+    "action": "BLOCK",
+    "rules_triggered": [
+      "HIGH_RISK_PATTERN:Unknown Store-CN",
+      "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
+      "HISTORICAL_PATTERN_MATCH:66similar"
+    ],
+    "pattern_category": "other",
+    "velocity_24h": 6,
+    "historical_similar": 66
+  },
+  {
     "transaction_id": "TX_000570",
     "user_id": 66,
     "amount": 2608.27,
@@ -369,7 +409,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 8,
+    "velocity_24h": 9,
     "historical_similar": 74
   },
   {
@@ -390,7 +430,7 @@
       "HISTORICAL_PATTERN_MATCH:74similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 74
   },
   {
@@ -412,7 +452,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 6,
+    "velocity_24h": 7,
     "historical_similar": 74
   },
   {
