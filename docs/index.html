@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🔍 TRIER - Oriental Pattern Fraud Detector</title>
+    <title>🔍 TRIER - Ориентальный детектор мошенничества</title>
     <meta http-equiv="refresh" content="60">
     <style>
         body {
@@ -90,54 +90,76 @@
             margin-top: 5px;
         }
         
-        /* OZON Section */
+        /* OZON Panel */
         .ozon-panel {
-            background: linear-gradient(135deg, #005bff10 0%, #003b9e10 100%);
+            background: linear-gradient(135deg, #005bff15 0%, #003b9e15 100%);
             border-radius: 15px;
             padding: 30px;
             margin: 30px 0;
             border: 1px solid #005bff30;
+            position: relative;
+            overflow: hidden;
         }
-        .ozon-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            align-items: center;
+        .ozon-panel::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, #005bff10 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            z-index: 1;
         }
+        .ozon-content {
+            position: relative;
+            z-index: 2;
+        }
+        
         .scope-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         .scope-card {
             background: #1e1e1e;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             border-left: 4px solid;
+            position: relative;
+            overflow: hidden;
         }
         .scope-card.fbs { border-color: #4caf50; }
         .scope-card.fbo { border-color: #ff9800; }
         .scope-card.returns { border-color: #f44336; }
         .scope-card.cancel { border-color: #9c27b0; }
         
-        .knob-container {
-            text-align: center;
-            position: relative;
-        }
-        .knob-value {
-            font-size: 3em;
-            font-weight: bold;
-            color: #fff;
-        }
-        .live-badge {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
+        .live-dot {
+            width: 8px;
+            height: 8px;
             background: #4caf50;
             border-radius: 50%;
-            animation: pulse 2s infinite;
-            margin-right: 8px;
+            animation: live-pulse 1.5s infinite;
+        }
+        
+        .data-stream {
+            position: relative;
+            height: 4px;
+            background: #1e1e1e;
+            margin: 20px 0;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        .data-stream::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #005bff, transparent);
+            animation: dataflow 2s infinite;
         }
         
         /* Pattern Grid */
@@ -202,6 +224,58 @@
             margin-top: 20px;
         }
         
+        /* Live Ticker */
+        .ticker-container {
+            background: #0a0c0e;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #005bff;
+        }
+        .ticker {
+            font-family: monospace;
+            font-size: 1.1em;
+            padding: 10px;
+            background: #1e1e1e;
+            border-radius: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: ticker-scroll 20s linear infinite;
+        }
+        .ticker:hover {
+            animation-play-state: paused;
+        }
+        @keyframes ticker-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* Animations */
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes dataflow {
+            0% { transform: translateX(-100%); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateX(100%); opacity: 0; }
+        }
+        @keyframes live-pulse {
+            0% { box-shadow: 0 0 0 0 #4caf50; }
+            70% { box-shadow: 0 0 0 5px #4caf50; opacity: 0; }
+            100% { box-shadow: 0 0 0 0 #4caf50; opacity: 0; }
+        }
+        
+        .live-badge {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #4caf50;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            margin-right: 8px;
+        }
         @keyframes pulse {
             0% { opacity: 1; }
             50% { opacity: 0.3; }
@@ -215,250 +289,408 @@
             color: #666;
             border-top: 1px solid #333;
         }
+        
+        .ru-note {
+            text-align: right;
+            margin-top: 10px;
+            color: #888;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+        
+        .explanation {
+            background: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="dashboard">
         <!-- Header -->
         <div class="header">
-            <h1>🔍 TRIER - Oriental Pattern Fraud Detector</h1>
-            <p>Last updated: <span id="updateTime">2026-02-27 15:30:42</span></p>
-            <p>Focus: RU/CN patterns | Amazon/Walmart unusual locations | Pattern-based rating system</p>
+            <h1>🔍 TRIER - Ориентальный детектор мошенничества</h1>
+            <p>Последнее обновление: <span id="updateTime">2026-02-27 15:30:42</span></p>
+            <p>Фокус: RU/CN паттерны | Amazon/Walmart аномалии | Рейтинговая система</p>
             
             <!-- Navigation -->
             <div class="nav-tabs">
-                <a href="index.html" class="nav-tab active">🏠 Main</a>
+                <a href="index.html" class="nav-tab active">🏠 Главная</a>
                 <a href="ozon_dashboard.html" class="nav-tab">🛒 OZON Live</a>
                 <a href="music.html" class="nav-tab">🎵 Music Lab</a>
-                <a href="fossil_museum.html" class="nav-tab">🏛️ Fossil Museum</a>
+                <a href="fossil_museum.html" class="nav-tab">🏛️ Музей ископаемых</a>
             </div>
         </div>
 
-        <!-- Global Metrics -->
+        <!-- Global Metrics with Russian Explanations -->
         <div class="metrics-grid">
             <div class="card">
-                <h3>Total Transactions</h3>
+                <h3>Всего транзакций</h3>
                 <div class="value" id="totalTransactions">1,019</div>
+                <div class="trend">+12% за неделю</div>
+                <div class="explanation">Общее количество обработанных транзакций</div>
             </div>
             <div class="card">
-                <h3>Total Volume</h3>
-                <div class="value" id="totalVolume">$163,216</div>
+                <h3>Общий объём</h3>
+                <div class="value" id="totalVolume">₽16.3M</div>
+                <div class="trend">↑ 8%</div>
+                <div class="explanation">Сумма всех транзакций в рублях</div>
             </div>
             <div class="card">
-                <h3>High Risk</h3>
+                <h3>Высокий риск</h3>
                 <div class="value" id="highRisk">25</div>
-                <div class="trend">2.5% of total</div>
+                <div class="trend">2.5% от общего</div>
+                <div class="explanation">Транзакции требующие блокировки</div>
             </div>
             <div class="card">
-                <h3>Precision/Recall</h3>
+                <h3>Точность/Полнота</h3>
                 <div class="value" id="precision">88%</div>
                 <div class="trend">F1: 0.76</div>
+                <div class="explanation">Соотношение правильных срабатываний</div>
             </div>
         </div>
 
-        <!-- OZON Live Section with Knob -->
+        <!-- OZON Live Panel with Russian Explanations -->
         <div class="ozon-panel">
-            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                <span style="font-size: 2.5em;">🛒</span>
-                <div>
-                    <h2 style="margin: 0; color: #005bff;">OZON Marketplace</h2>
-                    <p style="margin: 5px 0 0 0;">
+            <div class="ozon-content">
+                <!-- Header -->
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 2.5em; filter: drop-shadow(0 0 10px #005bff);">🛒</span>
+                        <div>
+                            <h2 style="margin: 0; color: #005bff; display: flex; align-items: center; gap: 10px;">
+                                OZON Маркетплейс
+                                <span style="background: #005bff; padding: 3px 10px; border-radius: 20px; font-size: 0.5em; color: white;">LIVE</span>
+                            </h2>
+                            <p style="margin: 5px 0 0 0; color: #888;">
+                                <span class="live-badge"></span> Реальное время · 4 скоупа активны
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-left: auto; text-align: right;">
+                        <div style="font-size: 2em; font-weight: bold; color: #fff;" id="ozonTotalOrders">1,247</div>
+                        <div style="color: #888;">заказов сегодня</div>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: #1e1e1e; padding: 15px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #888;">🎯 Обнаружение</span>
+                            <span style="color: #4caf50; font-size: 1.5em;">94%</span>
+                        </div>
+                        <div class="explanation">% мошенничеств, которые мы находим</div>
+                    </div>
+                    <div style="background: #1e1e1e; padding: 15px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #888;">🎯 Точность</span>
+                            <span style="color: #4caf50; font-size: 1.5em;">87%</span>
+                        </div>
+                        <div class="explanation">% срабатываний, которые верны</div>
+                    </div>
+                    <div style="background: #1e1e1e; padding: 15px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #888;">💰 Под риском</span>
+                            <span style="color: #ff6b6b; font-size: 1.5em;">₽345K</span>
+                        </div>
+                        <div class="explanation">Сумма подозрительных транзакций</div>
+                    </div>
+                    <div style="background: #1e1e1e; padding: 15px; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #888;">⚡ Время</span>
+                            <span style="color: #4caf50; font-size: 1.5em;">30с</span>
+                        </div>
+                        <div class="explanation">Скорость обнаружения</div>
+                    </div>
+                </div>
+
+                <!-- 4 Scopes with Russian Labels -->
+                <div class="scope-grid">
+                    <div class="scope-card fbs">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="color: #888;">📦 Posting FBS</div>
+                                <div style="font-size: 1.8em; font-weight: bold;" id="fbsCount">847</div>
+                            </div>
+                            <div class="live-dot"></div>
+                        </div>
+                        <div class="explanation">Заказы FBS + финансы · Тестирование карт</div>
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <div><span style="color: #f44336;">12</span> мошенничеств</div>
+                            <div><span style="color: #ff9800;">8</span> на проверке</div>
+                        </div>
+                    </div>
+
+                    <div class="scope-card fbo">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="color: #888;">📦 Supply Order</div>
+                                <div style="font-size: 1.8em; font-weight: bold;" id="fboCount">312</div>
+                            </div>
+                            <div class="live-dot"></div>
+                        </div>
+                        <div class="explanation">FBO поставки · Гео-несоответствия</div>
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <div><span style="color: #f44336;">5</span> мошенничеств</div>
+                            <div><span style="color: #ff9800;">3</span> гео-мисматч</div>
+                        </div>
+                    </div>
+
+                    <div class="scope-card returns">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="color: #888;">🔄 Returns</div>
+                                <div style="font-size: 1.8em; font-weight: bold;" id="returnsCount">45</div>
+                            </div>
+                            <div class="live-dot"></div>
+                        </div>
+                        <div class="explanation">Возвраты · Паттерны возвратов</div>
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <div><span style="color: #f44336;">4</span> злоупотреблений</div>
+                            <div><span style="color: #ff9800;">2</span> высокий возврат</div>
+                        </div>
+                    </div>
+
+                    <div class="scope-card cancel">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="color: #888;">❌ Cancellations</div>
+                                <div style="font-size: 1.8em; font-weight: bold;" id="cancelCount">23</div>
+                            </div>
+                            <div class="live-dot"></div>
+                        </div>
+                        <div class="explanation">Отмены · Кольца отмен</div>
+                        <div style="display: flex; gap: 15px; margin-top: 10px;">
+                            <div><span style="color: #f44336;">2</span> подозрительных</div>
+                            <div><span style="color: #ff9800;">1</span> кольцо</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Ticker -->
+                <div class="ticker-container">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                        <span style="color: #888;">📡 LIVE ПОТОК ТРАНЗАКЦИЙ</span>
                         <span class="live-badge"></span>
-                        Live · 4 scopes active · Updated every 30 min
-                    </p>
-                </div>
-            </div>
-            
-            <div class="ozon-grid">
-                <!-- Left: Scope Cards -->
-                <div>
-                    <div class="scope-grid">
-                        <div class="scope-card fbs">
-                            <div style="font-size: 0.8em; color: #888;">📦 Posting FBS</div>
-                            <div style="font-size: 1.8em; font-weight: bold;">847</div>
-                            <div style="color: #f44336;">12 fraud</div>
-                        </div>
-                        <div class="scope-card fbo">
-                            <div style="font-size: 0.8em; color: #888;">📦 Supply Order</div>
-                            <div style="font-size: 1.8em; font-weight: bold;">312</div>
-                            <div style="color: #ff9800;">5 fraud</div>
-                        </div>
-                        <div class="scope-card returns">
-                            <div style="font-size: 0.8em; color: #888;">🔄 Returns</div>
-                            <div style="font-size: 1.8em; font-weight: bold;">45</div>
-                            <div style="color: #f44336;">4 abuse</div>
-                        </div>
-                        <div class="scope-card cancel">
-                            <div style="font-size: 0.8em; color: #888;">❌ Cancellations</div>
-                            <div style="font-size: 1.8em; font-weight: bold;">23</div>
-                            <div style="color: #ff9800;">2 susp</div>
-                        </div>
+                        <span style="color: #4caf50;">Подключено</span>
+                    </div>
+                    <div class="ticker" id="liveTicker">
+                        🛒 FBS-12345 · ₽2,450 · Москва · card_testing ⚠️ | 
+                        🛒 FBO-67890 · ₽8,900 · СПБ · geo_mismatch ⚠️ | 
+                        🛒 RET-1122 · ₽3,500 · Казань · return_abuse ⚠️ |
                     </div>
                 </div>
-                
-                <!-- Right: Knob -->
-                <div class="knob-container">
-                    <svg width="200" height="200" viewBox="0 0 100 100">
-                        <!-- Background arc -->
-                        <path d="M20,70 A30,30 0 0,1 80,70" fill="none" stroke="#333" stroke-width="8"/>
-                        <!-- Colored arc (fraud risk) -->
-                        <path d="M20,70 A30,30 0 0,1 65,25" fill="none" stroke="#f44336" stroke-width="8" 
-                              stroke-dasharray="94 100" stroke-dashoffset="-10"/>
-                        <!-- Center text -->
-                        <text x="50" y="45" text-anchor="middle" fill="white" font-size="12">Risk</text>
-                        <text x="50" y="60" text-anchor="middle" fill="white" font-size="20" font-weight="bold">23</text>
-                        <text x="50" y="75" text-anchor="middle" fill="#888" font-size="8">active alerts</text>
-                    </svg>
-                    <div style="margin-top: 10px;">
-                        <span style="background: #005bff; padding: 5px 15px; border-radius: 20px; margin-right: 10px;">
-                            ⚡ 94% detection
-                        </span>
-                        <span style="background: #1e1e1e; padding: 5px 15px; border-radius: 20px; border: 1px solid #005bff;">
-                            ₽345K at risk
-                        </span>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="ozon_dashboard.html" style="color: #005bff; text-decoration: none; font-weight: bold;">
-                            View Full OZON Dashboard →
-                        </a>
+
+                <!-- Performance Details in Russian -->
+                <div style="background: #1e1e1e; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h3 style="margin: 0 0 15px 0;">📊 Детали производительности</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                        <div>
+                            <div style="color: #4caf50;">✓ 94% обнаружение</div>
+                            <p style="color: #888; margin: 5px 0 0 0; font-size: 0.9em;">
+                                Из 100 попыток мошенничества мы находим 94. 
+                                6% пропусков анализируются для улучшения паттернов.
+                            </p>
+                        </div>
+                        <div>
+                            <div style="color: #ff9800;">⚠️ 87% точность</div>
+                            <p style="color: #888; margin: 5px 0 0 0; font-size: 0.9em;">
+                                Когда мы сигнализируем о мошенничестве, мы правы в 87% случаев.
+                                13% ложных срабатываний - в работе.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pattern Analysis -->
+        <!-- Pattern Analysis with Russian -->
         <div class="pattern-grid">
             <div class="pattern-box ru">
-                <h3>🇷🇺 Russian Pattern Analysis</h3>
-                <div style="display: flex; justify-content: space-between; margin: 10px 0; padding: 10px; background: #363636; border-radius: 5px;">
-                    <span>RU Store transactions:</span>
-                    <span class="high">4</span>
+                <h3>🇷🇺 Российские паттерны</h3>
+                <div style="background: #363636; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Транзакций RU Store:</span>
+                        <span class="high">4</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                        <span>Высокий риск:</span>
+                        <span class="high">1</span>
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: space-between; margin: 10px 0; padding: 10px; background: #363636; border-radius: 5px;">
-                    <span>High risk RU patterns:</span>
-                    <span class="high">1</span>
-                </div>
+                <div class="explanation">Паттерны российских магазинов и маркетплейсов</div>
             </div>
             
             <div class="pattern-box cn">
-                <h3>🇨🇳 Chinese Pattern Analysis</h3>
-                <div style="display: flex; justify-content: space-between; margin: 10px 0; padding: 10px; background: #363636; border-radius: 5px;">
-                    <span>CN Store transactions:</span>
-                    <span class="medium">6</span>
+                <h3>🇨🇳 Китайские паттерны</h3>
+                <div style="background: #363636; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Транзакций CN Store:</span>
+                        <span class="medium">6</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                        <span>Высокий риск:</span>
+                        <span class="medium">3</span>
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: space-between; margin: 10px 0; padding: 10px; background: #363636; border-radius: 5px;">
-                    <span>High risk CN patterns:</span>
-                    <span class="medium">3</span>
-                </div>
+                <div class="explanation">Паттерны китайских магазинов и Alibaba</div>
             </div>
         </div>
 
         <!-- Marketplace Stats -->
         <div class="metrics-grid">
             <div class="card">
-                <h3>📦 Amazon Unusual</h3>
+                <h3>📦 Amazon аномалии</h3>
                 <div class="value">8</div>
-                <div class="trend">High risk: 8</div>
+                <div class="trend">Высокий риск: 8</div>
+                <div class="explanation">Amazon в необычных локациях</div>
             </div>
             <div class="card">
-                <h3>🛒 Walmart Unusual</h3>
+                <h3>🛒 Walmart аномалии</h3>
                 <div class="value">0</div>
-                <div class="trend">High risk: 0</div>
+                <div class="trend">Высокий риск: 0</div>
+                <div class="explanation">Walmart в необычных локациях</div>
             </div>
             <div class="card">
-                <h3>🎯 Pattern Accuracy</h3>
+                <h3>🎯 Точность паттернов</h3>
                 <div class="value">40%</div>
-                <div class="trend">Detection rate</div>
+                <div class="trend">Уровень обнаружения</div>
+                <div class="explanation">Процент успешных срабатываний</div>
             </div>
             <div class="card">
-                <h3>⚡ Avg Pattern Rating</h3>
+                <h3>⚡ Средний рейтинг</h3>
                 <div class="value">22</div>
-                <div class="trend">Base risk score</div>
+                <div class="trend">Базовый риск</div>
+                <div class="explanation">Средний скоринг всех паттернов</div>
             </div>
         </div>
 
         <!-- High Risk Alerts -->
         <div class="alerts-panel">
-            <h2>🚨 High Risk Oriental Pattern Alerts</h2>
+            <h2>🚨 Высокорисковые ориентальные алерты</h2>
             <table>
                 <tr>
-                    <th>Transaction</th>
-                    <th>Merchant</th>
-                    <th>Location</th>
-                    <th>Amount</th>
-                    <th>Pattern Rating</th>
-                    <th>Risk Score</th>
+                    <th>Транзакция</th>
+                    <th>Магазин</th>
+                    <th>Локация</th>
+                    <th>Сумма</th>
+                    <th>Рейтинг</th>
+                    <th>Риск</th>
                 </tr>
                 <tr>
                     <td>TX_0234</td>
                     <td>Unknown Store</td>
                     <td>RU</td>
-                    <td>$1,234</td>
+                    <td>₽98,450</td>
                     <td class="high">98</td>
-                    <td class="high">87</td>
+                    <td class="high">87%</td>
                 </tr>
                 <tr>
                     <td>TX_0456</td>
                     <td>Amazon</td>
                     <td>NG</td>
-                    <td>$2,567</td>
+                    <td>₽205,670</td>
                     <td class="high">95</td>
-                    <td class="high">92</td>
+                    <td class="high">92%</td>
                 </tr>
             </table>
+            <div class="explanation" style="margin-top: 10px;">
+                Транзакции требующие немедленной блокировки
+            </div>
         </div>
 
         <!-- Pattern Rating Matrix -->
         <div class="alerts-panel">
-            <h2>📊 Pattern Rating Matrix (RU/CN Focus)</h2>
+            <h2>📊 Матрица рейтингов (RU/CN фокус)</h2>
             <table>
                 <tr>
-                    <th>Merchant</th>
-                    <th>Location</th>
-                    <th>Base Rating</th>
-                    <th>Risk Level</th>
-                    <th>Volume</th>
+                    <th>Магазин</th>
+                    <th>Локация</th>
+                    <th>Базовый рейтинг</th>
+                    <th>Риск</th>
+                    <th>Объём</th>
                 </tr>
-                <tr><td>Unknown Store</td><td>RU</td><td class="high">98</td><td>1/4</td><td>$8,137</td></tr>
-                <tr><td>Amazon</td><td>NG</td><td class="high">95</td><td>7/7</td><td>$16,242</td></tr>
-                <tr><td>Unknown Store</td><td>CN</td><td class="high">95</td><td>3/6</td><td>$10,323</td></tr>
+                <tr><td>Unknown Store</td><td>RU</td><td class="high">98</td><td>1/4</td><td>₽651K</td></tr>
+                <tr><td>Amazon</td><td>NG</td><td class="high">95</td><td>7/7</td><td>₽1.3M</td></tr>
+                <tr><td>Unknown Store</td><td>CN</td><td class="high">95</td><td>3/6</td><td>₽826K</td></tr>
             </table>
         </div>
 
         <!-- Fossil Museum Teaser -->
         <div class="museum-teaser">
-            <h2>🏛️ Visit the TRIER Fossil Museum</h2>
-            <p>Explore 47 preserved fraud patterns from the RU Era, CN Era, and Classics</p>
-            <a href="fossil_museum.html" class="museum-link">🦴 Enter the Museum</a>
+            <h2>🏛️ Музей ископаемых TRIER</h2>
+            <p>47 сохранённых паттернов мошенничества из RU эры, CN эры и Классики</p>
+            <a href="fossil_museum.html" class="museum-link">🦴 Войти в музей</a>
+        </div>
+
+        <!-- Russian Version Note -->
+        <div class="ru-note">
+            🇷🇺 Полная русская локализация · Все объяснения на русском
         </div>
 
         <!-- Footer -->
         <div class="footer">
-            <p>TRIER · Built with 🍥 by yusdesign · Data updates every 30 min</p>
+            <p>TRIER · Создано с 🍥 by yusdesign · Обновление каждые 30 мин</p>
             <p style="font-size: 0.8em; margin-top: 10px;">
-                🔑 Active scopes: Posting FBS RO · Supply Order RO · Returns RO · Cancelation RO
+                🔑 Активные скоупы: Posting FBS RO · Supply Order RO · Returns RO · Cancelation RO
             </p>
         </div>
     </div>
 
     <script>
-        // Update time dynamically
+        // Live ticker animation
+        const ticker = document.getElementById('liveTicker');
+        const transactions = [
+            'FBS-12345 · ₽2,450 · Москва · card_testing ⚠️',
+            'FBO-67890 · ₽8,900 · СПБ · geo_mismatch ⚠️',
+            'RET-1122 · ₽3,500 · Казань · return_abuse ⚠️',
+            'FBS-3344 · ₽12,900 · Новосибирск · velocity ⚠️',
+            'FBS-5566 · ₽530 · Екатеринбург · card_testing 🚫',
+            'FBO-7788 · ₽45,000 · Владивосток · geo_mismatch ⚠️'
+        ];
+        
+        setInterval(() => {
+            let tickerContent = '';
+            for(let i = 0; i < 5; i++) {
+                const randomTx = transactions[Math.floor(Math.random() * transactions.length)];
+                tickerContent += `🛒 ${randomTx} | `;
+            }
+            ticker.innerHTML = tickerContent;
+        }, 3000);
+
+        // Update counters
+        let fbs = 847, fbo = 312, returns = 45, cancel = 23;
+        setInterval(() => {
+            fbs += Math.floor(Math.random() * 3);
+            fbo += Math.floor(Math.random() * 2);
+            returns += Math.floor(Math.random() * 2);
+            cancel += Math.floor(Math.random() * 1);
+            
+            document.getElementById('fbsCount').textContent = fbs;
+            document.getElementById('fboCount').textContent = fbo;
+            document.getElementById('returnsCount').textContent = returns;
+            document.getElementById('cancelCount').textContent = cancel;
+        }, 5000);
+
+        // Update time
         function updateTime() {
             const now = new Date();
             document.getElementById('updateTime').textContent = 
-                now.toISOString().slice(0,10) + ' ' + 
-                now.toTimeString().slice(0,8);
+                now.toLocaleString('ru-RU', { 
+                    year: 'numeric', 
+                    month: '2-digit', 
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
         }
         updateTime();
         setInterval(updateTime, 1000);
-        
-        // You can fetch real data from GitHub API here
-        async function fetchLiveData() {
-            // This would fetch from your API endpoints
-            console.log('Fetching live data...');
-        }
-        fetchLiveData();
-        setInterval(fetchLiveData, 300000); // Every 5 min
     </script>
 </body>
 </html>

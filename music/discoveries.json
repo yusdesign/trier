@@ -1,59 +1,5 @@
 [
   {
-    "artist": "Pinback",
-    "track": "Non Photo Blue",
-    "discovered_at": "2026-02-27T02:26:03.114840",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Literature",
-    "track": "Court, Date",
-    "discovered_at": "2026-02-27T02:29:36.862783",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Frightened Rabbit",
-    "track": "Break",
-    "discovered_at": "2026-02-27T02:32:03.113297",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Blonde Redhead",
-    "track": "Before (Radio Edit)",
-    "discovered_at": "2026-02-27T02:41:14.355949",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Walkmen",
-    "track": "The Love You Love",
-    "discovered_at": "2026-02-27T02:47:25.593015",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Pixies",
-    "track": "Magdalena",
-    "discovered_at": "2026-02-27T02:50:25.604836",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Cate Le Bon",
-    "track": "Heaven Is No Feeling",
-    "discovered_at": "2026-02-27T03:00:10.592101",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Papercuts",
-    "track": "A Peculiar Hallelujah",
-    "discovered_at": "2026-02-27T03:03:44.353831",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Shins",
-    "track": "Plenty Is Never Enough",
-    "discovered_at": "2026-02-27T03:06:44.349647",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Kopecky",
     "track": "Burnin'",
     "discovered_at": "2026-02-27T03:09:44.354550",
@@ -597,6 +543,60 @@
     "artist": "Dyan",
     "track": "Days Upon Days",
     "discovered_at": "2026-02-27T15:08:33.143750",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "William Harries Graham",
+    "track": "Yourself",
+    "discovered_at": "2026-02-27T15:16:59.398631",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Bear Hands",
+    "track": "Floor It",
+    "discovered_at": "2026-02-27T15:20:33.151994",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Ozwald",
+    "track": "Vacancy",
+    "discovered_at": "2026-02-27T15:27:06.906141",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "BROCKHOFF",
+    "track": "Easy Peeler",
+    "discovered_at": "2026-02-27T15:34:03.138974",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Deer Tick",
+    "track": "Jumpstarting",
+    "discovered_at": "2026-02-27T15:44:55.699728",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "War On Drugs",
+    "track": "Lost In The Dream",
+    "discovered_at": "2026-02-27T15:48:18.161610",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Nick & June",
+    "track": "Manic Pixie Dream Girl",
+    "discovered_at": "2026-02-27T15:55:59.411041",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Graham Colton",
+    "track": "Summer To Me",
+    "discovered_at": "2026-02-27T16:10:36.925383",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Jordan Klassen",
+    "track": "Sweet Chariot",
+    "discovered_at": "2026-02-27T16:14:33.145371",
     "source": "SomaFM Indie Pop"
   }
 ]
