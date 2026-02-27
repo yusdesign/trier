@@ -11,6 +11,8 @@
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/features/actions)  
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=github-pages&logoColor=white)](https://pages.github.com)  
 
+[![🐳 DEEPSEEK](https://img.shields.io/badge/🐳-DEEPSEEK-4A6CF7?style=for-the-badge)](https://deepseek.com)
+
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)  
 [![Last Commit](https://img.shields.io/github/last-commit/yusdesign/trier?style=flat-square&color=blue)](https://github.com/yusdesign/trier/commits)
 [![Stars](https://img.shields.io/github/stars/yusdesign/trier?style=flat-square&color=yellow)](https://github.com/yusdesign/trier/stargazers)  
