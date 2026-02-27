@@ -1,5 +1,5 @@
 
-# 🔍 TRIER - Oriental Pattern Fraud Detector & Music Lab
+# 🔍 TRIER, “Orient”, Pattern Fraud Detector & Music Lab
 
 <div align="center">
 
