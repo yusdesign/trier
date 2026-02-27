@@ -282,7 +282,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 66
   },
   {
@@ -345,7 +345,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 15,
+    "velocity_24h": 16,
     "historical_similar": 60
   },
   {

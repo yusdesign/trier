@@ -1,31 +1,42 @@
-name: Update OZON Live Dashboard
+name: OZON Real Data Dashboard
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Every 30 min
+    - cron: '*/30 * * * *'  # Every 30 minutes
   workflow_dispatch:
 
 jobs:
-  update-dashboard:
+  fetch-and-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       
-      - name: Fetch OZON Data
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: pip install requests
+      
+      - name: Fetch OZON Real Data
         env:
           OZON_CLIENT_ID: ${{ secrets.OZON_CLIENT_ID }}
           OZON_API_KEY: ${{ secrets.OZON_API_KEY }}
         run: |
           cd src
-          python ozon_dashboard_data.py  # Script that fetches API and generates JSON
+          python ozon_dashboard_data.py
       
-      - name: Update Dashboard
+      - name: Generate Dashboard
         run: |
-          # Generate HTML with fresh data
-          python src/update_ozon_dashboard.py
+          cd src
+          python generate_ozon_dashboard.py
       
-      - name: Deploy to Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      - name: Commit Real Data
+        run: |
+          git config --local user.email "ozon-bot@trier.com"
+          git config --local user.name "OZON Real Data Bot"
+          git add real_data/ozon/
+          git add docs/ozon_dashboard.html
+          git commit -m "🤖 OZON real data update $(date)" || exit 0
+          git push

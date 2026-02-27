@@ -1,17 +1,5 @@
 [
   {
-    "artist": "Kopecky",
-    "track": "Burnin'",
-    "discovered_at": "2026-02-27T03:09:44.354550",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Built To Spill",
-    "track": "Horizon To Cliff",
-    "discovered_at": "2026-02-27T03:14:03.127210",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Maia Friedman",
     "track": "Russian Blue",
     "discovered_at": "2026-02-27T03:20:03.114008",
@@ -597,6 +585,18 @@
     "artist": "Jordan Klassen",
     "track": "Sweet Chariot",
     "discovered_at": "2026-02-27T16:14:33.145371",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Andrew Kenny",
+    "track": "Hometown Fantasy",
+    "discovered_at": "2026-02-27T16:35:21.922238",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Cloakz",
+    "track": "El Zero",
+    "discovered_at": "2026-02-27T17:04:03.165682",
     "source": "SomaFM Indie Pop"
   }
 ]
