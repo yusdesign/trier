@@ -11,7 +11,7 @@
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/features/actions)  
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=github-pages&logoColor=white)](https://pages.github.com)  
 
-[![🐳](https://img.shields.io/badge/Powered%20by-DeepSeek-4A6CF7?style=for-the-badge&logo=deepseek&logoColor=white)]  
+[](https://img.shields.io/badge/🐳-DeepSeek-4A6CF7?style=for-the-badge&logo=deepseek&logoColor=white)]   
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)  
 [![Last Commit](https://img.shields.io/github/last-commit/yusdesign/trier?style=flat-square&color=blue)](https://github.com/yusdesign/trier/commits)
