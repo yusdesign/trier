@@ -19,10 +19,6 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas numpy
       
-      - name: Prepare directories
-        run: |
-          mkdir -p real_data/ozon data music docs
-      
       - name: Run Fraud Detection
         continue-on-error: true
         run: |
@@ -45,59 +41,13 @@ jobs:
           cd src
           [ -f "music_dashboard.py" ] && python music_dashboard.py
       
-      - name: 🔄 SYNC INDEX.HTML WITH RUSSO.HTML STRUCTURE
+      - name: Sync index with russo
         run: |
-          echo "🔄 Syncing index.html to match russo.html structure with ENGLISH content..."
-          
-          # Check if russo.html exists
-          if [ ! -f "docs/russo.html" ]; then
-            echo "⚠️ russo.html not found, creating placeholder"
-            echo '<!DOCTYPE html><html><head><title>TRIER - English</title></head><body><h1>TRIER Fraud Detection</h1><p>English version</p><a href="russo.html">🇷🇺 Русский</a></body></html>' > docs/russo.html
+          if [ -f "docs/russo.html" ]; then
+            cp docs/russo.html docs/index.html
+            echo "✅ index.html synced with russo.html"
           fi
-          
-          # Create ENGLISH index.html that MATCHES structure of russo.html
-          python - <<EOF
-          import re
-          
-          # Read Russian version
-          with open('docs/russo.html', 'r') as f:
-              russian = f.read()
-          
-          # Replace Russian text with English equivalents
-          # This is a simple example - expand based on your actual content
-          english = russian
-          
-          # Title and headers
-          english = english.replace('Ориентальный детектор мошенничества', 'Oriental Fraud Detector')
-          english = english.replace('Последнее обновление', 'Last updated')
-          english = english.replace('Фокус:', 'Focus:')
-          english = english.replace('Российские паттерны', 'Russian Patterns')
-          english = english.replace('Китайские паттерны', 'Chinese Patterns')
-          english = english.replace('Высокорисковые алерты', 'High Risk Alerts')
-          english = english.replace('Транзакция', 'Transaction')
-          english = english.replace('Магазин', 'Merchant')
-          english = english.replace('Локация', 'Location')
-          english = english.replace('Сумма', 'Amount')
-          english = english.replace('Риск', 'Risk')
-          
-          # Language switcher
-          english = english.replace('href="index.html"', 'href="russo.html"')
-          english = english.replace('🇷🇺 Русский', '🇬🇧 English')
-          
-          # Write English version
-          with open('docs/index.html', 'w') as f:
-              f.write(english)
-          
-          print("✅ index.html created with ENGLISH content matching russo.html structure")
-          EOF
-          
-          echo "📊 Files in docs/:"
-          ls -la docs/
       
-      - name: Commit all changes
-        run: |
-          git config --local user.email "trier-bot@github.com"
-          git config --local user.name "TRIER Bot"
-          git add data/ real_data/ music/ docs/
-          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 TRIER update $(date +'%Y-%m-%d %H:%M')"
-          git push
+      # ❌ NO GIT PUSH - REMOVED!
+      # The workflow just reads data and updates files locally
+      # GitHub Pages will show the latest files from the repo
