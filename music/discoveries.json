@@ -1,95 +1,5 @@
 [
   {
-    "artist": "Elvis Costello",
-    "track": "Bullets For The Newborn King",
-    "discovered_at": "2026-02-27T00:01:55.008019",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Pictish Trail",
-    "track": "Torch Song",
-    "discovered_at": "2026-02-27T00:05:28.778916",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Mommyheads",
-    "track": "It's Only Life",
-    "discovered_at": "2026-02-27T00:10:10.015160",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Royel Otis",
-    "track": "Ihysm",
-    "discovered_at": "2026-02-27T00:15:36.248619",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Errors",
-    "track": "Holus-Bolus",
-    "discovered_at": "2026-02-27T00:18:36.273089",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Caroline Rose",
-    "track": "Everywhere I Go I Bring The Ra",
-    "discovered_at": "2026-02-27T00:41:23.499892",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Islands",
-    "track": "Drown A Fish",
-    "discovered_at": "2026-02-27T00:59:47.897184",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Otter Petter",
-    "track": "Winnebago",
-    "discovered_at": "2026-02-27T00:59:59.119075",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dodos",
-    "track": "Destroyer",
-    "discovered_at": "2026-02-27T01:04:06.719189",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Domestics",
-    "track": "Tunnels And Trains",
-    "discovered_at": "2026-02-27T01:10:29.153866",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Rogue Wave",
-    "track": "When Sunday Morning Comes",
-    "discovered_at": "2026-02-27T01:13:17.881053",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Beths",
-    "track": "Mosquitoes",
-    "discovered_at": "2026-02-27T01:18:32.879279",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Yumi Zouma",
-    "track": "Haji Awali",
-    "discovered_at": "2026-02-27T01:26:36.645815",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Out Lines",
-    "track": "Buried Guns",
-    "discovered_at": "2026-02-27T01:29:14.110111",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dear Boy",
-    "track": "Wanderlow",
-    "discovered_at": "2026-02-27T01:34:17.879829",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Rose Of The West",
     "track": "Feast Or Famine (Elise's Radio Edit)",
     "discovered_at": "2026-02-27T01:37:51.640178",
@@ -597,6 +507,96 @@
     "artist": "764",
     "track": "hero - Loaded Painted Red",
     "discovered_at": "2026-02-27T11:55:56.750477",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Frankie Rose",
+    "track": "Street Of Dreams",
+    "discovered_at": "2026-02-27T12:01:56.767722",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Softcult",
+    "track": "Shortest Fuse",
+    "discovered_at": "2026-02-27T12:11:19.253952",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tullycraft",
+    "track": "Agincourt",
+    "discovered_at": "2026-02-27T12:19:22.977286",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tegan and Sara",
+    "track": "Goodbye, Goodbye",
+    "discovered_at": "2026-02-27T12:22:34.238991",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Neighbors",
+    "track": "Long Time Gone",
+    "discovered_at": "2026-02-27T12:44:30.489944",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Wilco",
+    "track": "Cry All Day",
+    "discovered_at": "2026-02-27T12:48:26.737576",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Nilifer Yanya",
+    "track": "Method Actor (Radio Edit)",
+    "discovered_at": "2026-02-27T12:56:19.244162",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Best Coast",
+    "track": "When The Sun Don't Shine",
+    "discovered_at": "2026-02-27T13:02:19.240964",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "toyGuitar",
+    "track": "On A Wire",
+    "discovered_at": "2026-02-27T13:04:34.249719",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Lykke Li",
+    "track": "Gunshot",
+    "discovered_at": "2026-02-27T13:25:45.505748",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Stella",
+    "track": "Girl Supreme",
+    "discovered_at": "2026-02-27T13:33:37.974523",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Danger Mouse & Sparklehorse",
+    "track": "Revenge (Feat. Wayne Coyne)",
+    "discovered_at": "2026-02-27T13:39:15.497179",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Fruit Tree Foundation",
+    "track": "Splinter",
+    "discovered_at": "2026-02-27T13:43:56.730919",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Midlake",
+    "track": "The Old And The Young (Radio Edit)",
+    "discovered_at": "2026-02-27T13:47:07.975545",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Vampire Weekend",
+    "track": "Walcott",
+    "discovered_at": "2026-02-27T13:50:41.751001",
     "source": "SomaFM Indie Pop"
   }
 ]
