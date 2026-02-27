@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 """
 🛒 OZON Real Data Fetcher
-Separate from synthetic data - pure real marketplace data
+Fixed version with proper JSON handling
 """
 
 import os
 import requests
 import sqlite3
 import json
-import hashlib
-import hmac
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -23,7 +21,7 @@ class OzonRealDataFetcher:
         if not self.client_id or not self.api_key:
             raise ValueError("❌ OZON credentials not found in environment")
         
-        # Real data paths (separate from synthetic)
+        # Real data paths
         self.real_data_path = Path('../real_data/ozon')
         self.real_data_path.mkdir(parents=True, exist_ok=True)
         
@@ -35,6 +33,50 @@ class OzonRealDataFetcher:
         }
         
         self.setup_databases()
+        self.init_metrics_file()  # NEW: Initialize metrics properly
+    
+    def init_metrics_file(self):
+        """Initialize metrics file with default values if empty/corrupted"""
+        self.metrics_file = self.real_data_path / 'ozon_metrics.json'
+        
+        default_metrics = {
+            'last_update': None,
+            'total_orders_24h': 0,
+            'fraud_alerts_24h': 0,
+            'amount_at_risk': 0,
+            'detection_rate': 0.94,
+            'precision': 0.87,
+            'scopes': {
+                'fbs': {'orders': 0, 'fraud': 0},
+                'fbo': {'orders': 0, 'fraud': 0},
+                'returns': {'count': 0, 'abuse': 0},
+                'cancels': {'count': 0, 'suspicious': 0}
+            }
+        }
+        
+        # Check if file exists and is valid JSON
+        if self.metrics_file.exists():
+            try:
+                with open(self.metrics_file, 'r') as f:
+                    content = f.read().strip()
+                    if content:  # File has content
+                        json.loads(content)  # Test if valid JSON
+                        print("✅ Existing metrics file is valid")
+                    else:
+                        # File is empty
+                        print("⚠️ Metrics file is empty, creating new one")
+                        with open(self.metrics_file, 'w') as f:
+                            json.dump(default_metrics, f, indent=2)
+            except json.JSONDecodeError:
+                # File is corrupted
+                print("⚠️ Metrics file corrupted, recreating")
+                with open(self.metrics_file, 'w') as f:
+                    json.dump(default_metrics, f, indent=2)
+        else:
+            # File doesn't exist
+            print("📁 Creating new metrics file")
+            with open(self.metrics_file, 'w') as f:
+                json.dump(default_metrics, f, indent=2)
     
     def setup_databases(self):
         """Create separate databases for real OZON data"""
@@ -90,25 +132,6 @@ class OzonRealDataFetcher:
         ''')
         conn.commit()
         conn.close()
-        
-        # 3. Real metrics JSON
-        self.metrics_file = self.real_data_path / 'ozon_metrics.json'
-        if not self.metrics_file.exists():
-            with open(self.metrics_file, 'w') as f:
-                json.dump({
-                    'last_update': None,
-                    'total_orders_24h': 0,
-                    'fraud_alerts_24h': 0,
-                    'amount_at_risk': 0,
-                    'detection_rate': 0.94,
-                    'precision': 0.87,
-                    'scopes': {
-                        'fbs': {'orders': 0, 'fraud': 0},
-                        'fbo': {'orders': 0, 'fraud': 0},
-                        'returns': {'count': 0, 'abuse': 0},
-                        'cancels': {'count': 0, 'suspicious': 0}
-                    }
-                }, f, indent=2)
         
         print(f"✅ Real OZON databases ready at {self.real_data_path}")
     
@@ -175,14 +198,13 @@ class OzonRealDataFetcher:
         """Detect card testing fraud in real data"""
         alerts = []
         
-        # Group by IP/customer (simplified)
-        for order in orders[:10]:  # Check recent orders
-            amount = order.get('financial_data', {}).get('products_price', 0)
+        for order in orders[:20]:  # Check recent orders
+            financial = order.get('financial_data', {})
+            amount = financial.get('products_price', 0)
             
-            # Card testing pattern: multiple small orders
-            if amount < 1000:  # Small amount
-                # Check if same customer has multiple orders
-                # This would need customer history
+            # Card testing pattern: small amounts
+            if amount < 1000 and amount > 0:  # Small amount
+                # Check if same customer has multiple orders (simplified)
                 risk_score = 0.85
                 
                 alert = {
@@ -190,7 +212,7 @@ class OzonRealDataFetcher:
                     'order_id': order.get('order_id'),
                     'amount': amount,
                     'risk_score': risk_score,
-                    'pattern': 'small_amount_multiple',
+                    'pattern': 'small_amount',
                     'detected_at': datetime.now().isoformat(),
                     'action': 'REVIEW'
                 }
@@ -201,6 +223,7 @@ class OzonRealDataFetcher:
     def save_alerts(self, alerts):
         """Save fraud alerts to real database"""
         if not alerts:
+            print("📊 No fraud alerts detected")
             return
         
         conn = sqlite3.connect(self.fraud_db)
@@ -225,8 +248,26 @@ class OzonRealDataFetcher:
     def update_metrics(self, orders, alerts):
         """Update real metrics JSON"""
         
-        with open(self.metrics_file, 'r') as f:
-            metrics = json.load(f)
+        # Read current metrics
+        try:
+            with open(self.metrics_file, 'r') as f:
+                metrics = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            # If anything fails, use default
+            metrics = {
+                'last_update': None,
+                'total_orders_24h': 0,
+                'fraud_alerts_24h': 0,
+                'amount_at_risk': 0,
+                'detection_rate': 0.94,
+                'precision': 0.87,
+                'scopes': {
+                    'fbs': {'orders': 0, 'fraud': 0},
+                    'fbo': {'orders': 0, 'fraud': 0},
+                    'returns': {'count': 0, 'abuse': 0},
+                    'cancels': {'count': 0, 'suspicious': 0}
+                }
+            }
         
         # Update metrics
         metrics['last_update'] = datetime.now().isoformat()
@@ -235,35 +276,42 @@ class OzonRealDataFetcher:
         metrics['amount_at_risk'] = sum(a['amount'] for a in alerts)
         
         # Update scope metrics
-        fbs_orders = [o for o in orders if 'financial_data' in o]
+        fbs_orders = [o for o in orders if o.get('financial_data')]
         metrics['scopes']['fbs']['orders'] = len(fbs_orders)
         metrics['scopes']['fbs']['fraud'] = len([a for a in alerts if a['type'] == 'card_testing'])
         
+        # Write back with proper formatting
         with open(self.metrics_file, 'w') as f:
-            json.dump(metrics, f, indent=2)
+            json.dump(metrics, f, indent=2, ensure_ascii=False)
         
         print(f"✅ Updated real metrics")
+        return metrics
     
     def run(self):
         """Main fetch and detect cycle"""
         print("\n" + "="*60)
         print("🛒 OZON REAL DATA FETCHER")
         print("="*60)
+        print(f"📁 Data directory: {self.real_data_path}")
         
         # Fetch real data
+        print("\n📡 Fetching FBS orders...")
         fbs_orders = self.fetch_fbs_orders()
         
         # Detect fraud
+        print("\n🔍 Detecting fraud patterns...")
         alerts = self.detect_card_testing(fbs_orders)
         
         # Save everything
         self.save_alerts(alerts)
-        self.update_metrics(fbs_orders, alerts)
+        metrics = self.update_metrics(fbs_orders, alerts)
         
         print(f"\n📊 Summary:")
-        print(f"   Real orders: {len(fbs_orders)}")
+        print(f"   Real orders fetched: {len(fbs_orders)}")
         print(f"   Fraud alerts: {len(alerts)}")
+        print(f"   Amount at risk: ₽{metrics['amount_at_risk']:,.0f}")
         print(f"   Data saved to: {self.real_data_path}")
+        print("="*60)
         
         return metrics
 
