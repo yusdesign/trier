@@ -1,0 +1,5 @@
+{"filename": "trier_fraud_detector.py", "gist_url": "https://gist.github.com/yus/5075e31fcd4f18d2c36d92df74bf2a8e", "created_at": "2026-02-27T07:15:42.163330", "description": "TRIER - Main fraud detection logic with oriental pattern focus"}
+{"filename": "trier_dashboard.py", "gist_url": "https://gist.github.com/yus/11b0baa2ad0afff79c857937a1590bfb", "created_at": "2026-02-27T07:15:43.031453", "description": "TRIER - Dashboard generator with pattern visualization"}
+{"filename": "data_generator.py", "gist_url": "https://gist.github.com/yus/6aec58762eecd2300c10bed22157e5e1", "created_at": "2026-02-27T07:15:43.849054", "description": "TRIER - Generate sample transaction data with oriental patterns"}
+{"filename": "latest_results.json", "gist_url": "https://gist.github.com/yus/fd427615b9beb792a5d929bed62e531d", "created_at": "2026-02-27T07:15:45.671512", "description": "TRIER - Latest detection results 2026-02-27 07:15"}
+{"filename": "latest_alerts.json", "gist_url": "https://gist.github.com/yus/e0d56b56dfaba74ecb7197d0ef32ba74", "created_at": "2026-02-27T07:15:46.683510", "description": "TRIER - Latest fraud alerts 2026-02-27 07:15"}
