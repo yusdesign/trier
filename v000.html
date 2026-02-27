@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRIER - Oriental Pattern Fraud Detector</title>
+    <meta http-equiv="refresh" content="60">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #1a1a1a; color: #e0e0e0; }
+        .dashboard { max-width: 1400px; margin: 0 auto; }
+        .header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 20px; }
+        
+        .card { 
+            background: #2d2d2d; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border-left: 4px solid #667eea;
+        }
+        .card h3 { margin: 0 0 10px 0; color: #a0a0a0; font-size: 0.9em; text-transform: uppercase; }
+        .card .value { font-size: 32px; font-weight: bold; color: #fff; }
+        .card .trend { font-size: 14px; color: #4caf50; margin-top: 5px; }
+        
+        .pattern-card { 
+            background: #2d2d2d;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .pattern-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0; }
+        
+        .pattern-box {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #ffd93e;
+        }
+        
+        .pattern-box.ru { border-top-color: #ff6b6b; }
+        .pattern-box.cn { border-top-color: #ffd93e; }
+        
+        .alerts-panel { 
+            background: #2d2d2d; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-top: 20px;
+        }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { text-align: left; padding: 12px; background: #363636; color: #fff; }
+        td { padding: 12px; border-bottom: 1px solid #404040; }
+        
+        .high { color: #ff6b6b; font-weight: bold; }
+        .medium { color: #ffd93e; }
+        .low { color: #6bff6b; }
+        
+        .pattern-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .tag-ru { background: #ff6b6b; color: white; }
+        .tag-cn { background: #ffd93e; color: black; }
+        .tag-amazon { background: #ff9900; color: black; }
+        .tag-walmart { background: #0071ce; color: white; }
+        
+        .stats-row { display: flex; justify-content: space-between; margin: 10px 0; padding: 10px; background: #363636; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header"><div class="nav" style="margin-bottom: 20px;"><a href="music.html" style="background: #1db954; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">🎵 Visit Music Lab</a></div>
+            <h1>🔍 TRIER - Oriental Pattern Fraud Detector</h1>
+            <p>Last updated: 2026-02-27 15:03:43</p>
+            <p>Focus: RU/CN patterns | Amazon/Walmart unusual locations | Pattern-based rating system</p>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="card">
+                <h3>Total Transactions</h3>
+                <div class="value">1468</div>
+            </div>
+            <div class="card">
+                <h3>Total Volume</h3>
+                <div class="value">$200,228.56</div>
+            </div>
+            <div class="card pattern-card">
+                <h3>High Risk (Oriental Focus)</h3>
+                <div class="value">32</div>
+                <div class="trend">2.2% of total</div>
+            </div>
+            <div class="card">
+                <h3>Precision/Recall</h3>
+                <div class="value">0%</div>
+                <div class="trend">F1: 0.00</div>
+            </div>
+        </div>
+        
+        <div class="pattern-grid">
+            <div class="pattern-box ru">
+                <h3>🇷🇺 Russian Pattern Analysis</h3>
+                <div class="stats-row">
+                    <span>RU Store transactions:</span>
+                    <span class="high">4</span>
+                </div>
+                <div class="stats-row">
+                    <span>High risk RU patterns:</span>
+                    <span class="high">3</span>
+                </div>
+                <div class="stats-row">
+                    <span>Unknown Store in RU:</span>
+                    <span class="high">3</span>
+                </div>
+            </div>
+            
+            <div class="pattern-box cn">
+                <h3>🇨🇳 Chinese Pattern Analysis</h3>
+                <div class="stats-row">
+                    <span>CN Store transactions:</span>
+                    <span class="medium">6</span>
+                </div>
+                <div class="stats-row">
+                    <span>High risk CN patterns:</span>
+                    <span class="medium">5</span>
+                </div>
+                <div class="stats-row">
+                    <span>Unknown Store in CN:</span>
+                    <span class="medium">5</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="card">
+                <h3>📦 Amazon Unusual Locations</h3>
+                <div class="value">8</div>
+                <div class="trend">High risk: 8</div>
+            </div>
+            <div class="card">
+                <h3>🛒 Walmart Unusual Locations</h3>
+                <div class="value">0</div>
+                <div class="trend">High risk: 0</div>
+            </div>
+            <div class="card">
+                <h3>🎯 Pattern Accuracy</h3>
+                <div class="value">80%</div>
+                <div class="trend">Pattern detection rate</div>
+            </div>
+            <div class="card">
+                <h3>⚡ Avg Pattern Rating</h3>
+                <div class="value">18</div>
+                <div class="trend">Base risk score</div>
+            </div>
+        </div>
+        
+        <div class="alerts-panel">
+            <h2>🚨 High Risk Oriental Pattern Alerts</h2>
+            <table>
+                <tr>
+                    <th>Transaction</th>
+                    <th>Merchant</th>
+                    <th>Location</th>
+                    <th>Amount</th>
+                    <th>Pattern Rating</th>
+                    <th>Risk Score</th>
+                    <th>Category</th>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div class="alerts-panel">
+            <h2>📊 Pattern Rating Matrix (RU/CN Focus)</h2>
+            <table>
+                <tr>
+                    <th>Merchant</th>
+                    <th>Location</th>
+                    <th>Base Rating</th>
+                    <th>Risk Level</th>
+                    <th>Volume</th>
+                </tr>
+
+                <tr>
+                    <td>Unknown Store</td>
+                    <td>RU</td>
+                    <td class="high">98</td>
+                    <td>3/4</td>
+                    <td>$8,137</td>
+                </tr>
+    
+                <tr>
+                    <td>Unknown Store</td>
+                    <td>NG</td>
+                    <td class="high">98</td>
+                    <td>6/6</td>
+                    <td>$9,131</td>
+                </tr>
+    
+                <tr>
+                    <td>Unknown Store</td>
+                    <td>CN</td>
+                    <td class="high">95</td>
+                    <td>5/6</td>
+                    <td>$10,323</td>
+                </tr>
+    
+                <tr>
+                    <td>Amazon</td>
+                    <td>NG</td>
+                    <td class="high">95</td>
+                    <td>7/7</td>
+                    <td>$16,242</td>
+                </tr>
+    
+                <tr>
+                    <td>Amazon</td>
+                    <td>RU</td>
+                    <td class="high">85</td>
+                    <td>4/4</td>
+                    <td>$8,527</td>
+                </tr>
+    
+                <tr>
+                    <td>Amazon</td>
+                    <td>CN</td>
+                    <td class="high">80</td>
+                    <td>4/4</td>
+                    <td>$6,418</td>
+                </tr>
+    
+                <tr>
+                    <td>Amazon</td>
+                    <td>AU</td>
+                    <td class="medium">70</td>
+                    <td>0/40</td>
+                    <td>$4,008</td>
+                </tr>
+    
+                <tr>
+                    <td>Amazon</td>
+                    <td>SE</td>
+                    <td class="medium">70</td>
+                    <td>0/2</td>
+                    <td>$153</td>
+                </tr>
+    
+                <tr>
+                    <td>Walmart</td>
+                    <td>AU</td>
+                    <td class="medium">65</td>
+                    <td>3/32</td>
+                    <td>$3,131</td>
+                </tr>
+    
+                <tr>
+                    <td>Walmart</td>
+                    <td>UK</td>
+                    <td class="medium">60</td>
+                    <td>0/29</td>
+                    <td>$2,974</td>
+                </tr>
+    
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+    
