@@ -67,7 +67,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 39
     },
     {
@@ -246,7 +246,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 18,
+      "velocity_24h": 19,
       "historical_similar": 35
     },
     {
@@ -282,7 +282,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -335,7 +335,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -369,7 +369,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -386,7 +386,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 35
     },
     {
@@ -513,7 +513,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 39
     },
     {
@@ -832,7 +832,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 0
     },
     {
@@ -958,7 +958,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -973,7 +973,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 0
     },
     {
@@ -991,7 +991,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -1027,7 +1027,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -1063,7 +1063,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 35
     },
     {
@@ -1080,7 +1080,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -1263,7 +1263,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 60
     },
     {
@@ -1347,14 +1347,15 @@
       "merchant": "Target",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 15.6,
+      "risk_score": 25.6,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -1391,7 +1392,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 35
     },
     {
@@ -1574,7 +1575,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 60
     },
     {
@@ -1592,7 +1593,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 0
     },
     {
@@ -1663,7 +1664,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 16,
       "historical_similar": 60
     },
     {
@@ -1824,7 +1825,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 0
     },
     {
@@ -1988,7 +1989,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 14,
       "historical_similar": 35
     },
     {
@@ -2026,7 +2027,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 60
     },
     {
@@ -2113,7 +2114,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -2186,7 +2187,7 @@
         "HISTORICAL_PATTERN_MATCH:66similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 66
     },
     {
@@ -2241,7 +2242,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 39
     },
     {
@@ -2278,7 +2279,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -2296,7 +2297,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 35
     },
     {
@@ -2306,16 +2307,17 @@
       "merchant": "Walmart",
       "location": "UK",
       "pattern_rating": 60,
-      "risk_score": 50.6,
+      "risk_score": 60.6,
       "risk_level": "MEDIUM",
       "action": "REVIEW",
       "rules_triggered": [
         "MEDIUM_RISK_PATTERN:Walmart-UK",
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -2333,7 +2335,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 35
     },
     {
@@ -2369,7 +2371,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 39
     },
     {
@@ -2388,7 +2390,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 39
     },
     {
@@ -2424,7 +2426,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 0
     },
     {
@@ -2468,15 +2470,16 @@
       "merchant": "Amazon",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 21.6,
+      "risk_score": 31.6,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -2587,7 +2590,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 35
     },
     {
@@ -2813,7 +2816,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -2866,7 +2869,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 39
     },
     {
@@ -2902,7 +2905,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 60
     },
     {
@@ -2958,7 +2961,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 0
     },
     {
@@ -3098,7 +3101,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 39
     },
     {
@@ -3240,7 +3243,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 35
     },
     {
@@ -3330,7 +3333,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -3385,7 +3388,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 39
     },
     {
@@ -3422,7 +3425,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 18,
+      "velocity_24h": 19,
       "historical_similar": 0
     },
     {
@@ -3442,7 +3445,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 74
     },
     {
@@ -3639,7 +3642,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 10,
       "historical_similar": 0
     },
     {
@@ -3747,7 +3750,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 0
     },
     {
@@ -3858,7 +3861,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 35
     },
     {
@@ -4036,7 +4039,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 60
     },
     {
@@ -4145,7 +4148,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 35
     },
     {
@@ -4276,7 +4279,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 74
     },
     {
@@ -4404,7 +4407,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 109
     },
     {
@@ -4675,7 +4678,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 0
     },
     {
@@ -4770,7 +4773,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 60
     },
     {
@@ -4824,7 +4827,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 39
     },
     {
@@ -4933,7 +4936,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 35
     },
     {
@@ -4952,7 +4955,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -5042,7 +5045,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -5262,7 +5265,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 35
     },
     {
@@ -5280,7 +5283,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 109
     },
     {
@@ -5341,15 +5344,16 @@
       "merchant": "Walmart",
       "location": "UK",
       "pattern_rating": 60,
-      "risk_score": 40.7,
+      "risk_score": 50.7,
       "risk_level": "MEDIUM",
       "action": "REVIEW",
       "rules_triggered": [
         "MEDIUM_RISK_PATTERN:Walmart-UK",
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -5402,7 +5406,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 0
     },
     {
@@ -5439,7 +5443,7 @@
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 99
     },
     {
@@ -5535,15 +5539,16 @@
       "merchant": "Spotify",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 23.0,
+      "risk_score": 33.0,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -5579,7 +5584,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -5589,14 +5594,15 @@
       "merchant": "Starbucks",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 10.4,
+      "risk_score": 20.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 39
     },
     {
@@ -5723,7 +5729,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -5776,7 +5782,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 0
     },
     {
@@ -5813,7 +5819,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 8,
+      "velocity_24h": 10,
       "historical_similar": 74
     },
     {
@@ -5832,7 +5838,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -5974,7 +5980,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -5994,7 +6000,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 74
     },
     {
@@ -6140,7 +6146,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 16,
       "historical_similar": 35
     },
     {
@@ -6232,7 +6238,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -6288,7 +6294,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 99
     },
     {
@@ -6326,7 +6332,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -6364,7 +6370,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 60
     },
     {
@@ -6812,7 +6818,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 35
     },
     {
@@ -6900,7 +6906,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 0
     },
     {
@@ -6972,7 +6978,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -7009,7 +7015,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 39
     },
     {
@@ -7082,7 +7088,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 74
     },
     {
@@ -7101,7 +7107,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 95
     },
     {
@@ -7181,14 +7187,15 @@
       "merchant": "Netflix",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 17.0,
+      "risk_score": 27.0,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -7225,7 +7232,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 95
     },
     {
@@ -7390,7 +7397,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 35
     },
     {
@@ -7536,7 +7543,7 @@
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 99
     },
     {
@@ -7590,7 +7597,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 60
     },
     {
@@ -7608,7 +7615,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -7679,7 +7686,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -7714,7 +7721,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 35
     },
     {
@@ -7750,7 +7757,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 39
     },
     {
@@ -7858,7 +7865,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 18,
+      "velocity_24h": 19,
       "historical_similar": 0
     },
     {
@@ -8073,7 +8080,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 95
     },
     {
@@ -8235,7 +8242,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 74
     },
     {
@@ -8287,7 +8294,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -8305,7 +8312,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -8320,7 +8327,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 0
     },
     {
@@ -8357,7 +8364,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 95
     },
     {
@@ -8410,7 +8417,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -8538,7 +8545,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 60
     },
     {
@@ -8557,7 +8564,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 60
     },
     {
@@ -8628,7 +8635,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 35
     },
     {
@@ -8683,7 +8690,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -8693,14 +8700,15 @@
       "merchant": "Spotify",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 15.8,
+      "risk_score": 25.8,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -8792,7 +8800,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 35
     },
     {
@@ -8897,7 +8905,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 0
     },
     {
@@ -8934,7 +8942,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 18,
+      "velocity_24h": 19,
       "historical_similar": 74
     },
     {
@@ -8970,7 +8978,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -9255,7 +9263,7 @@
         "HISTORICAL_PATTERN_MATCH:95similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 95
     },
     {
@@ -9362,7 +9370,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 0
     },
     {
@@ -9395,7 +9403,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 0
     },
     {
@@ -9451,7 +9459,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 14,
+      "velocity_24h": 16,
       "historical_similar": 74
     },
     {
@@ -9544,7 +9552,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -9562,7 +9570,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 35
     },
     {
@@ -9581,7 +9589,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 99
     },
     {
@@ -9659,7 +9667,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 18,
+      "velocity_24h": 19,
       "historical_similar": 60
     },
     {
@@ -9679,7 +9687,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -9768,7 +9776,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -9788,7 +9796,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 74
     },
     {
@@ -9898,7 +9906,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 39
     },
     {
@@ -9908,14 +9916,15 @@
       "merchant": "Target",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 10.4,
+      "risk_score": 20.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 11,
       "historical_similar": 39
     },
     {
@@ -9950,7 +9959,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 109
     },
     {
@@ -9968,7 +9977,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -10004,7 +10013,7 @@
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 99
     },
     {
@@ -10078,7 +10087,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 35
     },
     {
@@ -10114,7 +10123,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -10204,7 +10213,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 39
     },
     {
@@ -10279,7 +10288,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 74
     },
     {
@@ -10373,7 +10382,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 60
     },
     {
@@ -10391,7 +10400,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -10441,7 +10450,7 @@
       "action": "ALLOW",
       "rules_triggered": [],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 0
     },
     {
@@ -10657,7 +10666,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -10676,7 +10685,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 39
     },
     {
@@ -10912,7 +10921,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -10970,7 +10979,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 74
     },
     {
@@ -11006,7 +11015,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 35
     },
     {
@@ -11045,7 +11054,7 @@
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 16,
+      "velocity_24h": 18,
       "historical_similar": 99
     },
     {
@@ -11063,7 +11072,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 0
     },
     {
@@ -11171,7 +11180,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 39
     },
     {
@@ -11181,14 +11190,15 @@
       "merchant": "Amazon",
       "location": "UK",
       "pattern_rating": 15,
-      "risk_score": 9.4,
+      "risk_score": 19.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 74
     },
     {
@@ -11310,7 +11320,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -11550,7 +11560,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 35
     },
     {
@@ -11568,7 +11578,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 0
     },
     {
@@ -11641,7 +11651,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 35
     },
     {
@@ -11696,7 +11706,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 35
     },
     {
@@ -11714,7 +11724,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -11771,7 +11781,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 35
     },
     {
@@ -11898,7 +11908,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 109
     },
     {
@@ -12061,7 +12071,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -12114,7 +12124,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 0
     },
     {
@@ -12309,7 +12319,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 18,
       "historical_similar": 60
     },
     {
@@ -12362,7 +12372,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 0
     },
     {
@@ -12381,7 +12391,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 99
     },
     {
@@ -12418,7 +12428,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -12578,7 +12588,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 35
     },
     {
@@ -12759,7 +12769,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 39
     },
     {
@@ -12832,7 +12842,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 39
     },
     {
@@ -12849,7 +12859,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 0
     },
     {
@@ -12901,7 +12911,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 0
     },
     {
@@ -12929,15 +12939,16 @@
       "merchant": "Amazon",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 21.2,
+      "risk_score": 31.2,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 9,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -13194,7 +13205,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 60
     },
     {
@@ -13414,7 +13425,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 99
     },
     {
@@ -13537,7 +13548,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 0
     },
     {
@@ -13573,7 +13584,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 0
     },
     {
@@ -13780,7 +13791,7 @@
         "HISTORICAL_PATTERN_MATCH:95similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 95
     },
     {
@@ -13810,15 +13821,16 @@
       "merchant": "Netflix",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 25.3,
+      "risk_score": 35.3,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -14148,7 +14160,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 17,
       "historical_similar": 39
     },
     {
@@ -14180,7 +14192,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -14320,7 +14332,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 15,
       "historical_similar": 39
     },
     {
@@ -14357,7 +14369,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -14392,7 +14404,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 109
     },
     {
@@ -14444,7 +14456,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 35
     },
     {
@@ -14477,7 +14489,7 @@
         "HISTORICAL_PATTERN_MATCH:95similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 14,
       "historical_similar": 95
     },
     {
@@ -14532,7 +14544,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -14666,16 +14678,17 @@
       "merchant": "Walmart",
       "location": "UK",
       "pattern_rating": 60,
-      "risk_score": 50.3,
+      "risk_score": 60.3,
       "risk_level": "MEDIUM",
       "action": "REVIEW",
       "rules_triggered": [
         "MEDIUM_RISK_PATTERN:Walmart-UK",
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 99
     },
     {
@@ -14685,14 +14698,15 @@
       "merchant": "Spotify",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 13.4,
+      "risk_score": 23.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -14755,14 +14769,15 @@
       "merchant": "Uber",
       "location": "CA",
       "pattern_rating": 15,
-      "risk_score": 17.5,
+      "risk_score": 27.5,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 35
     },
     {
@@ -14780,7 +14795,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 0
     },
     {
@@ -14962,7 +14977,7 @@
         "HISTORICAL_PATTERN_MATCH:74similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 74
     },
     {
@@ -15002,7 +15017,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 66
     },
     {
@@ -15022,7 +15037,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 74
     },
     {
@@ -15057,7 +15072,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 60
     },
     {
@@ -15167,7 +15182,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 66
     },
     {
@@ -15186,7 +15201,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 60
     },
     {
@@ -15269,14 +15284,15 @@
       "merchant": "Walmart",
       "location": "US",
       "pattern_rating": 5,
-      "risk_score": 13.0,
+      "risk_score": 23.0,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:95similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 95
     },
     {
@@ -15364,7 +15380,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 35
     },
     {
@@ -15409,14 +15425,15 @@
       "merchant": "Amazon",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 11.4,
+      "risk_score": 21.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:99similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 10,
+      "velocity_24h": 12,
       "historical_similar": 99
     },
     {
@@ -15450,7 +15467,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 0
     },
     {
@@ -15468,7 +15485,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 22,
+      "velocity_24h": 23,
       "historical_similar": 35
     },
     {
@@ -15523,7 +15540,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 14,
       "historical_similar": 39
     },
     {
@@ -15577,7 +15594,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 35
     },
     {
@@ -15594,7 +15611,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -15651,7 +15668,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 15,
       "historical_similar": 60
     },
     {
@@ -15689,7 +15706,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -15961,7 +15978,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -16091,7 +16108,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 35
     },
     {
@@ -16145,7 +16162,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 15,
+      "velocity_24h": 16,
       "historical_similar": 109
     },
     {
@@ -16264,14 +16281,15 @@
       "merchant": "Spotify",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 12.8,
+      "risk_score": 22.8,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 60
     },
     {
@@ -16469,7 +16487,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 74
     },
     {
@@ -16648,7 +16666,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 35
     },
     {
@@ -16808,7 +16826,7 @@
         "HISTORICAL_PATTERN_MATCH:35similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 35
     },
     {
@@ -17041,7 +17059,7 @@
         "HISTORICAL_PATTERN_MATCH:109similar"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 17,
+      "velocity_24h": 18,
       "historical_similar": 109
     },
     {
@@ -17077,7 +17095,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 39
     },
     {
@@ -17114,7 +17132,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -17133,7 +17151,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 20,
+      "velocity_24h": 21,
       "historical_similar": 60
     },
     {
@@ -17169,7 +17187,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 13,
       "historical_similar": 0
     },
     {
@@ -17281,7 +17299,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 16,
+      "velocity_24h": 17,
       "historical_similar": 60
     },
     {
@@ -17319,7 +17337,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 19,
+      "velocity_24h": 20,
       "historical_similar": 109
     },
     {
@@ -17355,7 +17373,7 @@
         "HIGH_VELOCITY"
       ],
       "pattern_category": "other",
-      "velocity_24h": 13,
+      "velocity_24h": 14,
       "historical_similar": 0
     },
     {
@@ -17437,15 +17455,16 @@
       "merchant": "Target",
       "location": "US",
       "pattern_rating": 10,
-      "risk_score": 23.4,
+      "risk_score": 33.4,
       "risk_level": "LOW",
       "action": "ALLOW",
       "rules_triggered": [
+        "HIGH_VELOCITY",
         "HISTORICAL_PATTERN_MATCH:60similar",
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 10,
+      "velocity_24h": 11,
       "historical_similar": 60
     },
     {
@@ -17483,7 +17502,7 @@
         "HISTORICAL_PATTERN_MATCH:66similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 66
     },
     {
@@ -17606,7 +17625,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -17894,7 +17913,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 39
     },
     {
@@ -17911,7 +17930,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 0
     },
     {
@@ -18040,7 +18059,7 @@
         "HISTORICAL_PATTERN_MATCH:39similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 14,
+      "velocity_24h": 15,
       "historical_similar": 39
     },
     {
@@ -18219,7 +18238,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -18305,7 +18324,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -18554,7 +18573,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -18729,7 +18748,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -18905,7 +18924,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -18975,7 +18994,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -19026,7 +19045,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -19079,7 +19098,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -19151,7 +19170,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 12,
+      "velocity_24h": 13,
       "historical_similar": 60
     },
     {
@@ -19203,7 +19222,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -19254,7 +19273,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -19341,7 +19360,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -19392,7 +19411,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -19496,7 +19515,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -19565,7 +19584,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -19707,7 +19726,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -19793,7 +19812,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -19897,7 +19916,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -19968,7 +19987,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -19985,7 +20004,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -20161,7 +20180,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -20410,7 +20429,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -20445,7 +20464,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -20515,7 +20534,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -20549,7 +20568,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -20636,7 +20655,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -20671,7 +20690,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -20689,7 +20708,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -20793,7 +20812,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -20828,7 +20847,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -20971,7 +20990,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 11,
+      "velocity_24h": 12,
       "historical_similar": 60
     },
     {
@@ -21024,7 +21043,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 99
     },
     {
@@ -21059,7 +21078,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -21128,7 +21147,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -21163,7 +21182,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -21302,7 +21321,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -21409,7 +21428,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -21478,7 +21497,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -21512,7 +21531,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -21530,7 +21549,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -21600,7 +21619,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -21634,7 +21653,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -21652,7 +21671,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -21687,7 +21706,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -21757,7 +21776,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -21775,7 +21794,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -22123,7 +22142,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -22210,7 +22229,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -22315,7 +22334,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -22367,7 +22386,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -22435,7 +22454,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -22452,7 +22471,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -22487,7 +22506,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -22557,7 +22576,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -22679,7 +22698,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -22767,7 +22786,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -22837,7 +22856,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -22925,7 +22944,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -23031,7 +23050,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 9,
+      "velocity_24h": 10,
       "historical_similar": 60
     },
     {
@@ -23049,7 +23068,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -23067,7 +23086,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -23085,7 +23104,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -23141,7 +23160,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "global_retail",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 74
     },
     {
@@ -23192,7 +23211,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -23278,7 +23297,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -23416,7 +23435,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -23434,7 +23453,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -23523,7 +23542,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -23541,7 +23560,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -23661,7 +23680,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -23887,7 +23906,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -23956,7 +23975,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -24041,7 +24060,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -24199,7 +24218,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -24337,7 +24356,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -24389,7 +24408,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -24441,7 +24460,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -24753,7 +24772,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -24788,7 +24807,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -24874,7 +24893,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -25049,7 +25068,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -25152,7 +25171,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 4,
+      "velocity_24h": 5,
       "historical_similar": 60
     },
     {
@@ -25255,7 +25274,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -25515,7 +25534,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -25638,7 +25657,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -25708,7 +25727,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -25744,7 +25763,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 5,
+      "velocity_24h": 6,
       "historical_similar": 60
     },
     {
@@ -25919,7 +25938,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -25953,7 +25972,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 7,
+      "velocity_24h": 8,
       "historical_similar": 60
     },
     {
@@ -25970,7 +25989,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 6,
+      "velocity_24h": 7,
       "historical_similar": 60
     },
     {
@@ -26567,7 +26586,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 8,
+      "velocity_24h": 9,
       "historical_similar": 60
     },
     {
@@ -26759,7 +26778,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -26777,7 +26796,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -26863,7 +26882,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -26881,7 +26900,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -26968,7 +26987,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -26985,7 +27004,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -27037,7 +27056,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27142,7 +27161,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27194,7 +27213,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27229,7 +27248,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -27349,7 +27368,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -27434,7 +27453,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27487,7 +27506,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -27505,7 +27524,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27522,7 +27541,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -27557,7 +27576,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -27574,7 +27593,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -27729,7 +27748,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -27918,7 +27937,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -27953,7 +27972,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -28004,7 +28023,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -28056,7 +28075,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -28232,7 +28251,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -28249,7 +28268,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -28317,7 +28336,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -28387,7 +28406,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -28404,7 +28423,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 3,
+      "velocity_24h": 4,
       "historical_similar": 60
     },
     {
@@ -28439,7 +28458,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 1,
+      "velocity_24h": 2,
       "historical_similar": 60
     },
     {
@@ -28491,7 +28510,7 @@
         "HISTORICAL_PATTERN_MATCH:60similar"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -28700,7 +28719,7 @@
         "HIGH_RISK_USER"
       ],
       "pattern_category": "other",
-      "velocity_24h": 2,
+      "velocity_24h": 3,
       "historical_similar": 60
     },
     {
@@ -28820,6 +28839,459 @@
       ],
       "pattern_category": "other",
       "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_014030",
+      "user_id": 68,
+      "amount": 113.1,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.6,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_014330",
+      "user_id": 70,
+      "amount": 73.4,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.3,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_014749",
+      "user_id": 61,
+      "amount": 57.88,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.2,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_015156",
+      "user_id": 45,
+      "amount": 97.23,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.5,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_015604",
+      "user_id": 9,
+      "amount": 56.81,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_015904",
+      "user_id": 90,
+      "amount": 44.04,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.0,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_020204",
+      "user_id": 99,
+      "amount": 79.65,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.3,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 1,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_020538",
+      "user_id": 91,
+      "amount": 137.17,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.8,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 1,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_020719",
+      "user_id": 35,
+      "amount": 20.22,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 22.9,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_021149",
+      "user_id": 9,
+      "amount": 34.8,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.0,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_021641",
+      "user_id": 24,
+      "amount": 38.17,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.0,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_022004",
+      "user_id": 2,
+      "amount": 86.44,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.4,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_022411",
+      "user_id": 97,
+      "amount": 44.67,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_022734",
+      "user_id": 2,
+      "amount": 48.19,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_023153",
+      "user_id": 100,
+      "amount": 17.01,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 12.8,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 1,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_023526",
+      "user_id": 75,
+      "amount": 56.14,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_023826",
+      "user_id": 40,
+      "amount": 46.76,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_024053",
+      "user_id": 73,
+      "amount": 41.47,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.0,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_024319",
+      "user_id": 60,
+      "amount": 76.82,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.3,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_024726",
+      "user_id": 25,
+      "amount": 136.04,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.8,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_025026",
+      "user_id": 17,
+      "amount": 82.26,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.3,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_025411",
+      "user_id": 97,
+      "amount": 119.8,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.6,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 2,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_025649",
+      "user_id": 40,
+      "amount": 73.21,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 13.3,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 4,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_025938",
+      "user_id": 89,
+      "amount": 128.7,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.7,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 1,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_030153",
+      "user_id": 66,
+      "amount": 51.27,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.1,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
+      "historical_similar": 60
+    },
+    {
+      "transaction_id": "TX_MUSIC_20260302_030600",
+      "user_id": 49,
+      "amount": 122.61,
+      "merchant": "Spotify",
+      "location": "US",
+      "pattern_rating": 10,
+      "risk_score": 23.7,
+      "risk_level": "LOW",
+      "action": "ALLOW",
+      "rules_triggered": [
+        "HISTORICAL_PATTERN_MATCH:60similar",
+        "HIGH_RISK_USER"
+      ],
+      "pattern_category": "other",
+      "velocity_24h": 3,
       "historical_similar": 60
     }
   ],

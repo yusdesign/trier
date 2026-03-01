@@ -37,7 +37,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 15,
+    "velocity_24h": 16,
     "historical_similar": 60
   },
   {
@@ -57,7 +57,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
@@ -366,7 +366,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 16,
+    "velocity_24h": 17,
     "historical_similar": 60
   },
   {
@@ -408,7 +408,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 74
   },
   {
@@ -451,7 +451,7 @@
       "HISTORICAL_PATTERN_MATCH:74similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 15,
+    "velocity_24h": 16,
     "historical_similar": 74
   },
   {
@@ -556,7 +556,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 16,
+    "velocity_24h": 17,
     "historical_similar": 66
   },
   {
@@ -577,7 +577,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 66
   },
   {
@@ -681,7 +681,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 66
   }
 ]

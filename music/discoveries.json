@@ -1,83 +1,5 @@
 [
   {
-    "artist": "M.a.g.s.",
-    "track": "Sequence 03",
-    "discovered_at": "2026-02-27T11:23:19.248158",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Paula Kelley",
-    "track": "Party Line",
-    "discovered_at": "2026-02-27T11:26:52.988308",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Dressy Bessy",
-    "track": "Carry-On",
-    "discovered_at": "2026-02-27T11:30:15.512043",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "A.C. Newman",
-    "track": "Strings",
-    "discovered_at": "2026-02-27T11:35:07.989006",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Manchester Orchestra",
-    "track": "My Backwards Walk (Frightened Rabbit Cover)",
-    "discovered_at": "2026-02-27T11:39:49.237975",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Peter Bjorn & John",
-    "track": "Does It Matter Now",
-    "discovered_at": "2026-02-27T11:43:00.510603",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Specific Coast",
-    "track": "Problems (Clean)",
-    "discovered_at": "2026-02-27T11:50:19.237819",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "764",
-    "track": "hero - Loaded Painted Red",
-    "discovered_at": "2026-02-27T11:55:56.750477",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Frankie Rose",
-    "track": "Street Of Dreams",
-    "discovered_at": "2026-02-27T12:01:56.767722",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Softcult",
-    "track": "Shortest Fuse",
-    "discovered_at": "2026-02-27T12:11:19.253952",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Tullycraft",
-    "track": "Agincourt",
-    "discovered_at": "2026-02-27T12:19:22.977286",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Tegan and Sara",
-    "track": "Goodbye, Goodbye",
-    "discovered_at": "2026-02-27T12:22:34.238991",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Neighbors",
-    "track": "Long Time Gone",
-    "discovered_at": "2026-02-27T12:44:30.489944",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Wilco",
     "track": "Cry All Day",
     "discovered_at": "2026-02-27T12:48:26.737576",
@@ -597,6 +519,84 @@
     "artist": "Lemon Twigs",
     "track": "My Golden Years",
     "discovered_at": "2026-03-02T01:59:04.346745",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Imperial Teen",
+    "track": "Overtaken",
+    "discovered_at": "2026-03-02T02:07:19.355444",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Hippo Campus",
+    "track": "Why Even Try",
+    "discovered_at": "2026-03-02T02:31:53.121084",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Nation Of Language",
+    "track": "Weak In Your Light",
+    "discovered_at": "2026-03-02T02:43:19.346692",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Bethan",
+    "track": "Low Expectations",
+    "discovered_at": "2026-03-02T02:47:26.847515",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Vetiver",
+    "track": "More Of This",
+    "discovered_at": "2026-03-02T02:50:26.846868",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Roadkill Ghost Choir",
+    "track": "Sad Magic",
+    "discovered_at": "2026-03-02T02:54:11.861072",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Ty Segall",
+    "track": "The Clock",
+    "discovered_at": "2026-03-02T02:56:49.345613",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Satellite Stories",
+    "track": "Australia (Don't Ever Let Her Go)",
+    "discovered_at": "2026-03-02T03:09:11.844792",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Ray & Remora",
+    "track": "Creep Up",
+    "discovered_at": "2026-03-02T03:12:34.361785",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Gold Lake",
+    "track": "Echoes",
+    "discovered_at": "2026-03-02T03:28:19.353954",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Belaire",
+    "track": "You Really Got Me Goin'",
+    "discovered_at": "2026-03-02T03:31:53.107782",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "All Feels",
+    "track": "Shoreline",
+    "discovered_at": "2026-03-02T03:42:56.843639",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Modest Mouse",
+    "track": "Wicked Campaign",
+    "discovered_at": "2026-03-02T03:48:23.105600",
     "source": "SomaFM Indie Pop"
   }
 ]
