@@ -1,65 +1,5 @@
 [
   {
-    "artist": "Wilco",
-    "track": "Cry All Day",
-    "discovered_at": "2026-02-27T12:48:26.737576",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Nilifer Yanya",
-    "track": "Method Actor (Radio Edit)",
-    "discovered_at": "2026-02-27T12:56:19.244162",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Best Coast",
-    "track": "When The Sun Don't Shine",
-    "discovered_at": "2026-02-27T13:02:19.240964",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "toyGuitar",
-    "track": "On A Wire",
-    "discovered_at": "2026-02-27T13:04:34.249719",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Lykke Li",
-    "track": "Gunshot",
-    "discovered_at": "2026-02-27T13:25:45.505748",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Stella",
-    "track": "Girl Supreme",
-    "discovered_at": "2026-02-27T13:33:37.974523",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Danger Mouse & Sparklehorse",
-    "track": "Revenge (Feat. Wayne Coyne)",
-    "discovered_at": "2026-02-27T13:39:15.497179",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Fruit Tree Foundation",
-    "track": "Splinter",
-    "discovered_at": "2026-02-27T13:43:56.730919",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Midlake",
-    "track": "The Old And The Young (Radio Edit)",
-    "discovered_at": "2026-02-27T13:47:07.975545",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Vampire Weekend",
-    "track": "Walcott",
-    "discovered_at": "2026-02-27T13:50:41.751001",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Elbow",
     "track": "Real Life (Angel)",
     "discovered_at": "2026-02-27T14:08:04.981528",
@@ -597,6 +537,66 @@
     "artist": "Modest Mouse",
     "track": "Wicked Campaign",
     "discovered_at": "2026-03-02T03:48:23.105600",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Union Trade",
+    "track": "This Is What Happens",
+    "discovered_at": "2026-03-02T04:07:30.590084",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Rah Rah",
+    "track": "First Night We Met",
+    "discovered_at": "2026-03-02T04:11:26.859319",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Joel Gion",
+    "track": "Zig Zag",
+    "discovered_at": "2026-03-02T04:15:56.851620",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Cullen Omori",
+    "track": "Cinnamon",
+    "discovered_at": "2026-03-02T04:19:30.601393",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Matt Pond Pa",
+    "track": "Are You Talking To Me (With Anya Marina)",
+    "discovered_at": "2026-03-02T04:26:38.107767",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tilbury",
+    "track": "Tenderloin",
+    "discovered_at": "2026-03-02T04:51:34.348468",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Avers",
+    "track": "Everything Hz",
+    "discovered_at": "2026-03-02T04:55:53.108004",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Thao & The Get Down, Stay Down",
+    "track": "Bag Of Hammers",
+    "discovered_at": "2026-03-02T04:58:41.847281",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Radiation City",
+    "track": "Food",
+    "discovered_at": "2026-03-02T05:13:19.355500",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Broods",
+    "track": "Laf",
+    "discovered_at": "2026-03-02T05:17:04.354873",
     "source": "SomaFM Indie Pop"
   }
 ]
