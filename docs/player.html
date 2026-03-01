@@ -1,0 +1,105 @@
+<!-- Universal TRIER Music Player -->
+<div id="trier-player" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <div style="background: linear-gradient(135deg, #1db954, #1ed760); 
+                border-radius: 50px; padding: 5px; box-shadow: 0 4px 15px rgba(29,185,84,0.3);">
+        <div style="background: #0a0c0e; border-radius: 50px; padding: 8px 15px; 
+                    display: flex; align-items: center; gap: 15px; border: 1px solid #1db954;">
+            
+            <!-- Play/Pause Button -->
+            <button id="playPauseBtn" style="background: none; border: none; cursor: pointer; font-size: 24px;" onclick="togglePlay()">
+                ▶️
+            </button>
+            
+            <!-- Now Playing -->
+            <div style="min-width: 200px;">
+                <div style="font-size: 0.8em; color: #888;">NOW PLAYING</div>
+                <div id="nowPlaying" style="color: #fff; font-weight: bold;">SomaFM Indie Pop</div>
+                <div id="currentSong" style="font-size: 0.8em; color: #1db954;">Loading...</div>
+            </div>
+            
+            <!-- Volume Slider -->
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="color: #888;">🔊</span>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50" 
+                       style="width: 60px; height: 4px; border-radius: 2px; background: #333;" 
+                       onchange="setVolume(this.value)">
+            </div>
+            
+            <!-- Link to Full Music Lab -->
+            <a href="music.html" style="color: #1db954; text-decoration: none; font-size: 0.8em; padding: 5px 10px; border: 1px solid #1db954; border-radius: 20px;">
+                🎵 Full Stats
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Audio Element -->
+<audio id="somafmPlayer" style="display: none;" preload="none">
+    <source src="https://ice1.somafm.com/indiepop-32-aac" type="audio/aac">
+</audio>
+
+<script>
+let player = document.getElementById('somafmPlayer');
+let playBtn = document.getElementById('playPauseBtn');
+let nowPlaying = document.getElementById('currentSong');
+let isPlaying = false;
+
+// Load saved state
+if (localStorage.getItem('trierPlayerState') === 'playing') {
+    player.play();
+    isPlaying = true;
+    playBtn.innerHTML = '⏸️';
+}
+
+// Play/Pause toggle
+function togglePlay() {
+    if (isPlaying) {
+        player.pause();
+        playBtn.innerHTML = '▶️';
+        localStorage.setItem('trierPlayerState', 'paused');
+    } else {
+        player.play();
+        playBtn.innerHTML = '⏸️';
+        localStorage.setItem('trierPlayerState', 'playing');
+    }
+    isPlaying = !isPlaying;
+}
+
+// Volume control
+function setVolume(val) {
+    player.volume = val / 100;
+    localStorage.setItem('trierPlayerVolume', val);
+}
+
+// Load saved volume
+let savedVol = localStorage.getItem('trierPlayerVolume');
+if (savedVol) {
+    player.volume = savedVol / 100;
+    document.getElementById('volumeSlider').value = savedVol;
+}
+
+// Update now playing (you'd connect this to your logger)
+setInterval(() => {
+    // This would come from your trier_unified_logger.py
+    const songs = [
+        'Wet Leg - Chaise Longue',
+        'Alvvays - Archie, Marry Me',
+        'Beirut - Nantes',
+        'Yo La Tengo - Sugarcube',
+        'Camera Obscura - Lloyd, I\'m Ready'
+    ];
+    document.getElementById('nowPlaying').innerHTML = 
+        songs[Math.floor(Math.random() * songs.length)];
+}, 10000);
+
+// Player persists across pages
+window.addEventListener('beforeunload', () => {
+    localStorage.setItem('trierPlayerTime', player.currentTime);
+});
+
+// Resume from last position
+let savedTime = localStorage.getItem('trierPlayerTime');
+if (savedTime) {
+    player.currentTime = savedTime;
+}
+</script>

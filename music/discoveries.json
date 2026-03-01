@@ -1,101 +1,5 @@
 [
   {
-    "artist": "Maia Friedman",
-    "track": "Russian Blue",
-    "discovered_at": "2026-02-27T03:20:03.114008",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Mary Onettes",
-    "track": "Slide",
-    "discovered_at": "2026-02-27T03:22:40.585503",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Cub Sport",
-    "track": "Paradise",
-    "discovered_at": "2026-02-27T03:29:59.354479",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Radio Free Alice",
-    "track": "Rule 31",
-    "discovered_at": "2026-02-27T03:38:36.855366",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "STRFKR",
-    "track": "Never Ever",
-    "discovered_at": "2026-02-27T03:42:44.354934",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Quiet Company",
-    "track": "A Year In Decline",
-    "discovered_at": "2026-02-27T03:46:06.847090",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Hope Sandoval",
-    "track": "Thinking Like That",
-    "discovered_at": "2026-02-27T03:50:36.852711",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Bat For Lashes",
-    "track": "What's A Girl To Do",
-    "discovered_at": "2026-02-27T03:55:06.855615",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Jet Van Der Steen",
-    "track": "Juni",
-    "discovered_at": "2026-02-27T03:57:55.595806",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Antlers",
-    "track": "Carnage (Radio Edit)",
-    "discovered_at": "2026-02-27T04:00:55.593002",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Samana",
-    "track": "I'll Keep You With Me",
-    "discovered_at": "2026-02-27T04:07:06.865434",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Beach House",
-    "track": "Heart Of Chambers",
-    "discovered_at": "2026-02-27T04:12:10.614089",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Shannon & The Clams",
-    "track": "Bean Fields",
-    "discovered_at": "2026-02-27T04:16:29.361025",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Today Junior",
-    "track": "Fired Up",
-    "discovered_at": "2026-02-27T04:19:29.362593",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Donovan Woods",
-    "track": "We Used To",
-    "discovered_at": "2026-02-27T04:27:10.598368",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Chris Von Sneidern",
-    "track": "Feline",
-    "discovered_at": "2026-02-27T05:06:34.106110",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Growlers, The",
     "track": "One Million Lovers",
     "discovered_at": "2026-02-27T05:14:04.095588",
@@ -597,6 +501,102 @@
     "artist": "Cloakz",
     "track": "El Zero",
     "discovered_at": "2026-02-27T17:04:03.165682",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Broken Bells",
+    "track": "The High Road",
+    "discovered_at": "2026-03-01T19:10:33.063507",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Ratboys",
+    "track": "Anywhere",
+    "discovered_at": "2026-03-01T19:33:41.108475",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Jason Collett",
+    "track": "Bitter Beauty",
+    "discovered_at": "2026-03-01T19:36:41.106514",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Dream Reporter",
+    "track": "You Said",
+    "discovered_at": "2026-03-01T19:40:14.837136",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Quasi",
+    "track": "Black Dogs And Bubbles",
+    "discovered_at": "2026-03-01T19:52:26.089437",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Boys",
+    "track": "It Is Silly",
+    "discovered_at": "2026-03-01T19:57:18.573098",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Frankie Cosmos",
+    "track": "Outside With The Cuties",
+    "discovered_at": "2026-03-01T20:19:03.574534",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Abstract Crimewave",
+    "track": "The Gambler (Feat. Lykki Li)",
+    "discovered_at": "2026-03-01T20:28:03.580714",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tokyo Police Club",
+    "track": "Miserable",
+    "discovered_at": "2026-03-01T20:40:59.848520",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "John Vanderslice",
+    "track": "Trance Manual",
+    "discovered_at": "2026-03-01T20:59:33.571034",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Album Leaf",
+    "track": "Back To The Start",
+    "discovered_at": "2026-03-01T21:04:37.331718",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Good Day Father",
+    "track": "Sonic Amadea",
+    "discovered_at": "2026-03-01T21:12:41.095562",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Linda Lindas",
+    "track": "All In My Head",
+    "discovered_at": "2026-03-01T21:16:59.832832",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Hot Chip",
+    "track": "Alley Cats",
+    "discovered_at": "2026-03-01T21:20:22.346874",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Imogen Heap",
+    "track": "Swoon",
+    "discovered_at": "2026-03-01T21:25:26.092847",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Cults",
+    "track": "Always Forever",
+    "discovered_at": "2026-03-01T21:30:52.332099",
     "source": "SomaFM Indie Pop"
   }
 ]

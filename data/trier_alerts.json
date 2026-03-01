@@ -57,7 +57,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 6,
+    "velocity_24h": 7,
     "historical_similar": 66
   },
   {
@@ -77,7 +77,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 66
   },
   {
@@ -140,7 +140,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 11,
+    "velocity_24h": 12,
     "historical_similar": 66
   },
   {
@@ -210,18 +210,19 @@
     "merchant": "Amazon",
     "location": "RU",
     "pattern_rating": 85,
-    "risk_score": 93.0,
+    "risk_score": 100,
     "risk_level": "HIGH",
     "action": "BLOCK",
     "rules_triggered": [
       "UNUSUAL_RETAILER_LOCATION_HIGH_AMOUNT",
       "HIGH_RISK_PATTERN:Amazon-RU",
       "AMOUNT_ABOVE_PATTERN_EXPECTATION",
+      "HIGH_VELOCITY_WITH_RISKY_PATTERN",
       "HISTORICAL_PATTERN_MATCH:106similar",
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 5,
+    "velocity_24h": 6,
     "historical_similar": 106
   },
   {
@@ -241,7 +242,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 12,
+    "velocity_24h": 13,
     "historical_similar": 60
   },
   {
@@ -282,7 +283,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 15,
+    "velocity_24h": 16,
     "historical_similar": 66
   },
   {
@@ -365,7 +366,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
@@ -387,7 +388,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 8,
+    "velocity_24h": 9,
     "historical_similar": 74
   },
   {
@@ -409,7 +410,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 13,
+    "velocity_24h": 15,
     "historical_similar": 74
   },
   {
@@ -473,7 +474,7 @@
       "HISTORICAL_PATTERN_MATCH:108similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 15,
+    "velocity_24h": 16,
     "historical_similar": 108
   },
   {
@@ -493,7 +494,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 6,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
