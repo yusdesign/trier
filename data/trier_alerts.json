@@ -37,7 +37,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 60
   },
   {
@@ -97,7 +97,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
@@ -118,7 +118,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "other",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 66
   },
   {
@@ -139,7 +139,7 @@
       "HISTORICAL_PATTERN_MATCH:106similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 18,
+    "velocity_24h": 19,
     "historical_similar": 106
   },
   {
@@ -200,7 +200,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 7,
+    "velocity_24h": 8,
     "historical_similar": 66
   },
   {
@@ -262,7 +262,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 13,
+    "velocity_24h": 14,
     "historical_similar": 60
   },
   {
@@ -473,7 +473,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 10,
+    "velocity_24h": 11,
     "historical_similar": 74
   },
   {
@@ -598,7 +598,7 @@
       "HISTORICAL_PATTERN_MATCH:108similar"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 14,
+    "velocity_24h": 15,
     "historical_similar": 108
   },
   {
@@ -620,7 +620,7 @@
       "HIGH_RISK_USER"
     ],
     "pattern_category": "global_retail",
-    "velocity_24h": 12,
+    "velocity_24h": 13,
     "historical_similar": 108
   },
   {
@@ -681,7 +681,7 @@
       "HISTORICAL_PATTERN_MATCH:66similar"
     ],
     "pattern_category": "other",
-    "velocity_24h": 12,
+    "velocity_24h": 14,
     "historical_similar": 66
   }
 ]

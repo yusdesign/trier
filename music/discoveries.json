@@ -1,167 +1,5 @@
 [
   {
-    "artist": "Helio Sequence",
-    "track": "Satellite",
-    "discovered_at": "2026-02-27T06:30:39.702199",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Amber Arcades",
-    "track": "Oh My Love (What Have We Done)",
-    "discovered_at": "2026-02-27T06:37:38.655480",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Vaccines",
-    "track": "I Always Knew",
-    "discovered_at": "2026-02-27T06:40:49.906645",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Carroll",
-    "track": "Daylight",
-    "discovered_at": "2026-02-27T06:54:31.140595",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "VHS Collection",
-    "track": "Ghost",
-    "discovered_at": "2026-02-27T06:58:04.899692",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Telekinesis!",
-    "track": "Little Hill",
-    "discovered_at": "2026-02-27T07:13:24.494783",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Wye Oak",
-    "track": "Repeat (If You Remind Me)",
-    "discovered_at": "2026-02-27T07:33:05.778509",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Halsted",
-    "track": "Wait Up For Me",
-    "discovered_at": "2026-02-27T07:41:20.757312",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Baio",
-    "track": "Sunburn Modern (Radio Edit)",
-    "discovered_at": "2026-02-27T07:57:17.024597",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Metric",
-    "track": "Sick Muse",
-    "discovered_at": "2026-02-27T08:01:24.510610",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Clean Spill",
-    "track": "Come Around (Rado Edit)",
-    "discovered_at": "2026-02-27T08:05:43.265717",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Future Husband",
-    "track": "Ritual",
-    "discovered_at": "2026-02-27T09:10:21.376685",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "My Bloody Valentine",
-    "track": "Only Shallow",
-    "discovered_at": "2026-02-27T09:24:25.093811",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Champion And His Burning Flame",
-    "track": "The Expert",
-    "discovered_at": "2026-02-27T09:31:21.328037",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Pool Kids",
-    "track": "Easier Said Than Done (Dirty)",
-    "discovered_at": "2026-02-27T09:59:41.756519",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Milly",
-    "track": "Blocked On Everything",
-    "discovered_at": "2026-02-27T10:02:07.991155",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sarandons",
-    "track": "Deep End",
-    "discovered_at": "2026-02-27T10:06:04.264061",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Guided By Voices",
-    "track": "Fly Baby",
-    "discovered_at": "2026-02-27T10:22:11.756575",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Oneohtrix Point Never",
-    "track": "Measuring Ruins",
-    "discovered_at": "2026-02-27T10:23:53.000072",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Last Shadow Puppets",
-    "track": "She Does The Woods",
-    "discovered_at": "2026-02-27T10:31:34.258361",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Interpol",
-    "track": "Success",
-    "discovered_at": "2026-02-27T10:35:07.988567",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Braids",
-    "track": "Ebben (Elise's Radio Edit)",
-    "discovered_at": "2026-02-27T10:46:11.735389",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Carissa's Wierd",
-    "track": "Die",
-    "discovered_at": "2026-02-27T10:54:15.498555",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Meet Me In Orbit",
-    "track": "Last Time",
-    "discovered_at": "2026-02-27T10:59:30.491874",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Cribs",
-    "track": "Goodbye",
-    "discovered_at": "2026-02-27T11:13:56.748040",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Rare Monk",
-    "track": "Artifice",
-    "discovered_at": "2026-02-27T11:16:45.515038",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Arc De Soleil",
-    "track": "Riders Of The Moon",
-    "discovered_at": "2026-02-27T11:20:07.991274",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "M.a.g.s.",
     "track": "Sequence 03",
     "discovered_at": "2026-02-27T11:23:19.248158",
@@ -597,6 +435,168 @@
     "artist": "Sea Change",
     "track": "Let's Dance",
     "discovered_at": "2026-03-01T23:30:07.335221",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Jessie Baylin",
+    "track": "Lungs",
+    "discovered_at": "2026-03-01T23:34:03.570869",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "No Windows",
+    "track": "Small Flashing Light",
+    "discovered_at": "2026-03-01T23:40:59.844836",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Black Lips",
+    "track": "I Don't Wanna Go Home",
+    "discovered_at": "2026-03-01T23:52:26.094725",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Winter",
+    "track": "Crimson Enclosure",
+    "discovered_at": "2026-03-01T23:55:26.108396",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Alice Phoebe Lou",
+    "track": "Shine",
+    "discovered_at": "2026-03-01T23:59:56.111086",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "We Were Promised Jetpacks",
+    "track": "Bright Minds",
+    "discovered_at": "2026-03-02T00:02:44.862297",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "...And You Will Know Us By The Trail Of Dead",
+    "track": "Gold Heart Mountain Top Queen Directory",
+    "discovered_at": "2026-03-02T00:07:06.009132",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Tweedy",
+    "track": "Fake Fur Coat",
+    "discovered_at": "2026-03-02T00:09:09.779957",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Lucksmiths",
+    "track": "The Chapter In Your Life Entitled San Francisco",
+    "discovered_at": "2026-03-02T00:11:24.769776",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "5th",
+    "track": "Wave - Let It Go",
+    "discovered_at": "2026-03-02T00:24:45.599064",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Oh, Rose",
+    "track": "Easy",
+    "discovered_at": "2026-03-02T00:31:53.122049",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Sam Lynch",
+    "track": "Hurt",
+    "discovered_at": "2026-03-02T00:39:34.349537",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Skegss",
+    "track": "Up In The Clouds",
+    "discovered_at": "2026-03-02T00:43:19.351685",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Vaadat Charigim",
+    "track": "At Chavera",
+    "discovered_at": "2026-03-02T00:45:45.591289",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "She & Him",
+    "track": "In The Sun",
+    "discovered_at": "2026-03-02T00:49:52.966936",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Caveman",
+    "track": "Never Going Back",
+    "discovered_at": "2026-03-02T01:06:56.848237",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Coast Modern",
+    "track": "Animals",
+    "discovered_at": "2026-03-02T01:09:45.593332",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Georgia Gets By",
+    "track": "Some Kind Of Angel",
+    "discovered_at": "2026-03-02T01:12:56.847695",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Wild Pink",
+    "track": "Disintegrate",
+    "discovered_at": "2026-03-02T01:17:26.851365",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Famous Friend",
+    "track": "Nora",
+    "discovered_at": "2026-03-02T01:20:49.348549",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Heavenly States",
+    "track": "Berlin Wall",
+    "discovered_at": "2026-03-02T01:23:04.349905",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Owl John",
+    "track": "Los Angeles, Be Kind",
+    "discovered_at": "2026-03-02T01:25:30.588487",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Grouplove",
+    "track": "Schoolboy",
+    "discovered_at": "2026-03-02T01:29:15.602689",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Paper Kites",
+    "track": "Give Me Your Fire, Give Me Your Rain",
+    "discovered_at": "2026-03-02T01:33:00.589929",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Goo",
+    "track": "Desiderium",
+    "discovered_at": "2026-03-02T01:36:34.350354",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Avey Tare's Slasher Flicks",
+    "track": "Duplex Trip",
+    "discovered_at": "2026-03-02T01:51:56.855052",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Lemon Twigs",
+    "track": "My Golden Years",
+    "discovered_at": "2026-03-02T01:59:04.346745",
     "source": "SomaFM Indie Pop"
   }
 ]
