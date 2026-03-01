@@ -1,89 +1,5 @@
 [
   {
-    "artist": "Growlers, The",
-    "track": "One Million Lovers",
-    "discovered_at": "2026-02-27T05:14:04.095588",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Wesley Fuller",
-    "track": "Change Your Mind",
-    "discovered_at": "2026-02-27T05:18:34.115253",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Cass Mccombs",
-    "track": "Peace",
-    "discovered_at": "2026-02-27T05:29:04.099437",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Beaty Heart",
-    "track": "Seafood",
-    "discovered_at": "2026-02-27T05:33:22.842657",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Floodlights",
-    "track": "Nullarbor",
-    "discovered_at": "2026-02-27T05:36:34.109295",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Katzin",
-    "track": "Anna",
-    "discovered_at": "2026-02-27T05:43:58.458713",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Silva",
-    "track": "January",
-    "discovered_at": "2026-02-27T05:49:24.702227",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Mates Of State",
-    "track": "Change",
-    "discovered_at": "2026-02-27T05:53:32.221218",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Sharon Van Etten",
-    "track": "I'll Try",
-    "discovered_at": "2026-02-27T05:56:09.706598",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Farao",
-    "track": "Hunter (Radio Edit)",
-    "discovered_at": "2026-02-27T05:59:09.704318",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Cut Copy",
-    "track": "Stars Last Me A Lifetime",
-    "discovered_at": "2026-02-27T06:16:24.707792",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Automatic",
-    "track": "Black Box",
-    "discovered_at": "2026-02-27T06:19:58.464770",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "BEL",
-    "track": "Amor",
-    "discovered_at": "2026-02-27T06:24:05.953641",
-    "source": "SomaFM Indie Pop"
-  },
-  {
-    "artist": "Lunar Vacation",
-    "track": "You Shouldn't Be",
-    "discovered_at": "2026-02-27T06:26:54.722272",
-    "source": "SomaFM Indie Pop"
-  },
-  {
     "artist": "Helio Sequence",
     "track": "Satellite",
     "discovered_at": "2026-02-27T06:30:39.702199",
@@ -597,6 +513,90 @@
     "artist": "Cults",
     "track": "Always Forever",
     "discovered_at": "2026-03-01T21:30:52.332099",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Barrie",
+    "track": "Geology",
+    "discovered_at": "2026-03-01T21:43:37.139616",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Silversun Pickups",
+    "track": "Connection",
+    "discovered_at": "2026-03-01T21:59:11.092857",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "La Luz",
+    "track": "News Of The Universe",
+    "discovered_at": "2026-03-01T22:21:18.572445",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Middle Kids",
+    "track": "Run With You",
+    "discovered_at": "2026-03-01T22:23:56.093923",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Floating Action",
+    "track": "House Of Secrets",
+    "discovered_at": "2026-03-01T22:27:29.833132",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Girlhouse",
+    "track": "You Don't Think About Me",
+    "discovered_at": "2026-03-01T22:37:26.087876",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Thao & The Get Down Stay Down",
+    "track": "Give Me Peace",
+    "discovered_at": "2026-03-01T22:40:59.845706",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Other Lives",
+    "track": "English Summer",
+    "discovered_at": "2026-03-01T22:47:11.108638",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Marie",
+    "track": "Pierre Arthur - Fil de Soie",
+    "discovered_at": "2026-03-01T22:51:52.334496",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Young Ejecta",
+    "track": "Into Your Heart",
+    "discovered_at": "2026-03-01T23:08:33.574356",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Almost Monday",
+    "track": "Can't Slow Down",
+    "discovered_at": "2026-03-01T23:12:18.575215",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Heron",
+    "track": "Archives",
+    "discovered_at": "2026-03-01T23:21:18.575203",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Mehro",
+    "track": "Perfume",
+    "discovered_at": "2026-03-01T23:27:41.096273",
+    "source": "SomaFM Indie Pop"
+  },
+  {
+    "artist": "Sea Change",
+    "track": "Let's Dance",
+    "discovered_at": "2026-03-01T23:30:07.335221",
     "source": "SomaFM Indie Pop"
   }
 ]
