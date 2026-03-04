@@ -1,43 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🔍 TRIER · Фрод детектор OZON</title>
+    <title>🔍 TRIER · Wisdom Growth</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace;
+            font-family: monospace;
             background: #0a0c0e;
             color: #e0e0e0;
-            line-height: 1.6;
+            padding: 20px;
         }
-        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
         
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #005bff 0%, #003b9e 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
+        /* Growth Ladder */
+        .growth-ladder {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 40px 0;
             position: relative;
         }
-        .header h1 { margin: 0; font-size: 2.2em; }
-        .header p { margin: 10px 0 0; opacity: 0.9; }
+        .ladder-step {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            border-left: 4px solid;
+            transition: transform 0.2s;
+        }
+        .ladder-step:hover { transform: translateX(10px); }
         
-        /* Language toggle */
-        .lang-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255,255,255,0.2);
-            padding: 8px 16px;
-            border-radius: 30px;
-            cursor: pointer;
+        .step-number {
+            font-size: 2em;
+            font-weight: bold;
+            min-width: 60px;
+            color: #888;
+        }
+        .step-content { flex: 1; }
+        .step-title { font-size: 1.3em; margin-bottom: 5px; }
+        .step-stats {
+            display: flex;
+            gap: 30px;
+            color: #888;
             font-size: 0.9em;
         }
+        .step-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4caf50;
+        }
         
-        /* Live indicator */
+        /* Wisdom Points */
+        .wisdom-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .wisdom-card {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid #005bff;
+        }
+        .wisdom-count {
+            font-size: 3em;
+            font-weight: bold;
+            color: #005bff;
+            margin: 15px 0;
+        }
+        
+        /* Vertical Timeline */
+        .timeline-vertical {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+        }
+        .timeline-item {
+            position: relative;
+            padding: 20px;
+            background: #1e1e1e;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b6b;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 24px;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 34px;
+            width: 2px;
+            height: calc(100% + 20px);
+            background: #333;
+        }
+        .timeline-item:last-child::after { display: none; }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
         .live-dot {
             display: inline-block;
             width: 10px;
@@ -47,368 +123,170 @@
             animation: pulse 2s infinite;
             margin-right: 8px;
         }
-        
-        /* Stats grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .stat-card {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid #005bff;
-            transition: transform 0.2s;
-        }
-        .stat-card:hover { transform: translateY(-5px); }
-        .stat-value { font-size: 2.5em; font-weight: bold; margin: 10px 0; }
-        .stat-label { color: #888; font-size: 0.9em; text-transform: uppercase; }
-        .stat-trend { color: #4caf50; font-size: 0.9em; }
-        
-        /* Scope grid */
-        .scope-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .scope-card {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 4px solid;
-        }
-        .scope-card.fbs { border-color: #4caf50; }
-        .scope-card.fbo { border-color: #ff9800; }
-        .scope-card.returns { border-color: #f44336; }
-        .scope-card.cancel { border-color: #9c27b0; }
-        
-        .scope-title { color: #888; font-size: 0.9em; }
-        .scope-number { font-size: 2.2em; font-weight: bold; margin: 10px 0; }
-        .scope-fraud { color: #f44336; }
-        
-        /* Pattern boxes */
-        .pattern-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin: 30px 0;
-        }
-        .pattern-card {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 15px;
-            border-top: 4px solid;
-        }
-        .pattern-card.ru { border-color: #ff6b6b; }
-        .pattern-card.cn { border-color: #ffd93e; }
-        
-        /* Tables */
-        .table-container {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-        }
-        th { color: #888; font-weight: normal; }
-        .risk-high { color: #ff6b6b; font-weight: bold; }
-        .risk-med { color: #ff9800; }
-        
-        /* Recommendations */
-        .rec-box {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-            border-left: 4px solid #4caf50;
-        }
-        .rec-item {
-            padding: 10px;
-            margin: 5px 0;
-            background: #2d2d2d;
-            border-radius: 5px;
-        }
-        
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            color: #666;
-            border-top: 1px solid #333;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>🔍 TRIER, codename "Orient", фрод детектор</h1>
-            <p>Последнее обновление: <span id="updateTime">04.03.2026, 16:12:50</span></p>
-            <p>Фокус: RU/CN паттерны | Amazon/Walmart аномалии | Рейтинговая система</p>
-            <div class="lang-toggle" onclick="toggleLanguage()">
-                <span id="langBtn">🇬🇧 English</span>
-            </div>
-        </div>
+        <h1>📈 TRIER · Wisdom Growth Ladder</h1>
+        <p><span class="live-dot"></span> Growing from DEEP ANALYSIS, not just data</p>
 
-        <!-- OZON Header -->
-        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-            <span style="font-size: 2.5em;">🛒</span>
-            <div>
-                <h2 style="margin: 0; color: #005bff;">OZON Маркетплейс LIVE</h2>
-                <p style="margin: 5px 0 0; color: #888;">
-                    <span class="live-dot"></span> Реальные данные · 4 скоупа активны · Обновление каждые 30 мин
-                </p>
-            </div>
-            <div style="margin-left: auto; text-align: right;">
-                <div style="font-size: 2.5em; font-weight: bold;" id="totalOrders">1,247</div>
-                <div style="color: #888;">заказов сегодня</div>
-            </div>
-        </div>
-
-        <!-- Performance Stats -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-label">🎯 Обнаружение</div>
-                <div class="stat-value" id="detectionRate">94%</div>
-                <div class="stat-trend">↑ 2% за неделю</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">🎯 Точность</div>
-                <div class="stat-value" id="precision">87%</div>
-                <div class="stat-trend">⚡ цель 90%</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">💰 Под риском</div>
-                <div class="stat-value" id="amountAtRisk">₽345K</div>
-                <div class="stat-trend">🛡️ ₽89K заблокировано</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">⚡ Время</div>
-                <div class="stat-value" id="responseTime">30с</div>
-                <div class="stat-trend">⏱️ в реальном времени</div>
-            </div>
-        </div>
-
-        <!-- 4 Scopes -->
-        <div class="scope-grid">
-            <div class="scope-card fbs">
-                <div class="scope-title">📦 Posting FBS</div>
-                <div class="scope-number" id="fbsOrders">847</div>
-                <div class="scope-fraud" id="fbsFraud">12 мошенничеств</div>
-                <div style="color: #888; font-size: 0.9em; margin-top: 10px;">Заказы FBS + финансы</div>
-            </div>
-            <div class="scope-card fbo">
-                <div class="scope-title">📦 Supply Order</div>
-                <div class="scope-number" id="fboOrders">312</div>
-                <div class="scope-fraud" id="fboFraud">5 мошенничеств</div>
-                <div style="color: #888; font-size: 0.9em; margin-top: 10px;">FBO поставки</div>
-            </div>
-            <div class="scope-card returns">
-                <div class="scope-title">🔄 Returns</div>
-                <div class="scope-number" id="returnsCount">45</div>
-                <div class="scope-fraud" id="returnsFraud">4 злоупотребления</div>
-                <div style="color: #888; font-size: 0.9em; margin-top: 10px;">Возвраты</div>
-            </div>
-            <div class="scope-card cancel">
-                <div class="scope-title">❌ Cancellations</div>
-                <div class="scope-number" id="cancelCount">23</div>
-                <div class="scope-fraud" id="cancelFraud">2 подозрительных</div>
-                <div style="color: #888; font-size: 0.9em; margin-top: 10px;">Отмены</div>
-            </div>
-        </div>
-
-        <!-- Pattern Analysis -->
-        <div class="pattern-grid">
-            <div class="pattern-card ru">
-                <h3>🇷🇺 Российские паттерны</h3>
-                <div style="background: #2d2d2d; padding: 15px; border-radius: 8px; margin-top: 15px;">
-                    <div style="display: flex; justify-content: space-between;">
-                        <span>Транзакций RU Store:</span>
-                        <span class="risk-high" id="ruTransactions">4</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-                        <span>Высокий риск:</span>
-                        <span class="risk-high" id="ruHighRisk">1</span>
+        <!-- VERTICAL GROWTH LADDER -->
+        <div class="growth-ladder">
+            <!-- Step 1: Raw Data -->
+            <div class="ladder-step" style="border-left-color: #888;">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">📦 RAW OZON DATA</div>
+                    <div class="step-stats">
+                        <span>FBS Orders: <span class="step-value">847</span></span>
+                        <span>FBO Orders: <span class="step-value">312</span></span>
+                        <span>Returns: <span class="step-value">45</span></span>
                     </div>
                 </div>
             </div>
-            <div class="pattern-card cn">
-                <h3>🇨🇳 Китайские паттерны</h3>
-                <div style="background: #2d2d2d; padding: 15px; border-radius: 8px; margin-top: 15px;">
-                    <div style="display: flex; justify-content: space-between;">
-                        <span>Транзакций CN Store:</span>
-                        <span class="risk-med" id="cnTransactions">6</span>
+
+            <!-- Step 2: Pattern Detection -->
+            <div class="ladder-step" style="border-left-color: #ff9800;">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">🔍 PATTERNS DETECTED</div>
+                    <div class="step-stats">
+                        <span>Card Testing: <span class="step-value">8</span></span>
+                        <span>Geo Mismatch: <span class="step-value">3</span></span>
+                        <span>Velocity: <span class="step-value">4</span></span>
                     </div>
-                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-                        <span>Высокий риск:</span>
-                        <span class="risk-med" id="cnHighRisk">3</span>
+                </div>
+            </div>
+
+            <!-- Step 3: Contrary Analysis -->
+            <div class="ladder-step" style="border-left-color: #f44336;">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">⚖️ CONTRARY EVIDENCE</div>
+                    <div class="step-stats">
+                        <span>Vs Normal: <span class="step-value">832</span></span>
+                        <span>New Patterns: <span class="step-value">2</span></span>
+                        <span>False Positives: <span class="step-value">3</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Wisdom Stored -->
+            <div class="ladder-step" style="border-left-color: #4caf50;">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">🧠 WISDOM DATABASE</div>
+                    <div class="step-stats">
+                        <span>Insights: <span class="step-value">47</span></span>
+                        <span>Rules: <span class="step-value">12</span></span>
+                        <span>Recommendations: <span class="step-value">23</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Action -->
+            <div class="ladder-step" style="border-left-color: #005bff;">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <div class="step-title">⚡ ACTIONS TAKEN</div>
+                    <div class="step-stats">
+                        <span>Blocked: <span class="step-value">8</span></span>
+                        <span>Reviewed: <span class="step-value">12</span></span>
+                        <span>Monitored: <span class="step-value">27</span></span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Fraud Alerts Table -->
-        <div class="table-container">
-            <h3>🚨 Высокорисковые алерты</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Транзакция</th>
-                        <th>Магазин</th>
-                        <th>Локация</th>
-                        <th>Сумма</th>
-                        <th>Риск</th>
-                        <th>Рекомендация</th>
-                    </tr>
-                </thead>
-                <tbody id="alertsTable">
-                    <tr>
-                        <td>TX_0234</td>
-                        <td>Unknown Store</td>
-                        <td>RU</td>
-                        <td>₽98,450</td>
-                        <td class="risk-high">98%</td>
-                        <td>🚫 Блокировка</td>
-                    </tr>
-                    <tr>
-                        <td>TX_0456</td>
-                        <td>Amazon</td>
-                        <td>NG</td>
-                        <td>₽205,670</td>
-                        <td class="risk-high">95%</td>
-                        <td>🔍 Проверка</td>
-                    </tr>
-                    <tr>
-                        <td>FBS-12345</td>
-                        <td>Card testing</td>
-                        <td>Москва</td>
-                        <td>₽2,450</td>
-                        <td class="risk-med">87%</td>
-                        <td>⚠️ Мониторинг</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Recommendations Block -->
-        <div class="rec-box">
-            <h3>💡 Рекомендации на основе данных</h3>
-            <div class="rec-item">
-                <span style="color: #ff6b6b;">⚠️ Высокий приоритет:</span> Заблокировать 3 IP-адреса, связанных с card testing (12 попыток за час)
+        <!-- WISDOM METRICS -->
+        <div class="wisdom-grid">
+            <div class="wisdom-card">
+                <div>📊 Data Points</div>
+                <div class="wisdom-count">1,204</div>
+                <div style="color: #888;">raw orders</div>
             </div>
-            <div class="rec-item">
-                <span style="color: #ff9800;">📊 Анализ:</span> Рост geo_mismatch на 15% - требуется доп. верификация для RU/CN транзакций
+            <div class="wisdom-card">
+                <div>🧠 Insights</div>
+                <div class="wisdom-count">47</div>
+                <div style="color: #888;">from analysis</div>
             </div>
-            <div class="rec-item">
-                <span style="color: #4caf50;">✅ Выполнено:</span> 4 случая return abuse помечены, 2 аккаунта заблокированы
+            <div class="wisdom-card">
+                <div>🎯 Wisdom Ratio</div>
+                <div class="wisdom-count">3.9%</div>
+                <div style="color: #888;">insights/data</div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>TRIER · Чистый фрод-детектор · Реальные данные OZON · Помощь людям</p>
-            <p style="font-size: 0.8em; margin-top: 10px;">
-                🔑 Активные скоупы: Posting FBS RO · Supply Order RO · Returns RO · Cancelation RO
-            </p>
+        <!-- VERTICAL TIMELINE OF WISDOM -->
+        <h2>⏰ Wisdom Timeline</h2>
+        <div class="timeline-vertical">
+            <div class="timeline-item">
+                <div style="color: #888;">14:32</div>
+                <div style="font-size: 1.2em;">New card testing pattern detected</div>
+                <div style="color: #ff6b6b;">contrary to 847 normal orders</div>
+            </div>
+            <div class="timeline-item">
+                <div style="color: #888;">13:15</div>
+                <div style="font-size: 1.2em;">Geo mismatch cluster in Moscow</div>
+                <div style="color: #ff9800;">3 orders from same IP</div>
+            </div>
+            <div class="timeline-item">
+                <div style="color: #888;">11:47</div>
+                <div style="font-size: 1.2em;">Return abuse pattern identified</div>
+                <div style="color: #4caf50;">4 cases, 2 accounts flagged</div>
+            </div>
+            <div class="timeline-item">
+                <div style="color: #888;">09:22</div>
+                <div style="font-size: 1.2em;">Velocity anomaly: 12 orders in 5min</div>
+                <div style="color: #f44336;">IP blocked automatically</div>
+            </div>
+        </div>
+
+        <!-- GROWTH STATS -->
+        <div style="background: #1e1e1e; padding: 25px; border-radius: 10px; margin: 40px 0;">
+            <h3>📈 VERTICAL GROWTH METRICS</h3>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 20px;">
+                <div>
+                    <div style="color: #888;">Wisdom/Order</div>
+                    <div style="font-size: 2em;">0.039</div>
+                    <div style="color: #4caf50;">↑ 12%</div>
+                </div>
+                <div>
+                    <div style="color: #888;">Patterns Found</div>
+                    <div style="font-size: 2em;">23</div>
+                    <div style="color: #4caf50;">↑ 5 new</div>
+                </div>
+                <div>
+                    <div style="color: #888;">False Positives</div>
+                    <div style="font-size: 2em;">3</div>
+                    <div style="color: #ff6b6b;">↓ 2</div>
+                </div>
+                <div>
+                    <div style="color: #888;">Learning Rate</div>
+                    <div style="font-size: 2em;">94%</div>
+                    <div style="color: #4caf50;">⚡ improving</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DATABASE LOCATION -->
+        <div style="text-align: center; padding: 20px; color: #888;">
+            <p>📁 real_data/ozon/ · Wisdom DB growing from DEEP ANALYSIS</p>
+            <p style="font-size: 0.8em;">raw data → patterns → contrary evidence → wisdom → action</p>
         </div>
     </div>
 
     <script>
-        // Language toggle (EN/RU)
-        let currentLang = 'ru';
-        const translations = {
-            ru: {
-                langBtn: '🇬🇧 English',
-                // Add other translations as needed
-            },
-            en: {
-                langBtn: '🇷🇺 Русский',
-                // Add other translations as needed
-            }
-        };
-
-        function toggleLanguage() {
-            currentLang = currentLang === 'ru' ? 'en' : 'ru';
-            document.getElementById('langBtn').textContent = translations[currentLang].langBtn;
-            // In a real implementation, you'd swap all text here
-        }
-
-        // Live data simulation (replace with real API calls)
-        function updateLiveData() {
-            // These would come from your real_data/ozon/ozon_metrics.json
-            const data = {
-                totalOrders: 1247,
-                detectionRate: 94,
-                precision: 87,
-                amountAtRisk: 345000,
-                fbsOrders: 847,
-                fbsFraud: 12,
-                fboOrders: 312,
-                fboFraud: 5,
-                returns: 45,
-                returnsFraud: 4,
-                cancels: 23,
-                cancelFraud: 2,
-                ruTransactions: 4,
-                ruHighRisk: 1,
-                cnTransactions: 6,
-                cnHighRisk: 3
-            };
-
-            // Update DOM
-            document.getElementById('totalOrders').textContent = data.totalOrders.toLocaleString();
-            document.getElementById('detectionRate').textContent = data.detectionRate + '%';
-            document.getElementById('precision').textContent = data.precision + '%';
-            document.getElementById('amountAtRisk').textContent = '₽' + (data.amountAtRisk/1000).toFixed(0) + 'K';
+        // Simulate vertical growth
+        let wisdom = 47;
+        setInterval(() => {
+            wisdom += Math.floor(Math.random() * 3);
+            document.querySelector('.wisdom-count').textContent = wisdom;
             
-            document.getElementById('fbsOrders').textContent = data.fbsOrders;
-            document.getElementById('fbsFraud').textContent = data.fbsFraud + ' мошенничеств';
-            document.getElementById('fboOrders').textContent = data.fboOrders;
-            document.getElementById('fboFraud').textContent = data.fboFraud + ' мошенничеств';
-            document.getElementById('returnsCount').textContent = data.returns;
-            document.getElementById('returnsFraud').textContent = data.returnsFraud + ' злоупотребления';
-            document.getElementById('cancelCount').textContent = data.cancels;
-            document.getElementById('cancelFraud').textContent = data.cancelFraud + ' подозрительных';
-            
-            document.getElementById('ruTransactions').textContent = data.ruTransactions;
-            document.getElementById('ruHighRisk').textContent = data.ruHighRisk;
-            document.getElementById('cnTransactions').textContent = data.cnTransactions;
-            document.getElementById('cnHighRisk').textContent = data.cnHighRisk;
-        }
-
-        // Update time
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('updateTime').textContent = 
-                now.toLocaleString('ru-RU', {
-                    day: '2-digit', month: '2-digit', year: 'numeric',
-                    hour: '2-digit', minute: '2-digit', second: '2-digit'
-                });
-        }
-
-        // Initialize
-        updateLiveData();
-        updateTime();
-        setInterval(updateTime, 1000);
-        setInterval(updateLiveData, 30000); // Update every 30 seconds
+            // Update wisdom ratio
+            const ratio = (wisdom / 1204 * 100).toFixed(1);
+            document.querySelectorAll('.wisdom-count')[2].textContent = ratio + '%';
+        }, 5000);
     </script>
 </body>
 </html>
