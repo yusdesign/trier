@@ -26,15 +26,3 @@
 📜 License
 
 MIT © yusdesign
-
----
-
-<div align="center">
-
-⭐ Star TRIER on GitHub! ⭐
-
-https://img.shields.io/github/stars/yusdesign/trier?style=social
-
-Live long and TRIER! 🖖
-
-</div>
