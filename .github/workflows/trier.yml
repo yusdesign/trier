@@ -1,4 +1,4 @@
-name: TRIER Unified Workflow
+name: TRIER OZON-ONLY Workflow
 
 on:
   schedule:
@@ -19,35 +19,23 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas numpy
       
-      - name: Run Fraud Detection
-        continue-on-error: true
-        run: |
-          cd src
-          python trier_fraud_detector.py
-          python trier_dashboard.py
-      
       - name: Fetch OZON Real Data
-        continue-on-error: true
         env:
           OZON_CLIENT_ID: ${{ secrets.OZON_CLIENT_ID }}
           OZON_API_KEY: ${{ secrets.OZON_API_KEY }}
         run: |
           cd src
-          [ -f "ozon_dashboard_data.py" ] && python ozon_dashboard_data.py
+          python ozon_dashboard_data.py
       
-      - name: Update Music Dashboard
-        continue-on-error: true
+      - name: Generate OZON Dashboard
         run: |
           cd src
-          [ -f "music_dashboard.py" ] && python music_dashboard.py
+          python generate_ozon_dashboard.py
       
-      - name: Sync index with russo
+      - name: Commit real data
         run: |
-          if [ -f "docs/russo.html" ]; then
-            cp docs/russo.html docs/index.html
-            echo "✅ index.html synced with russo.html"
-          fi
-      
-      # ❌ NO GIT PUSH - REMOVED!
-      # The workflow just reads data and updates files locally
-      # GitHub Pages will show the latest files from the repo
+          git config --local user.email "trier@github.com"
+          git config --local user.name "TRIER Bot"
+          git add real_data/ozon/ docs/
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 OZON update $(date)"
+          git push
